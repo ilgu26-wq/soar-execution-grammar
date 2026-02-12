@@ -1,19 +1,31 @@
 # SOAR — Structural Observation & Alpha Recognition
 
-> "Making the unseen knowable through language" — Making the unseen knowable through language.
+SOAR — Structural Observation & Alpha Recognition  
+Making the unseen *decidable* through structure, not learning.
 
-## What This Repo Is
+## What This Repository Is
 
-Experimental evidence for the **Irreversible Energy Law of Decision Systems** — proof that learning-free intelligence emerges from structure, not optimization.
+SOAR is **not a trading strategy**, **not a predictor**, and **not a learning agent**.
 
-SOAR is an NQ/MNQ futures execution grammar that decides **when NOT to execute**, achieving prop/quant-level performance through structural filtering alone.
+SOAR is **not HFT** and does not rely on microsecond latency advantages.
+It operates on structural decision irreversibility, not speed.
+
+It is an **execution grammar** for futures trading (NQ/MNQ) that decides  
+**when NOT to execute** — and achieves prop/quant-level performance  
+*without optimization, rewards, or reinforcement learning*.
+
+This repository contains **experimental evidence** that:
+
+> Reliable execution does not emerge from better predictions,  
+> but from **irreversible structural constraints** on action.
 
 ## Core Discovery
 
 1. **Irreversibility of Judgment** — Once committed, decisions cannot be revised. This prevents chaotic feedback loops.
 2. **Energy Conservation Law (ECL)** — Energy is conserved; only execution converts energy to PnL; judgment doesn't alter energy.
 3. **Sharp Boundary** — The question "execute or not?" dominates "when to execute?" (EXP-48).
-4. **CI Wait** — "Waiting is better than killing" (Waiting is better than killing) — 3-way decision (EXECUTE/DENY/WAIT) via Beta posterior confidence intervals (EXP-69).
+4. **CI Wait** — "Waiting is better than killing" — 3-way decision (EXECUTE/DENY/WAIT) via Beta posterior confidence intervals (EXP-69).
+
 
 ## Current Freeze
 
@@ -30,7 +42,6 @@ SOAR is an NQ/MNQ futures execution grammar that decides **when NOT to execute**
 | False Execute | 9.0% | ≤ 18% | ✅ |
 | CI Wait | 9.6% | ≤ 15% | ✅ |
 | Reproducibility Hash | `9ec07cd1a73ae484` | Deterministic | ✅ |
-
 ## Phase Map
 
 ### Phase 1 — Observation (EXP-01~40)
@@ -93,6 +104,30 @@ Reducing fold-to-fold variance while preserving IMMORTAL capture.
 | 69 | CI Wait | ✅ DOMINATES shrinkage: FE_std 5.7%, IMM 84.3% |
 | 70 | Boundary Hysteresis | NO EFFECT — flip rate 0.0%, no instability exists |
 
+
+### Phase 4 — Institutional Validation (EXP-71+)
+Verifying structural execution under institutional evaluation frameworks.
+| EXP | Title | Key Finding |
+|-----|-------|-------------|
+| 71 | Institutional Metrics Overlay | ✅ ALL PASS — Sharpe +29.6, MDD -76.8%, beats 20/20 random gates |
+## Institutional Metrics (Supplement)
+For compatibility with institutional evaluation frameworks,
+we report standard risk-adjusted metrics (Sharpe, Sortino, MDD)
+as **non-optimized overlays** on the sealed v3_runtime.
+These metrics are **not objectives** of SOAR,
+but sanity checks confirming that structural execution
+does not introduce pathological risk profiles.
+| System | Sharpe | Sortino | MDD | Calmar | Hit Rate | PF |
+|--------|--------|---------|-----|--------|----------|------|
+| Baseline (Always-Execute) | +2.67 | +80.9 | $312.50 | +4.66 | 41.6% | 1.43 |
+| Sharp Boundary (EXEC/DENY) | +24.62 | +519.5 | $95.00 | +98.62 | 86.5% | 12.88 |
+| **SOAR v3 (CI Wait 15/85)** | **+29.58** | **+550.3** | **$72.50** | **+137.3** | **89.9%** | **17.81** |
+| Random Gate (same freq) | +2.75 | +83.3 | $309.62 | +5.28 | 41.9% | 1.45 |
+See: [EXP-71 Institutional Metrics Overlay](docs/EXP/EXP-71.md)
+
+> Metrics computed on identical trade logs without parameter tuning.
+These metrics are reported for interpretability, not optimization or selection.
+
 ## Reproduction
 
 ```bash
@@ -123,3 +158,14 @@ scripts/           Reproduction and integrity verification
 ## License
 
 Research use only. Not financial advice.
+
+## Intended Audience
+
+This repository is intended for:
+- Quant researchers interested in execution-layer structure
+- AI safety researchers studying irreversibility and control
+- Prop traders seeking rule-based execution grammars
+
+It is **not** intended as a retail trading system.
+
+No capital allocation claims are made.
