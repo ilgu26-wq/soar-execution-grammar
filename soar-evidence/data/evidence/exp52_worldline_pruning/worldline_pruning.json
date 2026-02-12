@@ -1,0 +1,127 @@
+{
+  "experiment": "EXP-52 Worldline Pruning",
+  "timestamp": "2026-02-12T13:08:37.447462",
+  "lock_version": "v2.0.0-PROD",
+  "pruning_conditions": {
+    "min_conditions": 2,
+    "checks": [
+      "E_sign_neg",
+      "dE_falling",
+      "force_misaligned",
+      "mae_dominant"
+    ]
+  },
+  "stats": {
+    "total_signals": 486,
+    "gate_denied": 193,
+    "traded": 293,
+    "pruned": 132,
+    "alive": 161,
+    "prune_rate": 45.1,
+    "false_prunes": 14,
+    "false_prune_rate": 10.6
+  },
+  "speed": {
+    "full_time_s": 0.87,
+    "pruned_time_s": 0.87,
+    "speedup": 1.0,
+    "layer_savings_pct": 45.1
+  },
+  "pruned_analysis": {
+    "pruned_wr": 10.6,
+    "alive_wr": 62.7,
+    "separation": 52.1,
+    "pruned_pnl": -2112.5,
+    "alive_pnl": 3312.5
+  },
+  "law_preservation": {
+    "full_invariants": {
+      "n_trades": 293,
+      "n_exec": 92,
+      "n_deny": 160,
+      "exec_wr": 91.3,
+      "deny_wr": 5.0,
+      "sharp_gap": 86.3,
+      "imm_wr": 95.7,
+      "stb_wr": 0.0,
+      "fate_separation": 95.7,
+      "aep_median": 0.9882,
+      "aep_q95": 1.0,
+      "aep_in_critical_pct": 69.8,
+      "false_exec_rate": 8.7,
+      "fate_distribution": {
+        "IMMORTAL": 0.16,
+        "SURVIVED": 0.072,
+        "ZOMBIE": 0.174,
+        "TERMINATED": 0.358,
+        "STILLBORN": 0.235
+      },
+      "metrics_pass": {
+        "M1_sharp_boundary": true,
+        "M2_fate_separation": true,
+        "M3_aep_stability": true,
+        "M4_false_execute": true,
+        "M5_fate_distribution": true
+      },
+      "all_pass": true,
+      "pass_count": 5
+    },
+    "pruned_invariants": {
+      "n_trades": 293,
+      "n_exec": 92,
+      "n_deny": 156,
+      "exec_wr": 91.3,
+      "deny_wr": 6.4,
+      "sharp_gap": 84.9,
+      "imm_wr": 97.7,
+      "stb_wr": 0.0,
+      "fate_separation": 97.7,
+      "aep_median": 0.9754,
+      "aep_q95": 1.0,
+      "aep_in_critical_pct": 65.6,
+      "false_exec_rate": 8.7,
+      "fate_distribution": {
+        "IMMORTAL": 0.147,
+        "SURVIVED": 0.072,
+        "ZOMBIE": 0.116,
+        "TERMINATED": 0.645,
+        "STILLBORN": 0.02
+      },
+      "metrics_pass": {
+        "M1_sharp_boundary": true,
+        "M2_fate_separation": true,
+        "M3_aep_stability": true,
+        "M4_false_execute": true,
+        "M5_fate_distribution": true
+      },
+      "all_pass": true,
+      "pass_count": 5
+    },
+    "all_preserved": true
+  },
+  "fate_validation": {
+    "alive_fate_consistency": 100.0,
+    "pruned_accuracy": 84.1
+  },
+  "hypotheses": {
+    "H52a_prune_rate": {
+      "threshold": "\u226540%",
+      "value": 45.1,
+      "supported": true
+    },
+    "H52b_false_prune": {
+      "threshold": "\u226415%",
+      "value": 10.6,
+      "supported": true
+    },
+    "H52c_law_preserved": {
+      "supported": true
+    },
+    "H52d_speedup": {
+      "threshold": "\u22651.2x",
+      "value": 1.0,
+      "supported": false
+    }
+  },
+  "supported_count": "3/4"
+}

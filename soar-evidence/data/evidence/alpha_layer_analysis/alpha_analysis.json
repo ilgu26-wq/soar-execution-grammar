@@ -1,0 +1,79 @@
+{
+  "total_trades": 293,
+  "aoc": 183,
+  "arc": 68,
+  "anc": 174,
+  "false_alpha_rate": 95.08,
+  "realization_rate": 37.16,
+  "overall_wr": 39.25,
+  "alpha_lock_wr": 95.59,
+  "pre_lock_wr": 22.22,
+  "lock_pnl": 2997.5,
+  "nonlock_pnl": -1797.5,
+  "by_fate": {
+    "IMMORTAL": {
+      "n": 47,
+      "wr": 95.74,
+      "pnl": 2090.0
+    },
+    "SURVIVED": {
+      "n": 21,
+      "wr": 95.24,
+      "pnl": 907.5
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "wr": 62.75,
+      "pnl": 1040.0
+    },
+    "TERMINATED": {
+      "n": 105,
+      "wr": 17.14,
+      "pnl": -1212.5
+    },
+    "STILLBORN": {
+      "n": 69,
+      "wr": 0.0,
+      "pnl": -1625.0
+    }
+  },
+  "by_orbit": {
+    "ALPHA": {
+      "n": 98,
+      "wr": 78.57,
+      "pnl": 3130.0
+    },
+    "FAILURE": {
+      "n": 135,
+      "wr": 0.74,
+      "pnl": -3120.0
+    },
+    "CONTESTED": {
+      "n": 54,
+      "wr": 68.52,
+      "pnl": 1330.0
+    },
+    "NEUTRAL": {
+      "n": 6,
+      "wr": 0.0,
+      "pnl": -140.0
+    }
+  },
+  "by_leader": {
+    "AOCL": {
+      "n": 73,
+      "wr": 69.86,
+      "pnl": 1852.5
+    },
+    "FCL": {
+      "n": 98,
+      "wr": 2.04,
+      "pnl": -2170.0
+    },
+    "TIE": {
+      "n": 122,
+      "wr": 50.82,
+      "pnl": 1517.5
+    }
+  }
+}

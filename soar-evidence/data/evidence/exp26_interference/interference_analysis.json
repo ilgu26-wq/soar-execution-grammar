@@ -1,0 +1,53 @@
+{
+  "macro_stats": {
+    "window": 10,
+    "mean_macro_e": -0.197529,
+    "std_macro_e": 13.950406
+  },
+  "fate_phi": {
+    "IMMORTAL": {
+      "n": 47,
+      "phi_bin_mean": 0.0319,
+      "phi_bin_pos_pct": 50.6,
+      "phi_con_mean": 4.2174,
+      "phi_con_std": 2.7156
+    },
+    "SURVIVED": {
+      "n": 21,
+      "phi_bin_mean": -0.0238,
+      "phi_bin_pos_pct": 48.6,
+      "phi_con_mean": 3.9218,
+      "phi_con_std": 2.3141
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "phi_bin_mean": 0.0549,
+      "phi_bin_pos_pct": 49.2,
+      "phi_con_mean": 2.3176,
+      "phi_con_std": 3.4967
+    },
+    "TERMINATED": {
+      "n": 105,
+      "phi_bin_mean": 0.0095,
+      "phi_bin_pos_pct": 48.3,
+      "phi_con_mean": -2.1441,
+      "phi_con_std": 4.9303
+    },
+    "STILLBORN": {
+      "n": 69,
+      "phi_bin_mean": 0.1072,
+      "phi_bin_pos_pct": 54.1,
+      "phi_con_mean": -6.3396,
+      "phi_con_std": 3.3808
+    }
+  },
+  "zombie_dynamics": {
+    "n": 51,
+    "phi_pre_atp": 0.0784,
+    "phi_at_atp": 0.0196,
+    "phi_post_atp_1": 0.1111,
+    "phi_at_revival": null,
+    "phi_at_end": 0.0,
+    "mean_sign_changes": 1.76
+  }
+}

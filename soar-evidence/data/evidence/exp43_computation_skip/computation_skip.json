@@ -1,0 +1,17 @@
+{
+  "total_trades": 293,
+  "skippable": 194,
+  "non_skippable": 99,
+  "total_computations": 17580,
+  "saved_computations": 4628,
+  "skip_pct": 26.3,
+  "speedup_factor": 1.36,
+  "skippable_wr": 18.0,
+  "non_skippable_wr": 80.8,
+  "false_skip_rate": 18.0,
+  "hypotheses": {
+    "H43a": "NOT SUPPORTED",
+    "H43b": "SUPPORTED",
+    "H43c": "SUPPORTED"
+  }
+}

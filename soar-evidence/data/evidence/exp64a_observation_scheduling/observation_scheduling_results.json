@@ -1,0 +1,2100 @@
+{
+  "experiment": "EXP-64a Observation Scheduling",
+  "timestamp": "2026-02-12T14:50:37.065360",
+  "lock_version": "v2.0.0-PROD",
+  "n_trades": 1344,
+  "p_sample_values": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "world_results": {
+    "1.0": {
+      "p_sample": 1.0,
+      "updates_done": 1344,
+      "updates_skipped": 0,
+      "compute_savings_pct": 0.0,
+      "eval": {
+        "label": "p=1.00",
+        "n_exec": 580,
+        "n_deny": 764,
+        "exec_wr": 85.0,
+        "deny_wr": 7.7,
+        "sharp_gap": 77.3,
+        "false_exec_rate": 15.0,
+        "exec_pnl": 20972.5,
+        "deny_pnl": -13698.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "infant_bins_remaining": 36,
+      "mature_bins": 14,
+      "counterexamples": 40,
+      "infant_losses": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 0,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 1,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 5,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 9,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 11,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 12,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 14,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 16,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 23,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 28,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 38,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 39,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "trade_idx": 44,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 51,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 58,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 59,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 69,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 70,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 75,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 105,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 110,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 111,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 119,
+          "sharpness_at_loss": 2.0,
+          "p_exec_at_loss": 0.6
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 126,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 132,
+          "sharpness_at_loss": 4.0,
+          "p_exec_at_loss": 0.7143
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 139,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 149,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 159,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 226,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 275,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 377,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 643,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 728,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 878,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 943,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 960,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 976,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 1024,
+          "sharpness_at_loss": 8.0,
+          "p_exec_at_loss": 0.8182
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 1076,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 1086,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        }
+      },
+      "growth_trajectories": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 7.0,
+          "growth": 6.0,
+          "observations": 7
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 9.0,
+          "growth": 8.0,
+          "observations": 9
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 8.0,
+          "growth": 7.0,
+          "observations": 8
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        }
+      }
+    },
+    "0.5": {
+      "p_sample": 0.5,
+      "updates_done": 911,
+      "updates_skipped": 433,
+      "compute_savings_pct": 32.2,
+      "eval": {
+        "label": "p=0.50",
+        "n_exec": 524,
+        "n_deny": 820,
+        "exec_wr": 88.2,
+        "deny_wr": 11.0,
+        "sharp_gap": 77.2,
+        "false_exec_rate": 11.8,
+        "exec_pnl": 20135.0,
+        "deny_pnl": -12861.25,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "infant_bins_remaining": 36,
+      "mature_bins": 14,
+      "counterexamples": 40,
+      "infant_losses": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 0,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 1,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 5,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 9,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 11,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 12,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 14,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 16,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 23,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 28,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 38,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 39,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "trade_idx": 44,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 51,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 58,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 59,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 69,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 70,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 75,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 105,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 110,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 111,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 119,
+          "sharpness_at_loss": 2.0,
+          "p_exec_at_loss": 0.6
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 126,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 132,
+          "sharpness_at_loss": 4.0,
+          "p_exec_at_loss": 0.7143
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 139,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 149,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 159,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 226,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 275,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 377,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 643,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 728,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 878,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 943,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 960,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 976,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 1024,
+          "sharpness_at_loss": 8.0,
+          "p_exec_at_loss": 0.8182
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 1076,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 1086,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        }
+      },
+      "growth_trajectories": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 7.0,
+          "growth": 6.0,
+          "observations": 7
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 9.0,
+          "growth": 8.0,
+          "observations": 9
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 8.0,
+          "growth": 7.0,
+          "observations": 8
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        }
+      }
+    },
+    "0.25": {
+      "p_sample": 0.25,
+      "updates_done": 715,
+      "updates_skipped": 629,
+      "compute_savings_pct": 46.8,
+      "eval": {
+        "label": "p=0.25",
+        "n_exec": 580,
+        "n_deny": 764,
+        "exec_wr": 85.0,
+        "deny_wr": 7.7,
+        "sharp_gap": 77.3,
+        "false_exec_rate": 15.0,
+        "exec_pnl": 20972.5,
+        "deny_pnl": -13698.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "infant_bins_remaining": 36,
+      "mature_bins": 14,
+      "counterexamples": 40,
+      "infant_losses": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 0,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 1,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 5,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 9,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 11,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 12,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 14,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 16,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 23,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 28,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 38,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 39,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "trade_idx": 44,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 51,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 58,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 59,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 69,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 70,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 75,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 105,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 110,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 111,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 119,
+          "sharpness_at_loss": 2.0,
+          "p_exec_at_loss": 0.6
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 126,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 132,
+          "sharpness_at_loss": 4.0,
+          "p_exec_at_loss": 0.7143
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 139,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 149,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 159,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 226,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 275,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 377,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 643,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 728,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 878,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 943,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 960,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 976,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 1024,
+          "sharpness_at_loss": 8.0,
+          "p_exec_at_loss": 0.8182
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 1076,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 1086,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        }
+      },
+      "growth_trajectories": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 7.0,
+          "growth": 6.0,
+          "observations": 7
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 9.0,
+          "growth": 8.0,
+          "observations": 9
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 8.0,
+          "growth": 7.0,
+          "observations": 8
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        }
+      }
+    },
+    "0.1": {
+      "p_sample": 0.1,
+      "updates_done": 582,
+      "updates_skipped": 762,
+      "compute_savings_pct": 56.7,
+      "eval": {
+        "label": "p=0.10",
+        "n_exec": 524,
+        "n_deny": 820,
+        "exec_wr": 88.2,
+        "deny_wr": 11.0,
+        "sharp_gap": 77.2,
+        "false_exec_rate": 11.8,
+        "exec_pnl": 20135.0,
+        "deny_pnl": -12861.25,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "infant_bins_remaining": 36,
+      "mature_bins": 14,
+      "counterexamples": 40,
+      "infant_losses": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 0,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 1,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "trade_idx": 5,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 9,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 11,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 12,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 14,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 16,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 23,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 28,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 38,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 39,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "trade_idx": 44,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 51,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 58,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 59,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 69,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 70,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "trade_idx": 75,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 105,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 110,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 111,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 119,
+          "sharpness_at_loss": 2.0,
+          "p_exec_at_loss": 0.6
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 126,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 132,
+          "sharpness_at_loss": 4.0,
+          "p_exec_at_loss": 0.7143
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 139,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "trade_idx": 149,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 159,
+          "sharpness_at_loss": 1.0,
+          "p_exec_at_loss": 0.5
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "trade_idx": 226,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 275,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "trade_idx": 377,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 643,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "trade_idx": 728,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "trade_idx": 878,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "trade_idx": 943,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 960,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|RISING|SHADOW|D1|TREND|LOW": {
+          "trade_idx": 976,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "trade_idx": 1024,
+          "sharpness_at_loss": 8.0,
+          "p_exec_at_loss": 0.8182
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "trade_idx": 1076,
+          "sharpness_at_loss": 0.0,
+          "p_exec_at_loss": 0.3333
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "trade_idx": 1086,
+          "sharpness_at_loss": 3.0,
+          "p_exec_at_loss": 0.6667
+        }
+      },
+      "growth_trajectories": {
+        "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|RISING|SHADOW|D2|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 7.0,
+          "growth": 6.0,
+          "observations": 7
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 9.0,
+          "growth": 8.0,
+          "observations": 9
+        },
+        "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|FALLING|SHADOW|D0|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 5.0,
+          "growth": 4.0,
+          "observations": 5
+        },
+        "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "POS|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 6.0,
+          "growth": 5.0,
+          "observations": 6
+        },
+        "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 8.0,
+          "growth": 7.0,
+          "observations": 8
+        },
+        "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 10.0,
+          "growth": 9.0,
+          "observations": 10
+        },
+        "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 4.0,
+          "growth": 3.0,
+          "observations": 4
+        },
+        "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 3.0,
+          "growth": 2.0,
+          "observations": 3
+        },
+        "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        },
+        "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+          "start_sharp": 1.0,
+          "end_sharp": 2.0,
+          "growth": 1.0,
+          "observations": 2
+        }
+      }
+    }
+  },
+  "drift_acceptable": false,
+  "counterexamples_found": true
+}

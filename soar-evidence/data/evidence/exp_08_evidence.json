@@ -1,0 +1,59 @@
+{
+  "experiment": "EXP-08-Boundary-Sensitivity-Sweep",
+  "timestamp": "2026-02-12T06:24:06.384566",
+  "lock_version": "v2.0.0-PROD",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "allowed_count": 896,
+  "denied_count": 702,
+  "allowed_pnl": 2085.0,
+  "denied_pnl": 1525.0,
+  "bucket_stats": {
+    "HARD_DENY": {
+      "range": "0.0~0.3",
+      "count": 2,
+      "win_rate": 50.0,
+      "avg_pnl": 12.5,
+      "total_pnl": 25.0,
+      "pct_of_denied": 0.3
+    },
+    "MODERATE_DENY": {
+      "range": "0.3~0.5",
+      "count": 661,
+      "win_rate": 36.0,
+      "avg_pnl": 1.93,
+      "total_pnl": 1275.0,
+      "pct_of_denied": 94.2
+    },
+    "SOFT_DENY": {
+      "range": "0.5~0.7",
+      "count": 39,
+      "win_rate": 41.0,
+      "avg_pnl": 5.77,
+      "total_pnl": 225.0,
+      "pct_of_denied": 5.6
+    },
+    "NEAR_ALLOW": {
+      "range": "0.7~0.8",
+      "count": 0,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "pct_of_denied": 0
+    },
+    "ALMOST_ALLOW": {
+      "range": "0.8~1.0",
+      "count": 0,
+      "win_rate": 0,
+      "avg_pnl": 0,
+      "total_pnl": 0,
+      "pct_of_denied": 0
+    }
+  },
+  "near_allow_count": 0,
+  "near_allow_wr": 0,
+  "near_allow_pnl": 0,
+  "middle_candidates": [],
+  "status": "OPTIMAL"
+}

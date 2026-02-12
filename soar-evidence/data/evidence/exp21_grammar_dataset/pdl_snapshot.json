@@ -1,0 +1,116 @@
+{
+  "version": "v0.1.0",
+  "epsilon": 0.01,
+  "cap": 1.2,
+  "total_deposits": 67,
+  "total_skips": 515,
+  "active_paths": 14,
+  "total_paths_observed": 14,
+  "max_pheromone": 1.2,
+  "min_pheromone": 1.01,
+  "paths": {
+    "Z_MOMENTUM.HIGH_CURV@TREND": {
+      "strength": 1.2,
+      "deposits": 20,
+      "first_leaders": {
+        "TIE": 7,
+        "AOCL": 13
+      }
+    },
+    "MICRO_MOMENTUM.ALIGNED@TREND": {
+      "strength": 1.14,
+      "deposits": 14,
+      "first_leaders": {
+        "AOCL": 14
+      }
+    },
+    "Z_MOMENTUM.LOW_CURV@TREND": {
+      "strength": 1.06,
+      "deposits": 6,
+      "first_leaders": {
+        "TIE": 1,
+        "AOCL": 5
+      }
+    },
+    "FLOW_IMBALANCE.WEAK_F@TREND": {
+      "strength": 1.06,
+      "deposits": 6,
+      "first_leaders": {
+        "TIE": 1,
+        "AOCL": 5
+      }
+    },
+    "MICRO_MOMENTUM.MISALIGNED@TREND": {
+      "strength": 1.05,
+      "deposits": 5,
+      "first_leaders": {
+        "TIE": 5
+      }
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@TREND": {
+      "strength": 1.05,
+      "deposits": 5,
+      "first_leaders": {
+        "AOCL": 4,
+        "TIE": 1
+      }
+    },
+    "FLOW_IMBALANCE.STRONG_F@TREND": {
+      "strength": 1.04,
+      "deposits": 4,
+      "first_leaders": {
+        "AOCL": 2,
+        "TIE": 2
+      }
+    },
+    "Z_MOMENTUM.LOW_CURV@DEAD": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "TIE": 1
+      }
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@DEAD": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "TIE": 1
+      }
+    },
+    "FLOW_IMBALANCE.WEAK_F@DEAD": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "TIE": 1
+      }
+    },
+    "Z_MOMENTUM.HIGH_CURV@STORM": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "TIE": 1
+      }
+    },
+    "MICRO_MOMENTUM.MISALIGNED@STORM": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "TIE": 1
+      }
+    },
+    "Z_MOMENTUM.HIGH_CURV@DEAD": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "AOCL": 1
+      }
+    },
+    "MICRO_MOMENTUM.ALIGNED@DEAD": {
+      "strength": 1.01,
+      "deposits": 1,
+      "first_leaders": {
+        "AOCL": 1
+      }
+    }
+  }
+}

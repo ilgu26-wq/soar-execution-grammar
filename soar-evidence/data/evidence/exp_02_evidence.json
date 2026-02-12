@@ -1,0 +1,58 @@
+{
+  "experiment": "EXP-02-Gate-Ablation",
+  "timestamp": "2026-02-12T05:11:27.278544",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "results": {
+    "RAW": {
+      "mode": "RAW",
+      "trades": 1598,
+      "denied": 0,
+      "pf": 1.14,
+      "win_rate": 36.5,
+      "max_dd_pct": 0.63,
+      "net_pnl": 3610.0,
+      "avg_pnl": 2.26,
+      "max_loss_streak": 17,
+      "avg_loss_streak": 2.71
+    },
+    "DD_ONLY": {
+      "mode": "DD_ONLY",
+      "trades": 1598,
+      "denied": 0,
+      "pf": 1.14,
+      "win_rate": 36.5,
+      "max_dd_pct": 0.63,
+      "net_pnl": 3610.0,
+      "avg_pnl": 2.26,
+      "max_loss_streak": 17,
+      "avg_loss_streak": 2.71
+    },
+    "DD_STREAK": {
+      "mode": "DD_STREAK",
+      "trades": 896,
+      "denied": 702,
+      "pf": 1.15,
+      "win_rate": 36.6,
+      "max_dd_pct": 0.42,
+      "net_pnl": 2085.0,
+      "avg_pnl": 2.33,
+      "max_loss_streak": 15,
+      "avg_loss_streak": 2.72
+    },
+    "FULL": {
+      "mode": "FULL",
+      "trades": 896,
+      "denied": 702,
+      "pf": 1.15,
+      "win_rate": 36.6,
+      "max_dd_pct": 0.42,
+      "net_pnl": 2085.0,
+      "avg_pnl": 2.33,
+      "max_loss_streak": 15,
+      "avg_loss_streak": 2.72
+    }
+  },
+  "status": "PASS"
+}

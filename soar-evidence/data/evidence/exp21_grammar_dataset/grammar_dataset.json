@@ -1,0 +1,226 @@
+{
+  "exp": "EXP-21",
+  "description": "Alpha Grammar Dataset \u2014 State\u2192Orbit\u2192Pheromone",
+  "total_samples": 582,
+  "reward_1_count": 257,
+  "reward_0_count": 325,
+  "reward_1_rate": 44.16,
+  "state_orbit_table": {
+    "Z_MOMENTUM.HIGH_CURV@TREND": {
+      "total": 183,
+      "alpha": 57,
+      "failure": 86,
+      "contested": 36,
+      "reward_sum": 77,
+      "reward_rate": 42.08,
+      "pheromone": 1.2
+    },
+    "MICRO_MOMENTUM.ALIGNED@TREND": {
+      "total": 83,
+      "alpha": 26,
+      "failure": 37,
+      "contested": 20,
+      "reward_sum": 40,
+      "reward_rate": 48.19,
+      "pheromone": 1.14
+    },
+    "Z_MOMENTUM.LOW_CURV@TREND": {
+      "total": 73,
+      "alpha": 27,
+      "failure": 37,
+      "contested": 8,
+      "reward_sum": 33,
+      "reward_rate": 45.21,
+      "pheromone": 1.06
+    },
+    "MICRO_MOMENTUM.MISALIGNED@TREND": {
+      "total": 70,
+      "alpha": 19,
+      "failure": 41,
+      "contested": 8,
+      "reward_sum": 24,
+      "reward_rate": 34.29,
+      "pheromone": 1.05
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@TREND": {
+      "total": 45,
+      "alpha": 15,
+      "failure": 21,
+      "contested": 8,
+      "reward_sum": 20,
+      "reward_rate": 44.44,
+      "pheromone": 1.05
+    },
+    "FLOW_IMBALANCE.WEAK_F@TREND": {
+      "total": 34,
+      "alpha": 14,
+      "failure": 11,
+      "contested": 8,
+      "reward_sum": 20,
+      "reward_rate": 58.82,
+      "pheromone": 1.06
+    },
+    "FLOW_IMBALANCE.STRONG_F@TREND": {
+      "total": 19,
+      "alpha": 6,
+      "failure": 8,
+      "contested": 5,
+      "reward_sum": 10,
+      "reward_rate": 52.63,
+      "pheromone": 1.04
+    },
+    "Z_MOMENTUM.LOW_CURV@DEAD": {
+      "total": 13,
+      "alpha": 5,
+      "failure": 3,
+      "contested": 5,
+      "reward_sum": 6,
+      "reward_rate": 46.15,
+      "pheromone": 1.01
+    },
+    "Z_MOMENTUM.HIGH_CURV@DEAD": {
+      "total": 15,
+      "alpha": 4,
+      "failure": 7,
+      "contested": 3,
+      "reward_sum": 5,
+      "reward_rate": 33.33,
+      "pheromone": 1.01
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@DEAD": {
+      "total": 9,
+      "alpha": 2,
+      "failure": 1,
+      "contested": 6,
+      "reward_sum": 3,
+      "reward_rate": 33.33,
+      "pheromone": 1.01
+    },
+    "Z_MOMENTUM.HIGH_CURV@CHOP": {
+      "total": 3,
+      "alpha": 3,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 3,
+      "reward_rate": 100.0,
+      "pheromone": 1.0
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@CHOP": {
+      "total": 2,
+      "alpha": 2,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 2,
+      "reward_rate": 100.0,
+      "pheromone": 1.0
+    },
+    "MICRO_MOMENTUM.ALIGNED@CHOP": {
+      "total": 2,
+      "alpha": 2,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 2,
+      "reward_rate": 100.0,
+      "pheromone": 1.0
+    },
+    "MICRO_MOMENTUM.MISALIGNED@DEAD": {
+      "total": 6,
+      "alpha": 2,
+      "failure": 2,
+      "contested": 1,
+      "reward_sum": 2,
+      "reward_rate": 33.33,
+      "pheromone": 1.0
+    },
+    "Z_MOMENTUM.HIGH_CURV@STORM": {
+      "total": 5,
+      "alpha": 1,
+      "failure": 2,
+      "contested": 2,
+      "reward_sum": 2,
+      "reward_rate": 40.0,
+      "pheromone": 1.01
+    },
+    "MICRO_MOMENTUM.ALIGNED@DEAD": {
+      "total": 6,
+      "alpha": 1,
+      "failure": 2,
+      "contested": 3,
+      "reward_sum": 2,
+      "reward_rate": 33.33,
+      "pheromone": 1.01
+    },
+    "FLOW_IMBALANCE.WEAK_F@DEAD": {
+      "total": 2,
+      "alpha": 0,
+      "failure": 1,
+      "contested": 1,
+      "reward_sum": 1,
+      "reward_rate": 50.0,
+      "pheromone": 1.01
+    },
+    "Z_MOMENTUM.LOW_CURV@CHOP": {
+      "total": 1,
+      "alpha": 1,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 1,
+      "reward_rate": 100.0,
+      "pheromone": 1.0
+    },
+    "FLOW_IMBALANCE.WEAK_F@CHOP": {
+      "total": 1,
+      "alpha": 1,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 1,
+      "reward_rate": 100.0,
+      "pheromone": 1.0
+    },
+    "RANGE_BREAKOUT.NARROW_RNG@TREND": {
+      "total": 3,
+      "alpha": 1,
+      "failure": 2,
+      "contested": 0,
+      "reward_sum": 1,
+      "reward_rate": 33.33,
+      "pheromone": 1.0
+    },
+    "MICRO_MOMENTUM.MISALIGNED@STORM": {
+      "total": 2,
+      "alpha": 0,
+      "failure": 1,
+      "contested": 1,
+      "reward_sum": 1,
+      "reward_rate": 50.0,
+      "pheromone": 1.01
+    },
+    "MEAN_REVERT.HIGH_CURV@TREND": {
+      "total": 2,
+      "alpha": 1,
+      "failure": 1,
+      "contested": 0,
+      "reward_sum": 1,
+      "reward_rate": 50.0,
+      "pheromone": 1.0
+    },
+    "RANGE_BREAKOUT.NARROW_RNG@DEAD": {
+      "total": 1,
+      "alpha": 0,
+      "failure": 0,
+      "contested": 0,
+      "reward_sum": 0,
+      "reward_rate": 0.0,
+      "pheromone": 1.0
+    },
+    "MICRO_MOMENTUM.ALIGNED@STORM": {
+      "total": 2,
+      "alpha": 0,
+      "failure": 1,
+      "contested": 1,
+      "reward_sum": 0,
+      "reward_rate": 0.0,
+      "pheromone": 1.0
+    }
+  }
+}

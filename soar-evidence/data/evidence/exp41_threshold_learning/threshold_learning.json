@@ -1,0 +1,2376 @@
+{
+  "method": "Hierarchical Bayesian LOO with Laplace smoothing",
+  "hierarchy": [
+    "(depth, aep_zone, shadow, regime)",
+    "(depth, aep_zone, shadow)",
+    "(depth, aep_zone)",
+    "(depth)"
+  ],
+  "laplace_alpha": 1.0,
+  "min_bucket_size": 3,
+  "results": {
+    "learned_n": 118,
+    "learned_wr": 73.6,
+    "learned_pf": 5.64,
+    "learned_net": 3539,
+    "learned_mdd": 0.09,
+    "learned_per_trade": 30.04
+  },
+  "comparison": {
+    "baseline_net": 1270,
+    "graduated_net": 3448,
+    "learned_net": 3539
+  },
+  "hypotheses": {
+    "H41a_learned_beats_graduated": "SUPPORTED",
+    "H41b_calibration_honest": "NOT SUPPORTED",
+    "H41c_reduces_dd": "SUPPORTED",
+    "H41d_improves_per_trade": "SUPPORTED"
+  },
+  "learned_p_exec": [
+    {
+      "trade_idx": 0,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 1,
+      "p_exec": 0.1562,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 2,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 3,
+      "p_exec": 0.9565,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 4,
+      "p_exec": 0.9565,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 5,
+      "p_exec": 0.7778,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 6,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 7,
+      "p_exec": 0.9474,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 8,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 9,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 10,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 11,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 12,
+      "p_exec": 0.1562,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 13,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 14,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 15,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 16,
+      "p_exec": 0.1667,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 17,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 18,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 19,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 20,
+      "p_exec": 0.8,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 21,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 22,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 23,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 24,
+      "p_exec": 0.8462,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 25,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 26,
+      "p_exec": 0.1667,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 27,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 28,
+      "p_exec": 0.4,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 29,
+      "p_exec": 0.9474,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 30,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 31,
+      "p_exec": 0.1667,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 32,
+      "p_exec": 0.2222,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 33,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 34,
+      "p_exec": 0.7,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 35,
+      "p_exec": 0.4286,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 36,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 37,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 38,
+      "p_exec": 0.96,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 39,
+      "p_exec": 0.3,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 40,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 41,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 42,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 43,
+      "p_exec": 0.8,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 44,
+      "p_exec": 0.75,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 45,
+      "p_exec": 0.8333,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 46,
+      "p_exec": 0.8333,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 47,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 48,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 49,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 50,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 51,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 52,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 53,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 54,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 55,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 56,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 57,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 58,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 59,
+      "p_exec": 0.1667,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 60,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 61,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 62,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 63,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 64,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 65,
+      "p_exec": 0.2143,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 66,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 67,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 68,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 69,
+      "p_exec": 0.1667,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 70,
+      "p_exec": 0.125,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 71,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 72,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 73,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 74,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 75,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 76,
+      "p_exec": 0.1765,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 77,
+      "p_exec": 0.9565,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 78,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 79,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 80,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 81,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 82,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 83,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 84,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 85,
+      "p_exec": 0.8636,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 86,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 87,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 88,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 89,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 90,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 91,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 92,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 93,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 94,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 95,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 96,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 97,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 98,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 99,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 100,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 101,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 102,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 103,
+      "p_exec": 0.1562,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 104,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 105,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 106,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 107,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 108,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 109,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 110,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 111,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 112,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 113,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 114,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 115,
+      "p_exec": 0.125,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 116,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 117,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 118,
+      "p_exec": 0.6,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 119,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 120,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 121,
+      "p_exec": 0.7,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 122,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 123,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 124,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 125,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 126,
+      "p_exec": 0.0465,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 127,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 128,
+      "p_exec": 0.1667,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 129,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 130,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 131,
+      "p_exec": 0.6,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 132,
+      "p_exec": 0.4286,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 133,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 134,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 135,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 136,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 137,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 138,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 139,
+      "p_exec": 0.4286,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 140,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 141,
+      "p_exec": 0.92,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 142,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 143,
+      "p_exec": 0.0556,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 144,
+      "p_exec": 0.2222,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 145,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 146,
+      "p_exec": 0.4286,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 147,
+      "p_exec": 0.4,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 148,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 149,
+      "p_exec": 0.0417,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 150,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 151,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 152,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 153,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 154,
+      "p_exec": 0.1667,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 155,
+      "p_exec": 0.0714,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 156,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 157,
+      "p_exec": 0.7,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 158,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 159,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 160,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 161,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 162,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 163,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 164,
+      "p_exec": 0.0465,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 165,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 166,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 167,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 168,
+      "p_exec": 0.2857,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 169,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 170,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 171,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 172,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 173,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 174,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 175,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 176,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 177,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 178,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 179,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 180,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 181,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 182,
+      "p_exec": 0.0256,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 183,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 184,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 185,
+      "p_exec": 0.9167,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 186,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 187,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 188,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 189,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 190,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 191,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 192,
+      "p_exec": 0.7778,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 193,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 194,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 195,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 196,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 197,
+      "p_exec": 0.4286,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 198,
+      "p_exec": 0.1667,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 199,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 200,
+      "p_exec": 0.8,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 201,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 202,
+      "p_exec": 0.75,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 203,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 204,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 205,
+      "p_exec": 0.8,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 206,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 207,
+      "p_exec": 0.2143,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 208,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 209,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 210,
+      "p_exec": 0.125,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 211,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 212,
+      "p_exec": 0.8,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 213,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 214,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 215,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 216,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 217,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 218,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 219,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 220,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 221,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 222,
+      "p_exec": 0.2,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 223,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 224,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 225,
+      "p_exec": 0.8636,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 226,
+      "p_exec": 0.0714,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 227,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 228,
+      "p_exec": 0.1429,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 229,
+      "p_exec": 0.0465,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 230,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 231,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 232,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 233,
+      "p_exec": 0.125,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 234,
+      "p_exec": 0.6154,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 235,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 236,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 237,
+      "p_exec": 0.7,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 238,
+      "p_exec": 0.625,
+      "depth": "D1",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 239,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 240,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 241,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 242,
+      "p_exec": 0.1667,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 243,
+      "p_exec": 0.0465,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 244,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 245,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 246,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 247,
+      "p_exec": 0.2857,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 248,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 249,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 250,
+      "p_exec": 0.6,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 251,
+      "p_exec": 0.75,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 252,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 253,
+      "p_exec": 0.1,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 254,
+      "p_exec": 0.15,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 255,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 256,
+      "p_exec": 0.125,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 257,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 258,
+      "p_exec": 0.1,
+      "depth": "D2",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 259,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 260,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 261,
+      "p_exec": 0.8125,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 262,
+      "p_exec": 0.9091,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 263,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 264,
+      "p_exec": 0.9474,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 265,
+      "p_exec": 0.0455,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 266,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 267,
+      "p_exec": 0.0513,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 268,
+      "p_exec": 0.1667,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 269,
+      "p_exec": 0.9375,
+      "depth": "ALLOW",
+      "aep_zone": "SUB",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 270,
+      "p_exec": 0.8636,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "FRACTURED_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 271,
+      "p_exec": 0.75,
+      "depth": "D1",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 272,
+      "p_exec": 0.6923,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 273,
+      "p_exec": 0.0556,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 274,
+      "p_exec": 0.9,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 275,
+      "p_exec": 0.6923,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 276,
+      "p_exec": 0.8,
+      "depth": "ALLOW",
+      "aep_zone": "SUPER",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 277,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 278,
+      "p_exec": 0.3333,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 279,
+      "p_exec": 0.0625,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 280,
+      "p_exec": 0.8,
+      "depth": "D2",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 281,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 282,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 283,
+      "p_exec": 0.6667,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": true
+    },
+    {
+      "trade_idx": 284,
+      "p_exec": 0.1875,
+      "depth": "D2",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 285,
+      "p_exec": 0.4,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 286,
+      "p_exec": 0.95,
+      "depth": "ALLOW",
+      "aep_zone": "CRIT",
+      "shadow": "NO_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 287,
+      "p_exec": 0.0417,
+      "depth": "D3+",
+      "aep_zone": "SUPER",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 288,
+      "p_exec": 0.8125,
+      "depth": "D1",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": true
+    },
+    {
+      "trade_idx": 289,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 290,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    },
+    {
+      "trade_idx": 291,
+      "p_exec": 0.1,
+      "depth": "D3+",
+      "aep_zone": "SUB",
+      "shadow": "PENUMBRA",
+      "is_win": false
+    },
+    {
+      "trade_idx": 292,
+      "p_exec": 0.0476,
+      "depth": "D3+",
+      "aep_zone": "CRIT",
+      "shadow": "CLEAN_SHADOW",
+      "is_win": false
+    }
+  ]
+}

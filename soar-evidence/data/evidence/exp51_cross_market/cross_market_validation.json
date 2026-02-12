@@ -1,0 +1,143 @@
+{
+  "experiment": "EXP-51 Cross-Market Law Validation",
+  "timestamp": "2026-02-12T12:51:38.199943",
+  "lock_version": "v2.0.0-PROD",
+  "frozen_laws": [
+    "EXP-47 Minimal",
+    "EXP-48 Sharp Boundary",
+    "EXP-44 ECL"
+  ],
+  "reference": {
+    "world": "NQ_FULL",
+    "n_trades": 293,
+    "invariants": {
+      "n_trades": 293,
+      "n_exec": 92,
+      "n_deny": 160,
+      "exec_wr": 91.3,
+      "deny_wr": 5.0,
+      "sharp_gap": 86.3,
+      "imm_wr": 95.7,
+      "stb_wr": 0.0,
+      "fate_separation": 95.7,
+      "aep_median": 0.9882,
+      "aep_q95": 1.0,
+      "aep_in_critical_pct": 69.8,
+      "false_exec_rate": 8.7,
+      "fate_distribution": {
+        "IMMORTAL": 0.16,
+        "SURVIVED": 0.072,
+        "ZOMBIE": 0.174,
+        "TERMINATED": 0.358,
+        "STILLBORN": 0.235
+      },
+      "metrics_pass": {
+        "M1_sharp_boundary": true,
+        "M2_fate_separation": true,
+        "M3_aep_stability": true,
+        "M4_false_execute": true,
+        "M5_fate_distribution": true
+      },
+      "all_pass": true,
+      "pass_count": 5
+    }
+  },
+  "worlds": [
+    {
+      "world": "NQ_T1_HIGH",
+      "market": "NQ",
+      "time_window": "T1",
+      "vol_regime": "HIGH",
+      "label": "2026-02-04 14:00:00 ~ 2026-02-04 23:31:01",
+      "status": "PASS",
+      "n_trades": 255,
+      "wr": 40.4,
+      "net_pnl": 1247.5,
+      "invariants": {
+        "n_trades": 255,
+        "n_exec": 82,
+        "n_deny": 137,
+        "exec_wr": 92.7,
+        "deny_wr": 4.4,
+        "sharp_gap": 88.3,
+        "imm_wr": 97.7,
+        "stb_wr": 0.0,
+        "fate_separation": 97.7,
+        "aep_median": 0.9784,
+        "aep_q95": 1.0,
+        "aep_in_critical_pct": 66.0,
+        "false_exec_rate": 7.3,
+        "fate_distribution": {
+          "IMMORTAL": 0.169,
+          "SURVIVED": 0.063,
+          "ZOMBIE": 0.176,
+          "TERMINATED": 0.365,
+          "STILLBORN": 0.227
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": true,
+          "M5_fate_distribution": true
+        },
+        "all_pass": true,
+        "pass_count": 5
+      }
+    },
+    {
+      "world": "NQ_T2_LOW",
+      "market": "NQ",
+      "time_window": "T2",
+      "vol_regime": "LOW",
+      "label": "2026-02-04 23:31:01 ~ 2026-02-11 23:04:27",
+      "status": "SKIP"
+    },
+    {
+      "world": "NQ_T3_LOW",
+      "market": "NQ",
+      "time_window": "T3",
+      "vol_regime": "LOW",
+      "label": "2026-02-11 23:04:27 ~ 2026-02-12 00:00:01",
+      "status": "PASS",
+      "n_trades": 19,
+      "wr": 47.4,
+      "net_pnl": 200.0,
+      "invariants": {
+        "n_trades": 19,
+        "n_exec": 6,
+        "n_deny": 12,
+        "exec_wr": 100.0,
+        "deny_wr": 16.7,
+        "sharp_gap": 83.3,
+        "imm_wr": 100.0,
+        "stb_wr": 0.0,
+        "fate_separation": 100.0,
+        "aep_median": 1.0,
+        "aep_q95": 1.0,
+        "aep_in_critical_pct": 94.1,
+        "false_exec_rate": 0.0,
+        "fate_distribution": {
+          "IMMORTAL": 0.053,
+          "SURVIVED": 0.158,
+          "ZOMBIE": 0.053,
+          "TERMINATED": 0.474,
+          "STILLBORN": 0.263
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": true,
+          "M5_fate_distribution": true
+        },
+        "all_pass": true,
+        "pass_count": 5
+      }
+    }
+  ],
+  "verdict": "INSUFFICIENT_DATA",
+  "pass_rate": 100.0,
+  "n_valid": 2,
+  "n_pass": 2
+}

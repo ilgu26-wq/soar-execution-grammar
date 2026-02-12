@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "total_trades_with_ca": 293,
+  "total_events": 661,
+  "event_distribution": {
+    "AOCL_COMMIT": 183,
+    "FCL_COMMIT": 196,
+    "ATP": 224,
+    "ZOMBIE_REVIVAL": 58,
+    "CROSSOVER": 0
+  },
+  "drift_by_event": {
+    "AOCL_COMMIT": {
+      "n": 183,
+      "mean_delta_e_axis": 7.225,
+      "mean_delta_e_orbit": 0.5125
+    },
+    "FCL_COMMIT": {
+      "n": 196,
+      "mean_delta_e_axis": -4.253,
+      "mean_delta_e_orbit": -0.4229
+    },
+    "ATP": {
+      "n": 224,
+      "mean_delta_e_axis": -6.262,
+      "mean_delta_e_orbit": -0.1045
+    },
+    "ZOMBIE_REVIVAL": {
+      "n": 58,
+      "mean_delta_e_axis": 30.98,
+      "mean_delta_e_orbit": 0.12
+    }
+  },
+  "drift_by_fate_at_aocl": {}
+}

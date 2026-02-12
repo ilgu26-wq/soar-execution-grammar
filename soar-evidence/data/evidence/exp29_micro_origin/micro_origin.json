@@ -1,0 +1,79 @@
+{
+  "macro_storm": {
+    "n_bars": 7285,
+    "n_macro": 500,
+    "pct_macro": 6.9,
+    "thresholds": {
+      "vr": 1.6,
+      "ch_range_p90": 27.0,
+      "d2e_p90": 6.25,
+      "big_move_p95": 6.25
+    }
+  },
+  "micro_storm": {
+    "n_windows": 20,
+    "n_micro": 2,
+    "tau_pol": 0.7366,
+    "tau_theta": 7.7026
+  },
+  "part_a": {
+    "p_micro_macro": 0.0,
+    "p_micro_nonmacro": 10.53,
+    "odds_ratio": 0.0,
+    "fisher_or": 0.0,
+    "fisher_p": 1.0,
+    "hm1": false,
+    "hm2": true,
+    "hm3": false,
+    "micro_in_macro": 0,
+    "micro_in_nonmacro": 2,
+    "micro_in_session": 0
+  },
+  "part_b": {
+    "best_lag": 0,
+    "best_corr": 0.0,
+    "lag_corrs": {}
+  },
+  "part_c": {
+    "pol_proposal_mean": 0.0067,
+    "pol_allowed_mean": 0.0082,
+    "pol_denied_mean": 0.0021
+  },
+  "verdict": [
+    "H-M2 (Geometry Shock)"
+  ],
+  "micro_events": [
+    {
+      "start_idx": 108,
+      "bar_min": 2499,
+      "bar_max": 4112,
+      "pol": 0.8,
+      "theta": 5.0374,
+      "hollow": true,
+      "macro_frac": 0.0105,
+      "is_macro": false,
+      "is_session_boundary": false,
+      "ais_mean": 0.3253,
+      "wr": 28.3,
+      "pol_proposal": 0.0041,
+      "pol_allowed": 0.0,
+      "pol_denied": 0.0085
+    },
+    {
+      "start_idx": 204,
+      "bar_min": 5032,
+      "bar_max": 6329,
+      "pol": 0.75,
+      "theta": 7.0476,
+      "hollow": true,
+      "macro_frac": 0.1002,
+      "is_macro": false,
+      "is_session_boundary": false,
+      "ais_mean": 0.3765,
+      "wr": 43.3,
+      "pol_proposal": 0.0,
+      "pol_allowed": 0.0,
+      "pol_denied": 0.0
+    }
+  ]
+}

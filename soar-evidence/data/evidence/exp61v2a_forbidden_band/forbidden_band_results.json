@@ -1,0 +1,443 @@
+{
+  "experiment": "EXP-61 v2a Forbidden Band Coalescence \u2014 Margin Sweep",
+  "timestamp": "2026-02-12T14:29:52.984592",
+  "lock_version": "v2.0.0-PROD",
+  "n_original_bins": 57,
+  "theta": 0.5,
+  "margins_tested": [
+    0.02,
+    0.05,
+    0.08,
+    0.1,
+    0.12,
+    0.15,
+    0.2
+  ],
+  "pass_criteria": {
+    "sharp_gap_drift_min": -3.0,
+    "false_exec_drift_max": 2.0,
+    "immortal_capture_min": 85.0,
+    "min_merges": 1
+  },
+  "pre_eval": {
+    "label": "Pre-Merge",
+    "n_exec": 580,
+    "n_deny": 764,
+    "exec_wr": 85.0,
+    "deny_wr": 7.7,
+    "sharp_gap": 77.3,
+    "false_exec_rate": 15.0,
+    "exec_pnl": 20972.5,
+    "deny_pnl": -13698.75,
+    "immortal_capture_rate": 91.0,
+    "immortal_total": 100,
+    "immortal_captured": 91
+  },
+  "sweep_results": [
+    {
+      "margin": 0.02,
+      "n_merges": 5,
+      "n_rejected_cfb": 1,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 52,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "POS|RISING|SHADOW|D2|TREND|LOW",
+            "POS|RISING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.6,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.05,
+      "n_merges": 5,
+      "n_rejected_cfb": 1,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 52,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "POS|RISING|SHADOW|D2|TREND|LOW",
+            "POS|RISING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.6,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.08,
+      "n_merges": 4,
+      "n_rejected_cfb": 2,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 53,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.1,
+      "n_merges": 4,
+      "n_rejected_cfb": 2,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 53,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.12,
+      "n_merges": 4,
+      "n_rejected_cfb": 2,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 53,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.15,
+      "n_merges": 4,
+      "n_rejected_cfb": 2,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 53,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    },
+    {
+      "margin": 0.2,
+      "n_merges": 4,
+      "n_rejected_cfb": 2,
+      "n_rejected_post_cfb": 0,
+      "n_post_bins": 53,
+      "merge_details": [
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|TREND|LOW",
+            "NEG|FALLING|SHADOW|D3+|TREND|LOW"
+          ],
+          "p_merged": 0.0385,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+          "from": [
+            "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+            "POS|RISING|NO_SHADOW|D0|TREND|LOW"
+          ],
+          "p_merged": 0.875,
+          "dim_name": "ARG_depth"
+        },
+        {
+          "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+          "from": [
+            "NEG|RISING|SHADOW|D3+|TREND|LOW",
+            "NEG|RISING|SHADOW|D3+|TREND|HIGH"
+          ],
+          "p_merged": 0.125,
+          "dim_name": "AEP_zone"
+        },
+        {
+          "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+          "from": [
+            "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+            "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH"
+          ],
+          "p_merged": 0.0112,
+          "dim_name": "ARG_depth"
+        }
+      ],
+      "d_sharp_gap": -8.1,
+      "d_false_exec": 7.5,
+      "immortal_capture": 91.0,
+      "d_pnl": -1362.5,
+      "d_exec": 56,
+      "pass": false,
+      "sg_pass": false,
+      "fe_pass": false,
+      "imm_pass": true,
+      "merge_pass": true
+    }
+  ],
+  "passing_margins": [],
+  "optimal_margin": null
+}

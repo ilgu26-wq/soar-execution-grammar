@@ -1,0 +1,130 @@
+{
+  "n_cycles": 4,
+  "cycle_sizes": [
+    73,
+    73,
+    73,
+    74
+  ],
+  "local_drift": {
+    "cycle_correlations": [
+      0.04436422644023697,
+      -0.1534472980435844,
+      0.11596627027037208
+    ],
+    "global_correlation": 0.027662,
+    "high_ais_dp": -0.006803,
+    "low_ais_dp": 0.014416
+  },
+  "manifold_rotation": {
+    "per_cycle_theta": [
+      26.4818,
+      9.2833,
+      18.004
+    ],
+    "total_theta": 34.1216
+  },
+  "boundary_compression": [
+    {
+      "high": 19.2,
+      "mid": 35.6,
+      "low": 45.2,
+      "near_06": 16.4,
+      "near_03": 21.9
+    },
+    {
+      "high": 21.9,
+      "mid": 16.4,
+      "low": 61.6,
+      "near_06": 8.2,
+      "near_03": 20.5
+    },
+    {
+      "high": 23.3,
+      "mid": 21.9,
+      "low": 54.8,
+      "near_06": 13.7,
+      "near_03": 13.7
+    },
+    {
+      "high": 25.7,
+      "mid": 21.6,
+      "low": 52.7,
+      "near_06": 6.8,
+      "near_03": 17.6
+    }
+  ],
+  "hypotheses": {
+    "H1_corr_positive": true,
+    "H2_low_le_high": false,
+    "H3_theta_small": false,
+    "H4_zi_ratio": true,
+    "confirmed": 2
+  },
+  "influence_trajectories": {
+    "high_ais_paths": {
+      "Z_MOMENTUM.LOW_CURV@CHOP": [
+        1.002694,
+        1.002694,
+        1.002694,
+        1.002694
+      ],
+      "MEAN_REVERT.HIGH_CURV@TREND": [
+        1.0,
+        1.0,
+        1.003652,
+        0.999437
+      ],
+      "FLOW_IMBALANCE.WEAK_F@DEAD": [
+        1.003376,
+        1.003376,
+        0.999118,
+        0.999118
+      ],
+      "Z_MOMENTUM.HIGH_CURV@CHOP": [
+        0.999212,
+        0.999212,
+        0.999212,
+        0.999212
+      ],
+      "FLOW_IMBALANCE.STRONG_F@TREND": [
+        0.9958,
+        0.996359,
+        0.99849,
+        0.99424
+      ]
+    },
+    "low_ais_paths": {
+      "RANGE_BREAKOUT.NARROW_RNG@DEAD": [
+        1.0,
+        0.9948,
+        0.9948,
+        0.9948
+      ],
+      "RANGE_BREAKOUT.NARROW_RNG@TREND": [
+        0.996884,
+        0.990703,
+        0.990703,
+        0.990703
+      ],
+      "Z_MOMENTUM.HIGH_CURV@DEAD": [
+        0.993791,
+        0.988503,
+        0.984922,
+        0.98276
+      ],
+      "MICRO_MOMENTUM.ALIGNED@DEAD": [
+        1.0,
+        0.993876,
+        0.990894,
+        0.987939
+      ],
+      "MICRO_MOMENTUM.ALIGNED@STORM": [
+        1.0,
+        1.0,
+        1.0,
+        0.9968
+      ]
+    }
+  }
+}

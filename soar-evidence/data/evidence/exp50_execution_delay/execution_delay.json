@@ -1,0 +1,27 @@
+{
+  "method": "Bar-level energy confirmation before execution",
+  "bar0_signal": {
+    "pos_n": 139,
+    "pos_wr": 69.8,
+    "neg_n": 154,
+    "neg_wr": 11.7
+  },
+  "rising_2bar": {
+    "n": 66,
+    "wr": 93.9
+  },
+  "results": {
+    "n": 120,
+    "wr": 78.9,
+    "pf": 7.49,
+    "net": 4066,
+    "mdd": 0.06,
+    "per_trade": 33.96
+  },
+  "hypotheses": {
+    "H50a": "SUPPORTED",
+    "H50b": "SUPPORTED",
+    "H50c": "NOT SUPPORTED",
+    "H50d": "NOT SUPPORTED"
+  }
+}

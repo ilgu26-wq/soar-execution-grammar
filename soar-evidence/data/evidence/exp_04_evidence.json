@@ -1,0 +1,70 @@
+{
+  "experiment": "EXP-04-CORE-vs-V2",
+  "timestamp": "2026-02-12T06:01:20.989543",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "raw": {
+    "mode": "RAW",
+    "trades": 1610,
+    "denied": 0,
+    "denied_losses": 0,
+    "pf": 1.14,
+    "win_rate": 36.3,
+    "max_dd_pct": 0.64,
+    "net_pnl": 3460.0,
+    "avg_pnl": 2.15,
+    "max_loss_streak": 17,
+    "worst_5": [
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0
+    ],
+    "final_equity": 103460.0
+  },
+  "core_v1": {
+    "mode": "CORE_V1",
+    "trades": 47,
+    "denied": 1551,
+    "denied_losses": 983,
+    "pf": 0.94,
+    "win_rate": 31.9,
+    "max_dd_pct": 0.22,
+    "net_pnl": -50.0,
+    "avg_pnl": -1.06,
+    "max_loss_streak": 7,
+    "worst_5": [
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0
+    ],
+    "final_equity": 99950.0
+  },
+  "core_v2": {
+    "mode": "CORE_V2",
+    "trades": 896,
+    "denied": 702,
+    "denied_losses": 447,
+    "pf": 1.15,
+    "win_rate": 36.6,
+    "max_dd_pct": 0.42,
+    "net_pnl": 2085.0,
+    "avg_pnl": 2.33,
+    "max_loss_streak": 15,
+    "worst_5": [
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0
+    ],
+    "final_equity": 102085.0
+  },
+  "winner": "DRAW",
+  "reason": "No clear structural advantage",
+  "status": "DRAW"
+}

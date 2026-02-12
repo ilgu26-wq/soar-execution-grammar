@@ -1,0 +1,55 @@
+{
+  "experiment": "EXP-01-RAW-vs-SOAR",
+  "timestamp": "2026-02-12T05:11:23.902634",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "raw": {
+    "mode": "RAW",
+    "trades": 1610,
+    "pf": 1.14,
+    "win_rate": 36.3,
+    "max_dd_pct": 0.64,
+    "net_pnl": 3460.0,
+    "avg_pnl": 2.15,
+    "worst_5": [
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0
+    ],
+    "max_loss_streak": 17,
+    "avg_loss_streak": 2.73
+  },
+  "soar": {
+    "mode": "SOAR",
+    "trades": 896,
+    "denied": 702,
+    "denied_losses_blocked": 447,
+    "denied_loss_ratio": 63.7,
+    "denied_avg_pnl": 2.17,
+    "deny_reasons": {
+      "DD_BREACH": 0,
+      "CONSEC_LOSS_PAUSE": 702,
+      "HIGH_VOL_CAUTION": 0
+    },
+    "pf": 1.15,
+    "win_rate": 36.6,
+    "max_dd_pct": 0.42,
+    "net_pnl": 2085.0,
+    "avg_pnl": 2.33,
+    "worst_5": [
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0,
+      -25.0
+    ],
+    "max_loss_streak": 15,
+    "avg_loss_streak": 2.72
+  },
+  "dd_reduced": true,
+  "streak_reduced": true,
+  "status": "PASS"
+}

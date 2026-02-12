@@ -1,0 +1,92 @@
+{
+  "manifest": "v3_runtime_freeze",
+  "version": "v3.0.0",
+  "timestamp": "2026-02-12T13:49:25.531522",
+  "base_engine": "SOAR CORE v2.0.0-PROD",
+  "freeze_authority": "EXP-55 NQ ALL PASS (2/2 NQ worlds)",
+  "runtime_laws": {
+    "description": "Category A — EXPs that changed execution paths. These are laws.",
+    "entries": {
+      "EXP-48_Sharp_Boundary": {
+        "module": "core/boundary.py → apply_sharp_boundary()",
+        "law": "p_exec → EXECUTE/DENY binary separation. Sharp Gap ≥ 70%p.",
+        "runtime_impact": "Gate execution path determination"
+      },
+      "EXP-44_ECL_Execution": {
+        "module": "core/alpha_energy.py → compute_energy_trajectory()",
+        "law": "Energy conservation. Judgment does not change energy. Only execution converts energy to PnL.",
+        "runtime_impact": "Energy calculation path"
+      },
+      "EXP-47_Minimal_Distillation": {
+        "module": "experiments/exp_51_cross_market.py → extract_minimal_features()",
+        "law": "12 layers → 6 states (E_sign, dE_sign, Shadow, ARG_depth, Regime, AEP_bin)",
+        "runtime_impact": "Feature extraction dimensionality reduction"
+      },
+      "EXP-52_Worldline_Pruning": {
+        "module": "experiments/exp_54_deferred_compute.py → fast_death_check()",
+        "law": "DEAD worldlines block computation. Survival/death determined using only bar 0-1 information.",
+        "runtime_impact": "Orbit computation 45% reduction"
+      },
+      "EXP-53_Hierarchical_Pruning": {
+        "module": "experiments/exp_54_deferred_compute.py → tier2_soft_death_check()",
+        "law": "3-tier (HARD_DEAD → SOFT_DEAD → ALIVE) hierarchical pruning.",
+        "runtime_impact": "SOFT_DEAD separation, 47.8% orbit reduction"
+      },
+      "EXP-54_Deferred_Compute": {
+        "module": "experiments/exp_54_deferred_compute.py → deferred_recovery_check(), classify_hard_dead_zone()",
+        "law": "Zone-based classification (INSTANT/CONFIRMED/DEFERRED). 33% ZOMBIE recovery.",
+        "runtime_impact": "ZOMBIE moved to deferred bucket, false prune 8.4%"
+      },
+      "EXP-55_Global_Validation": {
+        "module": "experiments/exp_55_global_stress_test.py",
+        "law": "Confirmed all laws preserved at NQ large scale (24K bars, 1051 trades).",
+        "runtime_impact": "v3_runtime freeze basis"
+      }
+    }
+  },
+  "judge_learning": {
+    "description": "Category B — EXPs that changed the Judge but not SOAR. These are learning rules.",
+    "entries": {
+      "EXP-41_Threshold_Learning": "Execution threshold learning. p_exec calibration.",
+      "EXP-42_ZOMBIE_Learning": "ZOMBIE pattern recognition. Pruning boundary learning.",
+      "EXP-43_Computation_Skip": "Computation skip rules. Pre-stage of fast_death_check.",
+      "EXP-46_Observer_Learning": "Observer learning (failed). Proved that observer cannot change execution."
+    },
+    "status": "SEALED — reflected in runtime, originals preserved"
+  },
+  "observation_sealed": {
+    "description": "Category C — pure observation/verification EXPs. Documentation + physics proofs.",
+    "entries": {
+      "EXP-01~10": "Initial exploration (raw vs soar, gate ablation, calibration)",
+      "EXP-12~19": "Regime/motion/orbit exploration (regime, motion watchdog, orbit)",
+      "EXP-20~29": "Alpha ecosystem observation (pheromone, ATP, energy, axis, census)",
+      "EXP-30~38": "Frame/shadow/phase transition physics proofs",
+      "EXP-39_ARG_Relative_Gate": "ARG-DENY semantic verification. Gate separation proof.",
+      "EXP-40_ARG_Attach": "ARG simulation.",
+      "EXP-45_Energy_Exit": "Energy-based liquidation.",
+      "EXP-49_IMMORTAL_Tight": "IMMORTAL filter experiment.",
+      "EXP-50_Execution_Delay": "Execution delay experiment.",
+      "EXP-51_Cross_Market": "Cross-market base code (used as utility)."
+    },
+    "status": "SEALED — cannot delete, not included in execution path"
+  },
+  "frozen_parameters_NQ": {
+    "tick_size": 0.25,
+    "tick_value": 5.0,
+    "STOP_TICKS": 5,
+    "INSTANT_DEAD_THRESHOLD": -10.0,
+    "DEFERRED_E_LOWER": -3.0,
+    "DEFERRED_E_UPPER": -1.0,
+    "PRUNE_MIN_CONDITIONS": 2,
+    "force_dir_con_threshold": 0.3,
+    "mae_mfe_ratio": 0.5,
+    "sharp_gap_min": 70.0,
+    "false_exec_max": 10.0
+  },
+  "pending_calibration": {
+    "ES": "EXP-56 needed — FPR 27.0%, M4 fail (21.0%)",
+    "BTC": "EXP-56 needed — FPR 29.7%, M4 fail (15.4%)"
+  },
+  "engineering_statement": "We did not create alpha — we separated the physical laws already existing in the market into an executable grammar.",
+  "zombie_seal": "Worldlines are classified based only on bars 0-2. Alpha that revives afterward is outside the scope of this engine."
+}

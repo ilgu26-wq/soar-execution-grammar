@@ -1,0 +1,46 @@
+{
+  "experiment": "EXP-03-Kill-Switch",
+  "timestamp": "2026-02-12T05:11:30.548510",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "alive": {
+    "trades": 896,
+    "denied": 702,
+    "pf": 1.15,
+    "win_rate": 36.6,
+    "max_dd_pct": 0.42,
+    "net_pnl": 2085.0,
+    "avg_pnl": 2.33,
+    "max_loss_streak": 15,
+    "max_underwater": 224,
+    "final_equity": 102085.0
+  },
+  "zombie": {
+    "trades": 1598,
+    "denied": 0,
+    "pf": 1.14,
+    "win_rate": 36.5,
+    "max_dd_pct": 0.63,
+    "net_pnl": 3610.0,
+    "avg_pnl": 2.26,
+    "max_loss_streak": 17,
+    "max_underwater": 309,
+    "final_equity": 103610.0
+  },
+  "dead": {
+    "trades": 1598,
+    "denied": 0,
+    "pf": 1.14,
+    "win_rate": 36.5,
+    "max_dd_pct": 0.63,
+    "net_pnl": 3610.0,
+    "avg_pnl": 2.26,
+    "max_loss_streak": 17,
+    "max_underwater": 309,
+    "final_equity": 103610.0
+  },
+  "alive_survives": true,
+  "dead_worse": true,
+  "status": "PASS"
+}

@@ -1,0 +1,178 @@
+{
+  "timestamp": "2026-02-12T13:25:07.788702",
+  "level1_physics": {
+    "pass": true
+  },
+  "level2_exec_graph": {
+    "exec_chain_modules": [
+      "v2_locked",
+      "regime_layer",
+      "force_engine",
+      "alpha_layer",
+      "motion_watchdog",
+      "pheromone_drift",
+      "failure_commitment",
+      "alpha_termination",
+      "alpha_energy"
+    ],
+    "post_pipeline_exec": [
+      "compute_shadow_geometry",
+      "compute_aep",
+      "compute_arg_deny",
+      "extract_minimal_features",
+      "apply_sharp_boundary"
+    ],
+    "post_pipeline_measurement": [
+      "measure_invariants"
+    ],
+    "observer_modules": [
+      "central_axis",
+      "boundary",
+      "gate",
+      "judge",
+      "constitution",
+      "engine",
+      "run_core"
+    ],
+    "exec_exps": [
+      "EXP-13 motion_watchdog",
+      "EXP-15 failure_commitment",
+      "EXP-16 alpha_orbit",
+      "EXP-17 observer_gauge",
+      "EXP-18a gauge_lock_v2",
+      "EXP-20 pheromone_drift",
+      "EXP-22 alpha_termination",
+      "EXP-23 alpha_energy",
+      "EXP-36 shadow_geometry",
+      "EXP-38 phase_transition",
+      "EXP-39 relative_gate",
+      "EXP-40 arg_attach",
+      "EXP-44 ecl_execution",
+      "EXP-47 minimal_distillation",
+      "EXP-48 sharp_boundary",
+      "EXP-52 worldline_pruning",
+      "EXP-53 hierarchical_pruning"
+    ],
+    "observer_exps": [
+      "EXP-24 central_axis",
+      "EXP-30 energy_axis",
+      "EXP-31 relative_frame",
+      "EXP-32 orbit_closure",
+      "EXP-34 frame_switch",
+      "EXP-35 frame_cost",
+      "EXP-37 shadow_accumulation",
+      "EXP-41 threshold_learning",
+      "EXP-42 zombie_learning",
+      "EXP-43 computation_skip",
+      "EXP-45 energy_exit",
+      "EXP-46 observer_learning",
+      "EXP-49 immortal_tight",
+      "EXP-50 execution_delay"
+    ],
+    "measurement_exps": [
+      "EXP-01 raw_vs_soar",
+      "EXP-02 gate_ablation",
+      "EXP-03 kill_switch",
+      "EXP-04 core_vs_v2",
+      "EXP-05 v2_with_v1_overlay",
+      "EXP-06 trade_count_calibration",
+      "EXP-07 prop_deployment_sim",
+      "EXP-08 boundary_sensitivity",
+      "EXP-09 alpha_condition_refinement",
+      "EXP-10 proposal_shaping",
+      "EXP-12 regime_condition_resolution",
+      "EXP-14 motion_penalty",
+      "EXP-19 contested_micro_orbit",
+      "EXP-21 pdl_rl_dataset",
+      "EXP-25 alpha_census",
+      "EXP-26 interference",
+      "EXP-27 sbii",
+      "EXP-28 geometry_drift",
+      "EXP-29 micro_origin",
+      "EXP-51 cross_market"
+    ]
+  },
+  "level3_redundancy": {
+    "redundant_computations": [
+      "progressive_orbit (EXP-17)",
+      "central_axis (EXP-24)",
+      "energy_trajectory recomputation"
+    ],
+    "prunable_steps": [
+      "Motion Analysis",
+      "FCL Evaluation",
+      "AOCL Evaluation",
+      "Stabilized Orbit (bar loop)",
+      "ATP + Fate",
+      "Energy Trajectory"
+    ]
+  },
+  "separation_map": {
+    "soar_core": [
+      "v2_locked",
+      "regime_layer",
+      "force_engine",
+      "alpha_layer",
+      "motion_watchdog",
+      "pheromone_drift",
+      "failure_commitment",
+      "alpha_termination",
+      "alpha_energy",
+      "compute_shadow_geometry",
+      "compute_aep",
+      "compute_arg_deny",
+      "extract_minimal_features",
+      "apply_sharp_boundary"
+    ],
+    "soar_observer": [
+      "central_axis",
+      "boundary",
+      "gate",
+      "judge",
+      "constitution",
+      "engine",
+      "run_core",
+      "EXP-24 central_axis",
+      "EXP-30 energy_axis",
+      "EXP-31 relative_frame",
+      "EXP-32 orbit_closure",
+      "EXP-34 frame_switch",
+      "EXP-35 frame_cost",
+      "EXP-37 shadow_accumulation",
+      "EXP-41 threshold_learning",
+      "EXP-42 zombie_learning",
+      "EXP-43 computation_skip",
+      "EXP-45 energy_exit",
+      "EXP-46 observer_learning",
+      "EXP-49 immortal_tight",
+      "EXP-50 execution_delay"
+    ],
+    "soar_experiments": [
+      "EXP-01 raw_vs_soar",
+      "EXP-02 gate_ablation",
+      "EXP-03 kill_switch",
+      "EXP-04 core_vs_v2",
+      "EXP-05 v2_with_v1_overlay",
+      "EXP-06 trade_count_calibration",
+      "EXP-07 prop_deployment_sim",
+      "EXP-08 boundary_sensitivity",
+      "EXP-09 alpha_condition_refinement",
+      "EXP-10 proposal_shaping",
+      "EXP-12 regime_condition_resolution",
+      "EXP-14 motion_penalty",
+      "EXP-19 contested_micro_orbit",
+      "EXP-21 pdl_rl_dataset",
+      "EXP-25 alpha_census",
+      "EXP-26 interference",
+      "EXP-27 sbii",
+      "EXP-28 geometry_drift",
+      "EXP-29 micro_origin",
+      "EXP-51 cross_market"
+    ]
+  },
+  "immediate_actions": [
+    "REMOVE progressive_orbit_evaluation from run_v2_pipeline (redundant with stabilized_orbit)",
+    "REMOVE unused central_axis import from exp_51",
+    "OPTIMIZE compute_aep shadow recomputation"
+  ]
+}

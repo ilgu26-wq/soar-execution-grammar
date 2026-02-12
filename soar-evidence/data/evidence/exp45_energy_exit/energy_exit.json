@@ -1,0 +1,21 @@
+{
+  "death_conditions": [
+    "E_total < 0",
+    "dE/dt <= 0",
+    "NOT PENUMBRA",
+    "NOT AOCL leader"
+  ],
+  "population": {
+    "has_death": 135,
+    "no_death": 158
+  },
+  "death_group_wr": 3.7,
+  "alive_group_wr": 69.6,
+  "simulated_improvement": 2738,
+  "hypotheses": {
+    "H45a": "SUPPORTED",
+    "H45b": "NOT SUPPORTED",
+    "H45c": "SUPPORTED",
+    "H45d": "SUPPORTED"
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "experiment": "EXP-68 Bagged Posterior + EXP-68b Bagging x CI Wait",
+  "timestamp": "2026-02-12T17:29:15.136694",
+  "lock_version": "v2.0.0-PROD",
+  "theta": 0.5,
+  "results": {
+    "NQ_Combined": {
+      "sweep_a": [
+        {
+          "name": "Baseline (K=1)",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 1,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.5,
+            "fe_test_std": 7.7,
+            "fe_test_values": [
+              1.3,
+              12.8,
+              11.3,
+              24.7,
+              17.3
+            ],
+            "sg_test_mean": 75.9,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14485.0,
+            "n_exec_mean": 78.6,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=5 median",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 5,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.7,
+            "fe_test_std": 7.7,
+            "fe_test_values": [
+              1.3,
+              11.8,
+              12.8,
+              24.4,
+              18.3
+            ],
+            "sg_test_mean": 76.6,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14710.0,
+            "n_exec_mean": 80.2,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=10 median",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 10,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.3,
+            "fe_test_std": 7.9,
+            "fe_test_values": [
+              1.3,
+              8.7,
+              13.9,
+              24.4,
+              18.1
+            ],
+            "sg_test_mean": 76.3,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14528.0,
+            "n_exec_mean": 78.8,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=20 median",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 12.8,
+            "fe_test_std": 7.9,
+            "fe_test_values": [
+              1.3,
+              8.7,
+              11.3,
+              24.4,
+              18.1
+            ],
+            "sg_test_mean": 76.3,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14420.0,
+            "n_exec_mean": 77.4,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=40 median",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 40,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.1,
+            "fe_test_std": 7.9,
+            "fe_test_values": [
+              1.3,
+              8.7,
+              12.8,
+              24.4,
+              18.3
+            ],
+            "sg_test_mean": 76.5,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14555.0,
+            "n_exec_mean": 78.6,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        }
+      ],
+      "sweep_b": [
+        {
+          "name": "Baseline (K=1)",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 1,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.5,
+            "fe_test_std": 7.7,
+            "fe_test_values": [
+              1.3,
+              12.8,
+              11.3,
+              24.7,
+              17.3
+            ],
+            "sg_test_mean": 75.9,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14485.0,
+            "n_exec_mean": 78.6,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=20 mean",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "mean",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 12.8,
+            "fe_test_std": 7.9,
+            "fe_test_values": [
+              1.3,
+              8.7,
+              11.4,
+              24.4,
+              18.1
+            ],
+            "sg_test_mean": 75.9,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14325.0,
+            "n_exec_mean": 77.0,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=20 median",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 12.8,
+            "fe_test_std": 7.9,
+            "fe_test_values": [
+              1.3,
+              8.7,
+              11.3,
+              24.4,
+              18.1
+            ],
+            "sg_test_mean": 76.3,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14420.0,
+            "n_exec_mean": 77.4,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "Bag K=20 q25",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "q25",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 11.9,
+            "fe_test_std": 6.9,
+            "fe_test_values": [
+              1.3,
+              9.0,
+              11.8,
+              22.2,
+              15.4
+            ],
+            "sg_test_mean": 74.6,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 13830.0,
+            "n_exec_mean": 72.4,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        }
+      ],
+      "sweep_68b": [
+        {
+          "name": "Baseline (K=1)",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 1,
+            "aggregator": "median",
+            "ci_mode": false,
+            "alpha_lo": null,
+            "alpha_hi": null,
+            "n_folds": 5,
+            "fe_test_mean": 13.5,
+            "fe_test_std": 7.7,
+            "fe_test_values": [
+              1.3,
+              12.8,
+              11.3,
+              24.7,
+              17.3
+            ],
+            "sg_test_mean": 75.9,
+            "imm_test_mean": 90.8,
+            "pnl_test_total": 14485.0,
+            "n_exec_mean": 78.6,
+            "wait_pct_mean": 0.0,
+            "wait_imm_total": 0
+          }
+        },
+        {
+          "name": "CI 15/85 only (K=1)",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 1,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.15,
+            "alpha_hi": 0.85,
+            "n_folds": 5,
+            "fe_test_mean": 8.8,
+            "fe_test_std": 5.7,
+            "fe_test_values": [
+              1.4,
+              5.1,
+              7.5,
+              17.7,
+              12.1
+            ],
+            "sg_test_mean": 74.8,
+            "imm_test_mean": 84.3,
+            "pnl_test_total": 13050.0,
+            "n_exec_mean": 64.8,
+            "wait_pct_mean": 10.5,
+            "wait_imm_total": 4
+          }
+        },
+        {
+          "name": "Bag K=5 + CI 15/85",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 5,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.15,
+            "alpha_hi": 0.85,
+            "n_folds": 5,
+            "fe_test_mean": 9.6,
+            "fe_test_std": 6.7,
+            "fe_test_values": [
+              1.9,
+              5.1,
+              7.8,
+              21.2,
+              12.1
+            ],
+            "sg_test_mean": 71.6,
+            "imm_test_mean": 84.3,
+            "pnl_test_total": 12162.0,
+            "n_exec_mean": 61.8,
+            "wait_pct_mean": 11.4,
+            "wait_imm_total": 4
+          }
+        },
+        {
+          "name": "Bag K=10 + CI 15/85",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 10,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.15,
+            "alpha_hi": 0.85,
+            "n_folds": 5,
+            "fe_test_mean": 10.1,
+            "fe_test_std": 7.0,
+            "fe_test_values": [
+              1.5,
+              5.3,
+              7.8,
+              21.2,
+              14.5
+            ],
+            "sg_test_mean": 72.7,
+            "imm_test_mean": 84.3,
+            "pnl_test_total": 12698.0,
+            "n_exec_mean": 64.8,
+            "wait_pct_mean": 10.0,
+            "wait_imm_total": 4
+          }
+        },
+        {
+          "name": "Bag K=20 + CI 15/85",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.15,
+            "alpha_hi": 0.85,
+            "n_folds": 5,
+            "fe_test_mean": 9.6,
+            "fe_test_std": 6.8,
+            "fe_test_values": [
+              1.4,
+              5.1,
+              7.9,
+              21.2,
+              12.3
+            ],
+            "sg_test_mean": 73.4,
+            "imm_test_mean": 84.3,
+            "pnl_test_total": 12798.0,
+            "n_exec_mean": 64.6,
+            "wait_pct_mean": 9.4,
+            "wait_imm_total": 4
+          }
+        },
+        {
+          "name": "Bag K=40 + CI 15/85",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 40,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.15,
+            "alpha_hi": 0.85,
+            "n_folds": 5,
+            "fe_test_mean": 9.6,
+            "fe_test_std": 6.8,
+            "fe_test_values": [
+              1.4,
+              5.1,
+              7.9,
+              21.2,
+              12.3
+            ],
+            "sg_test_mean": 73.4,
+            "imm_test_mean": 84.3,
+            "pnl_test_total": 12798.0,
+            "n_exec_mean": 64.6,
+            "wait_pct_mean": 9.4,
+            "wait_imm_total": 4
+          }
+        },
+        {
+          "name": "Bag K=20 + CI 10/90",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.1,
+            "alpha_hi": 0.9,
+            "n_folds": 5,
+            "fe_test_mean": 8.5,
+            "fe_test_std": 7.6,
+            "fe_test_values": [
+              0.0,
+              5.3,
+              3.6,
+              21.3,
+              12.5
+            ],
+            "sg_test_mean": 72.5,
+            "imm_test_mean": 77.5,
+            "pnl_test_total": 12165.0,
+            "n_exec_mean": 60.4,
+            "wait_pct_mean": 13.9,
+            "wait_imm_total": 7
+          }
+        },
+        {
+          "name": "Bag K=20 + CI 12/88",
+          "summary": {
+            "market": "NQ_Combined",
+            "K": 20,
+            "aggregator": "median",
+            "ci_mode": true,
+            "alpha_lo": 0.12,
+            "alpha_hi": 0.88,
+            "n_folds": 5,
+            "fe_test_mean": 9.1,
+            "fe_test_std": 7.0,
+            "fe_test_values": [
+              1.5,
+              5.3,
+              5.2,
+              21.3,
+              12.3
+            ],
+            "sg_test_mean": 72.5,
+            "imm_test_mean": 82.5,
+            "pnl_test_total": 12350.0,
+            "n_exec_mean": 61.8,
+            "wait_pct_mean": 12.9,
+            "wait_imm_total": 5
+          }
+        }
+      ]
+    }
+  }
+}

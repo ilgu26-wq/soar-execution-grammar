@@ -1,0 +1,184 @@
+{
+  "params": {
+    "w1": 0.3,
+    "w2": 0.25,
+    "w3": 0.2,
+    "w4": 0.25,
+    "kappa": 0.02,
+    "floor": 0.9,
+    "cap": 1.05,
+    "phi_max": 5.0,
+    "l_ref": 5.0,
+    "e_norm": 398.55
+  },
+  "zombie_subtypes": {
+    "Z-II": {
+      "n": 15,
+      "wr": 60.0,
+      "pnl": 280.0
+    },
+    "Z-I": {
+      "n": 21,
+      "wr": 76.2,
+      "pnl": 650.0
+    },
+    "Z-III": {
+      "n": 15,
+      "wr": 46.7,
+      "pnl": 110.0
+    }
+  },
+  "ais_by_fate": {
+    "IMMORTAL": {
+      "n": 47,
+      "ais_mean": 0.6299,
+      "ais_std": 0.0928
+    },
+    "SURVIVED": {
+      "n": 21,
+      "ais_mean": 0.7166,
+      "ais_std": 0.0961
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "ais_mean": 0.4519,
+      "ais_std": 0.1248
+    },
+    "TERMINATED": {
+      "n": 105,
+      "ais_mean": 0.2807,
+      "ais_std": 0.1761
+    },
+    "STILLBORN": {
+      "n": 69,
+      "ais_mean": 0.2031,
+      "ais_std": 0.0719
+    }
+  },
+  "influence_map": {
+    "Z_MOMENTUM.LOW_CURV@TREND": {
+      "n": 73,
+      "ais_mean": 0.3784,
+      "influence": 0.9976
+    },
+    "MICRO_MOMENTUM.MISALIGNED@TREND": {
+      "n": 70,
+      "ais_mean": 0.3651,
+      "influence": 0.9973
+    },
+    "Z_MOMENTUM.HIGH_CURV@TREND": {
+      "n": 183,
+      "ais_mean": 0.3794,
+      "influence": 0.9976
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@TREND": {
+      "n": 45,
+      "ais_mean": 0.3843,
+      "influence": 0.9977
+    },
+    "FLOW_IMBALANCE.WEAK_F@TREND": {
+      "n": 34,
+      "ais_mean": 0.4122,
+      "influence": 0.9982
+    },
+    "Z_MOMENTUM.LOW_CURV@DEAD": {
+      "n": 13,
+      "ais_mean": 0.4184,
+      "influence": 0.9984
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@DEAD": {
+      "n": 9,
+      "ais_mean": 0.388,
+      "influence": 0.9978
+    },
+    "FLOW_IMBALANCE.WEAK_F@DEAD": {
+      "n": 2,
+      "ais_mean": 0.4783,
+      "influence": 0.9996
+    },
+    "MICRO_MOMENTUM.ALIGNED@TREND": {
+      "n": 83,
+      "ais_mean": 0.3948,
+      "influence": 0.9979
+    },
+    "Z_MOMENTUM.LOW_CURV@CHOP": {
+      "n": 1,
+      "ais_mean": 0.6347,
+      "influence": 1.0027
+    },
+    "Z_MOMENTUM.HIGH_CURV@CHOP": {
+      "n": 3,
+      "ais_mean": 0.4606,
+      "influence": 0.9992
+    },
+    "RANGE_BREAKOUT.WIDE_RNG@CHOP": {
+      "n": 2,
+      "ais_mean": 0.3978,
+      "influence": 0.998
+    },
+    "MICRO_MOMENTUM.ALIGNED@CHOP": {
+      "n": 2,
+      "ais_mean": 0.3978,
+      "influence": 0.998
+    },
+    "FLOW_IMBALANCE.WEAK_F@CHOP": {
+      "n": 1,
+      "ais_mean": 0.3814,
+      "influence": 0.9976
+    },
+    "FLOW_IMBALANCE.STRONG_F@TREND": {
+      "n": 19,
+      "ais_mean": 0.4561,
+      "influence": 0.9991
+    },
+    "Z_MOMENTUM.HIGH_CURV@DEAD": {
+      "n": 15,
+      "ais_mean": 0.3227,
+      "influence": 0.9965
+    },
+    "RANGE_BREAKOUT.NARROW_RNG@TREND": {
+      "n": 3,
+      "ais_mean": 0.2928,
+      "influence": 0.9959
+    },
+    "RANGE_BREAKOUT.NARROW_RNG@DEAD": {
+      "n": 1,
+      "ais_mean": 0.24,
+      "influence": 0.9948
+    },
+    "MICRO_MOMENTUM.MISALIGNED@DEAD": {
+      "n": 6,
+      "ais_mean": 0.4246,
+      "influence": 0.9985
+    },
+    "Z_MOMENTUM.HIGH_CURV@STORM": {
+      "n": 5,
+      "ais_mean": 0.3667,
+      "influence": 0.9973
+    },
+    "MICRO_MOMENTUM.MISALIGNED@STORM": {
+      "n": 2,
+      "ais_mean": 0.4468,
+      "influence": 0.9989
+    },
+    "MICRO_MOMENTUM.ALIGNED@DEAD": {
+      "n": 6,
+      "ais_mean": 0.3245,
+      "influence": 0.9965
+    },
+    "MEAN_REVERT.HIGH_CURV@TREND": {
+      "n": 2,
+      "ais_mean": 0.4863,
+      "influence": 0.9997
+    },
+    "MICRO_MOMENTUM.ALIGNED@STORM": {
+      "n": 2,
+      "ais_mean": 0.34,
+      "influence": 0.9968
+    }
+  },
+  "ais_lock_predictor": {
+    "lock_ais_mean": 0.6567,
+    "nonlock_ais_mean": 0.2957
+  }
+}

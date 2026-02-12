@@ -1,0 +1,64 @@
+{
+  "total_trades": 293,
+  "census": {
+    "IMMORTAL": {
+      "n": 47,
+      "pct": 16.0,
+      "wr": 95.7,
+      "pnl": 2090.0
+    },
+    "SURVIVED": {
+      "n": 21,
+      "pct": 7.2,
+      "wr": 95.2,
+      "pnl": 907.5
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "pct": 17.4,
+      "wr": 62.7,
+      "pnl": 1040.0
+    },
+    "TERMINATED": {
+      "n": 105,
+      "pct": 35.8,
+      "wr": 17.1,
+      "pnl": -1212.5
+    },
+    "STILLBORN": {
+      "n": 69,
+      "pct": 23.5,
+      "wr": 0.0,
+      "pnl": -1625.0
+    }
+  },
+  "birth_phase": {
+    "IMMORTAL": {
+      "mean_e1": 5.45,
+      "mean_e2": 13.32
+    },
+    "SURVIVED": {
+      "mean_e1": 18.57,
+      "mean_e2": 27.86
+    },
+    "ZOMBIE": {
+      "mean_e1": 4.49,
+      "mean_e2": 8.53
+    },
+    "TERMINATED": {
+      "mean_e1": 0.6,
+      "mean_e2": -2.48
+    },
+    "STILLBORN": {
+      "mean_e1": -14.39,
+      "mean_e2": -19.54
+    }
+  },
+  "lifecycle_flow": {
+    "aocl_emerged": 183,
+    "no_aocl": 110,
+    "contested": 49,
+    "pure_alpha": 0,
+    "pure_failure": 0
+  }
+}

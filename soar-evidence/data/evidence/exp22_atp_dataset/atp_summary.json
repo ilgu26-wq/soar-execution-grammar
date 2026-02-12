@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "total_trades": 293,
+  "atp_fired": 224,
+  "fate_distribution": {
+    "STILLBORN": 69,
+    "TERMINATED": 105,
+    "IMMORTAL": 47,
+    "SURVIVED": 21,
+    "ZOMBIE": 51
+  },
+  "channel_distribution": {
+    "IR-2:MFE_MAE_COLLAPSE": 169,
+    "IR-4:DIR_UNSTABLE": 53,
+    "IR-1:ORBIT_LOCK": 2
+  },
+  "mean_lifespan": 2.38,
+  "median_lifespan": 1.0
+}

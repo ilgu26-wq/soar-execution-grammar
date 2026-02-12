@@ -1,0 +1,54 @@
+{
+  "experiment": "EXP-05-V2-with-V1-Overlay",
+  "timestamp": "2026-02-12T06:08:10.929305",
+  "data": "NQ_5s.csv",
+  "bars": 23053,
+  "signals": 1610,
+  "results": {
+    "RAW": {
+      "mode": "RAW",
+      "trades": 1598,
+      "denied": 0,
+      "denied_losses": 0,
+      "pf": 1.14,
+      "win_rate": 36.5,
+      "max_dd_pct": 0.63,
+      "net_pnl": 3610.0,
+      "avg_pnl": 2.26,
+      "avg_size": 1.0,
+      "max_loss_streak": 17,
+      "final_equity": 103610.0
+    },
+    "V2_ONLY": {
+      "mode": "V2_ONLY",
+      "trades": 896,
+      "denied": 702,
+      "denied_losses": 447,
+      "pf": 1.15,
+      "win_rate": 36.6,
+      "max_dd_pct": 0.42,
+      "net_pnl": 2085.0,
+      "avg_pnl": 2.33,
+      "avg_size": 1.0,
+      "max_loss_streak": 15,
+      "final_equity": 102085.0
+    },
+    "V2+OVERLAY": {
+      "mode": "V2+OVERLAY",
+      "trades": 896,
+      "denied": 702,
+      "denied_losses": 447,
+      "pf": 1.13,
+      "win_rate": 36.6,
+      "max_dd_pct": 0.39,
+      "net_pnl": 1517.5,
+      "avg_pnl": 1.69,
+      "avg_size": 0.811,
+      "max_loss_streak": 15,
+      "final_equity": 101517.5
+    }
+  },
+  "pnl_retention_pct": 72.8,
+  "dd_reduction_pct": 7.1,
+  "status": "PARTIAL"
+}

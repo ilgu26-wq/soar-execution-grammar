@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "total_trades": 293,
+  "formula": "E(k) = E_excursion + 4.0*E_orbit + 2.0*E_stability",
+  "by_fate": {
+    "IMMORTAL": {
+      "n": 47,
+      "mean_peak": 37.3,
+      "mean_final": 36.34,
+      "mean_integral": 248.74
+    },
+    "SURVIVED": {
+      "n": 21,
+      "mean_peak": 89.87,
+      "mean_final": 87.6,
+      "mean_integral": 665.81
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "mean_peak": 18.83,
+      "mean_final": 5.51,
+      "mean_integral": 82.82
+    },
+    "TERMINATED": {
+      "n": 105,
+      "mean_peak": 13.33,
+      "mean_final": -9.58,
+      "mean_integral": -61.09
+    },
+    "STILLBORN": {
+      "n": 69,
+      "mean_peak": -11.71,
+      "mean_final": -39.23,
+      "mean_integral": -300.13
+    }
+  },
+  "by_regime": {
+    "TREND": {
+      "n": 256,
+      "mean_peak": 17.59,
+      "mean_final": -0.52
+    },
+    "DEAD": {
+      "n": 28,
+      "mean_peak": 14.24,
+      "mean_final": 2.08
+    },
+    "CHOP": {
+      "n": 4,
+      "mean_peak": 21.0,
+      "mean_final": 21.0
+    },
+    "STORM": {
+      "n": 5,
+      "mean_peak": 41.2,
+      "mean_final": 21.36
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "EXP-58 World A/B Online Test",
+  "timestamp": "2026-02-12T14:07:58.885171",
+  "lock_version": "v2.0.0-PROD",
+  "theta": 0.5,
+  "datasets": [
+    "NQ_Tick_5s",
+    "NQ_1min"
+  ]
+}

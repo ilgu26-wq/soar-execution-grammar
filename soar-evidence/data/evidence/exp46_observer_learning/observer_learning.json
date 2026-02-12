@@ -1,0 +1,27 @@
+{
+  "method": "Energy-weighted LOO Bayesian with Observer Budget",
+  "weights": {
+    "dead": 0.1,
+    "low": 0.3,
+    "normal": 1.0,
+    "high": 2.0,
+    "penumbra_multiplier": 1.5
+  },
+  "results": {
+    "n": 153,
+    "wr": 59.9,
+    "pf": 3.0,
+    "net": 3018,
+    "mdd": 0.13,
+    "per_trade": 19.82
+  },
+  "budget_distribution": {
+    "dead_muted": 135,
+    "active": 148
+  },
+  "hypotheses": {
+    "H46a": "NOT SUPPORTED",
+    "H46b": "NOT SUPPORTED",
+    "H46c": "NOT SUPPORTED"
+  }
+}

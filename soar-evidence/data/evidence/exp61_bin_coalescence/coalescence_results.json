@@ -1,0 +1,126 @@
+{
+  "experiment": "EXP-61 Bin Coalescence",
+  "timestamp": "2026-02-12T14:21:41.914324",
+  "lock_version": "v2.0.0-PROD",
+  "n_original_bins": 57,
+  "n_active_bins": 40,
+  "n_adjacent_pairs": 94,
+  "n_merge_candidates": 9,
+  "merges_performed": 5,
+  "n_post_bins": 52,
+  "merge_records": [
+    {
+      "key_a": "NEG|FALLING|SHADOW|D2|TREND|LOW",
+      "key_b": "NEG|FALLING|SHADOW|D3+|TREND|LOW",
+      "merged_key": "NEG|FALLING|SHADOW|D2+D3+|TREND|LOW",
+      "dim_name": "ARG_depth",
+      "skl": 0.0,
+      "merged_p_exec": 0.0385,
+      "merged_n": 24,
+      "merged_alpha": 1.0,
+      "merged_beta": 25.0
+    },
+    {
+      "key_a": "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+      "key_b": "POS|RISING|NO_SHADOW|D0|TREND|LOW",
+      "merged_key": "POS|RISING|NO_SHADOW|D1+D0|TREND|LOW",
+      "dim_name": "ARG_depth",
+      "skl": 0.0,
+      "merged_p_exec": 0.875,
+      "merged_n": 6,
+      "merged_alpha": 7.0,
+      "merged_beta": 1.0
+    },
+    {
+      "key_a": "NEG|RISING|SHADOW|D3+|TREND|LOW",
+      "key_b": "NEG|RISING|SHADOW|D3+|TREND|HIGH",
+      "merged_key": "NEG|RISING|SHADOW|D3+|TREND|LOW+HIGH",
+      "dim_name": "AEP_zone",
+      "skl": 0.0,
+      "merged_p_exec": 0.125,
+      "merged_n": 6,
+      "merged_alpha": 1.0,
+      "merged_beta": 7.0
+    },
+    {
+      "key_a": "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH",
+      "key_b": "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH",
+      "merged_key": "NEG|FALLING|SHADOW|D2+D3+|NON_TREND|HIGH",
+      "dim_name": "ARG_depth",
+      "skl": 0.031,
+      "merged_p_exec": 0.0112,
+      "merged_n": 87,
+      "merged_alpha": 1.0,
+      "merged_beta": 88.0
+    },
+    {
+      "key_a": "POS|RISING|SHADOW|D2|TREND|LOW",
+      "key_b": "POS|RISING|SHADOW|D0|TREND|LOW",
+      "merged_key": "POS|RISING|SHADOW|D2+D0|TREND|LOW",
+      "dim_name": "ARG_depth",
+      "skl": 0.0982,
+      "merged_p_exec": 0.5385,
+      "merged_n": 11,
+      "merged_alpha": 7.0,
+      "merged_beta": 6.0
+    }
+  ],
+  "pre_eval": {
+    "label": "Pre-Merge",
+    "n_exec": 580,
+    "n_deny": 764,
+    "exec_wr": 85.0,
+    "deny_wr": 7.7,
+    "sharp_gap": 77.3,
+    "false_exec_rate": 15.0,
+    "exec_pnl": 20972.5,
+    "deny_pnl": -13698.75,
+    "immortal_capture_rate": 91.0,
+    "immortal_total": 100,
+    "immortal_captured": 91
+  },
+  "post_eval": {
+    "label": "Post-Merge",
+    "n_exec": 636,
+    "n_deny": 708,
+    "exec_wr": 77.5,
+    "deny_wr": 8.3,
+    "sharp_gap": 69.2,
+    "false_exec_rate": 22.5,
+    "exec_pnl": 19610.0,
+    "deny_pnl": -12336.25,
+    "immortal_capture_rate": 91.0,
+    "immortal_total": 100,
+    "immortal_captured": 91
+  },
+  "sharp_eval": {
+    "label": "Sharp_Anchor",
+    "n_exec": 624,
+    "n_deny": 720,
+    "exec_wr": 75.2,
+    "deny_wr": 11.5,
+    "sharp_gap": 63.6,
+    "false_exec_rate": 24.8,
+    "exec_pnl": 18223.75,
+    "deny_pnl": -10950.0,
+    "immortal_capture_rate": 98.0,
+    "immortal_total": 100,
+    "immortal_captured": 98
+  },
+  "shape_changes": {
+    "pre_variance": 0.013933,
+    "post_variance": 0.012114,
+    "pre_convergence": 0.9443,
+    "post_convergence": 0.9515,
+    "pre_states": {
+      "DECIDED": 17,
+      "CONVERGING": 23
+    },
+    "post_states": {
+      "CONVERGING": 18,
+      "DECIDED": 17
+    }
+  },
+  "verdict": "FAIL_FE",
+  "original_posterior_backup": "/home/runner/workspace/experiments/../data/exp_evidence/exp57_execution_probability/posterior.json"
+}

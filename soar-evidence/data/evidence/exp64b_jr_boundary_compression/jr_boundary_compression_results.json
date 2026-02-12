@@ -1,0 +1,564 @@
+{
+  "experiment": "EXP-64b JR Boundary Compression",
+  "timestamp": "2026-02-12T15:09:31.878471",
+  "lock_version": "v2.0.0-PROD",
+  "n_trades": 1344,
+  "n_train": 940,
+  "n_test": 404,
+  "train_ratio": 0.7,
+  "theta": 0.5,
+  "p_sample_mature": 0.25,
+  "configs": [
+    {
+      "name": "Baseline (64a only)",
+      "b_threshold": 2.0,
+      "k": 1.0,
+      "s0": 3.0
+    },
+    {
+      "name": "JR-BC (b\u22650.65)",
+      "b_threshold": 0.65,
+      "k": 1.0,
+      "s0": 3.0
+    },
+    {
+      "name": "JR-BC (b\u22650.50)",
+      "b_threshold": 0.5,
+      "k": 1.0,
+      "s0": 3.0
+    },
+    {
+      "name": "JR-BC (b\u22650.35)",
+      "b_threshold": 0.35,
+      "k": 1.5,
+      "s0": 3.0
+    },
+    {
+      "name": "Over-BC stress (b\u22650.20)",
+      "b_threshold": 0.2,
+      "k": 1.0,
+      "s0": 3.0
+    }
+  ],
+  "world_results": {
+    "Baseline (64a only)": {
+      "config": {
+        "name": "Baseline (64a only)",
+        "b_threshold": 2.0,
+        "k": 1.0,
+        "s0": 3.0
+      },
+      "full_computes": 549,
+      "fast_computes": 391,
+      "compute_savings_pct": 41.6,
+      "full_compute_pct": 58.4,
+      "bt_start": 0.9248,
+      "bt_end": 0.8622,
+      "bt_reduction_pct": 6.8,
+      "p05_start": 1.0,
+      "p05_end": 0.9362,
+      "p05_reduction_pct": 6.4,
+      "final_maturity": {
+        "NEWBORN": 21,
+        "INFANT": 20,
+        "ADOLESCENT": 5,
+        "MATURE": 11
+      },
+      "n_adolescent": 5,
+      "adolescent_bins": [
+        {
+          "key": "POS|RISING|SHADOW|D2|NON_TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.15
+        },
+        {
+          "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+          "sharpness": 14.0,
+          "n": 14,
+          "p": 0.875
+        },
+        {
+          "key": "NEG|RISING|SHADOW|D2|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.0667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D3+|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.2667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D1|TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.7
+        }
+      ],
+      "train_eval": {
+        "label": "train",
+        "n_exec": 372,
+        "n_deny": 568,
+        "exec_wr": 90.6,
+        "deny_wr": 9.2,
+        "sharp_gap": 81.4,
+        "false_exec_rate": 9.4,
+        "exec_pnl": 14947.5,
+        "deny_pnl": -9678.75,
+        "immortal_capture_rate": 91.8,
+        "immortal_total": 73,
+        "immortal_captured": 67
+      },
+      "test_eval": {
+        "label": "test",
+        "n_exec": 167,
+        "n_deny": 237,
+        "exec_wr": 77.2,
+        "deny_wr": 14.3,
+        "sharp_gap": 62.9,
+        "false_exec_rate": 22.8,
+        "exec_pnl": 5117.5,
+        "deny_pnl": -3112.5,
+        "immortal_capture_rate": 88.9,
+        "immortal_total": 27,
+        "immortal_captured": 24
+      },
+      "full_eval": {
+        "label": "full",
+        "n_exec": 539,
+        "n_deny": 805,
+        "exec_wr": 86.5,
+        "deny_wr": 10.7,
+        "sharp_gap": 75.8,
+        "false_exec_rate": 13.5,
+        "exec_pnl": 20065.0,
+        "deny_pnl": -12791.25,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      }
+    },
+    "JR-BC (b\u22650.65)": {
+      "config": {
+        "name": "JR-BC (b\u22650.65)",
+        "b_threshold": 0.65,
+        "k": 1.0,
+        "s0": 3.0
+      },
+      "full_computes": 667,
+      "fast_computes": 273,
+      "compute_savings_pct": 29.0,
+      "full_compute_pct": 71.0,
+      "bt_start": 0.9248,
+      "bt_end": 0.8467,
+      "bt_reduction_pct": 8.4,
+      "p05_start": 1.0,
+      "p05_end": 0.9362,
+      "p05_reduction_pct": 6.4,
+      "final_maturity": {
+        "NEWBORN": 21,
+        "INFANT": 20,
+        "ADOLESCENT": 5,
+        "MATURE": 11
+      },
+      "n_adolescent": 5,
+      "adolescent_bins": [
+        {
+          "key": "POS|RISING|SHADOW|D2|NON_TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.15
+        },
+        {
+          "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+          "sharpness": 14.0,
+          "n": 14,
+          "p": 0.875
+        },
+        {
+          "key": "NEG|RISING|SHADOW|D2|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.0667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D3+|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.2667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D1|TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.7
+        }
+      ],
+      "train_eval": {
+        "label": "train",
+        "n_exec": 410,
+        "n_deny": 530,
+        "exec_wr": 87.1,
+        "deny_wr": 6.0,
+        "sharp_gap": 81.0,
+        "false_exec_rate": 12.9,
+        "exec_pnl": 15447.5,
+        "deny_pnl": -10178.75,
+        "immortal_capture_rate": 91.8,
+        "immortal_total": 73,
+        "immortal_captured": 67
+      },
+      "test_eval": {
+        "label": "test",
+        "n_exec": 185,
+        "n_deny": 219,
+        "exec_wr": 75.7,
+        "deny_wr": 10.5,
+        "sharp_gap": 65.2,
+        "false_exec_rate": 24.3,
+        "exec_pnl": 5455.0,
+        "deny_pnl": -3450.0,
+        "immortal_capture_rate": 88.9,
+        "immortal_total": 27,
+        "immortal_captured": 24
+      },
+      "full_eval": {
+        "label": "full",
+        "n_exec": 595,
+        "n_deny": 749,
+        "exec_wr": 83.5,
+        "deny_wr": 7.3,
+        "sharp_gap": 76.2,
+        "false_exec_rate": 16.5,
+        "exec_pnl": 20902.5,
+        "deny_pnl": -13628.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "label": "JR-BC (b\u22650.65)"
+    },
+    "JR-BC (b\u22650.50)": {
+      "config": {
+        "name": "JR-BC (b\u22650.50)",
+        "b_threshold": 0.5,
+        "k": 1.0,
+        "s0": 3.0
+      },
+      "full_computes": 714,
+      "fast_computes": 226,
+      "compute_savings_pct": 24.0,
+      "full_compute_pct": 76.0,
+      "bt_start": 0.9248,
+      "bt_end": 0.8392,
+      "bt_reduction_pct": 9.3,
+      "p05_start": 1.0,
+      "p05_end": 0.9362,
+      "p05_reduction_pct": 6.4,
+      "final_maturity": {
+        "NEWBORN": 21,
+        "INFANT": 20,
+        "ADOLESCENT": 5,
+        "MATURE": 11
+      },
+      "n_adolescent": 5,
+      "adolescent_bins": [
+        {
+          "key": "POS|RISING|SHADOW|D2|NON_TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.15
+        },
+        {
+          "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+          "sharpness": 14.0,
+          "n": 14,
+          "p": 0.875
+        },
+        {
+          "key": "NEG|RISING|SHADOW|D2|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.0667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D3+|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.2667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D1|TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.7
+        }
+      ],
+      "train_eval": {
+        "label": "train",
+        "n_exec": 410,
+        "n_deny": 530,
+        "exec_wr": 87.1,
+        "deny_wr": 6.0,
+        "sharp_gap": 81.0,
+        "false_exec_rate": 12.9,
+        "exec_pnl": 15447.5,
+        "deny_pnl": -10178.75,
+        "immortal_capture_rate": 91.8,
+        "immortal_total": 73,
+        "immortal_captured": 67
+      },
+      "test_eval": {
+        "label": "test",
+        "n_exec": 185,
+        "n_deny": 219,
+        "exec_wr": 75.7,
+        "deny_wr": 10.5,
+        "sharp_gap": 65.2,
+        "false_exec_rate": 24.3,
+        "exec_pnl": 5455.0,
+        "deny_pnl": -3450.0,
+        "immortal_capture_rate": 88.9,
+        "immortal_total": 27,
+        "immortal_captured": 24
+      },
+      "full_eval": {
+        "label": "full",
+        "n_exec": 595,
+        "n_deny": 749,
+        "exec_wr": 83.5,
+        "deny_wr": 7.3,
+        "sharp_gap": 76.2,
+        "false_exec_rate": 16.5,
+        "exec_pnl": 20902.5,
+        "deny_pnl": -13628.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "label": "JR-BC (b\u22650.50)"
+    },
+    "JR-BC (b\u22650.35)": {
+      "config": {
+        "name": "JR-BC (b\u22650.35)",
+        "b_threshold": 0.35,
+        "k": 1.5,
+        "s0": 3.0
+      },
+      "full_computes": 742,
+      "fast_computes": 198,
+      "compute_savings_pct": 21.1,
+      "full_compute_pct": 78.9,
+      "bt_start": 0.9748,
+      "bt_end": 0.881,
+      "bt_reduction_pct": 9.6,
+      "p05_start": 1.0,
+      "p05_end": 0.9362,
+      "p05_reduction_pct": 6.4,
+      "final_maturity": {
+        "NEWBORN": 21,
+        "INFANT": 20,
+        "ADOLESCENT": 5,
+        "MATURE": 11
+      },
+      "n_adolescent": 5,
+      "adolescent_bins": [
+        {
+          "key": "POS|RISING|SHADOW|D2|NON_TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.15
+        },
+        {
+          "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+          "sharpness": 14.0,
+          "n": 14,
+          "p": 0.875
+        },
+        {
+          "key": "NEG|RISING|SHADOW|D2|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.0667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D3+|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.2667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D1|TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.7
+        }
+      ],
+      "train_eval": {
+        "label": "train",
+        "n_exec": 410,
+        "n_deny": 530,
+        "exec_wr": 87.1,
+        "deny_wr": 6.0,
+        "sharp_gap": 81.0,
+        "false_exec_rate": 12.9,
+        "exec_pnl": 15447.5,
+        "deny_pnl": -10178.75,
+        "immortal_capture_rate": 91.8,
+        "immortal_total": 73,
+        "immortal_captured": 67
+      },
+      "test_eval": {
+        "label": "test",
+        "n_exec": 185,
+        "n_deny": 219,
+        "exec_wr": 75.7,
+        "deny_wr": 10.5,
+        "sharp_gap": 65.2,
+        "false_exec_rate": 24.3,
+        "exec_pnl": 5455.0,
+        "deny_pnl": -3450.0,
+        "immortal_capture_rate": 88.9,
+        "immortal_total": 27,
+        "immortal_captured": 24
+      },
+      "full_eval": {
+        "label": "full",
+        "n_exec": 595,
+        "n_deny": 749,
+        "exec_wr": 83.5,
+        "deny_wr": 7.3,
+        "sharp_gap": 76.2,
+        "false_exec_rate": 16.5,
+        "exec_pnl": 20902.5,
+        "deny_pnl": -13628.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      },
+      "label": "JR-BC (b\u22650.35)"
+    },
+    "Over-BC stress (b\u22650.20)": {
+      "config": {
+        "name": "Over-BC stress (b\u22650.20)",
+        "b_threshold": 0.2,
+        "k": 1.0,
+        "s0": 3.0
+      },
+      "full_computes": 815,
+      "fast_computes": 125,
+      "compute_savings_pct": 13.3,
+      "full_compute_pct": 86.7,
+      "bt_start": 0.9248,
+      "bt_end": 0.8294,
+      "bt_reduction_pct": 10.3,
+      "p05_start": 1.0,
+      "p05_end": 0.9362,
+      "p05_reduction_pct": 6.4,
+      "final_maturity": {
+        "NEWBORN": 21,
+        "INFANT": 20,
+        "ADOLESCENT": 5,
+        "MATURE": 11
+      },
+      "n_adolescent": 5,
+      "adolescent_bins": [
+        {
+          "key": "POS|RISING|SHADOW|D2|NON_TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.15
+        },
+        {
+          "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+          "sharpness": 14.0,
+          "n": 14,
+          "p": 0.875
+        },
+        {
+          "key": "NEG|RISING|SHADOW|D2|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.0667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D3+|TREND|HIGH",
+          "sharpness": 13.0,
+          "n": 13,
+          "p": 0.2667
+        },
+        {
+          "key": "POS|RISING|SHADOW|D1|TREND|HIGH",
+          "sharpness": 18.0,
+          "n": 18,
+          "p": 0.7
+        }
+      ],
+      "train_eval": {
+        "label": "train",
+        "n_exec": 410,
+        "n_deny": 530,
+        "exec_wr": 87.1,
+        "deny_wr": 6.0,
+        "sharp_gap": 81.0,
+        "false_exec_rate": 12.9,
+        "exec_pnl": 15447.5,
+        "deny_pnl": -10178.75,
+        "immortal_capture_rate": 91.8,
+        "immortal_total": 73,
+        "immortal_captured": 67
+      },
+      "test_eval": {
+        "label": "test",
+        "n_exec": 185,
+        "n_deny": 219,
+        "exec_wr": 75.7,
+        "deny_wr": 10.5,
+        "sharp_gap": 65.2,
+        "false_exec_rate": 24.3,
+        "exec_pnl": 5455.0,
+        "deny_pnl": -3450.0,
+        "immortal_capture_rate": 88.9,
+        "immortal_total": 27,
+        "immortal_captured": 24
+      },
+      "full_eval": {
+        "label": "full",
+        "n_exec": 595,
+        "n_deny": 749,
+        "exec_wr": 83.5,
+        "deny_wr": 7.3,
+        "sharp_gap": 76.2,
+        "false_exec_rate": 16.5,
+        "exec_pnl": 20902.5,
+        "deny_pnl": -13628.75,
+        "immortal_capture_rate": 91.0,
+        "immortal_total": 100,
+        "immortal_captured": 91
+      }
+    }
+  },
+  "hypotheses": {
+    "H-64b-a": {
+      "pass": false,
+      "value": 9.6
+    },
+    "H-64b-b": {
+      "pass": true,
+      "value": 5
+    },
+    "H-64b-c": {
+      "pass": true,
+      "imm": 91.0,
+      "fe": 16.5,
+      "sg": 76.2
+    },
+    "H-64b-d": {
+      "pass": false,
+      "delta": 20.5
+    }
+  },
+  "all_pass": false
+}

@@ -1,0 +1,4358 @@
+{
+  "overview": {
+    "n_trades": 293,
+    "n_deny": 235,
+    "n_allow": 58,
+    "deny_pct": 80.2
+  },
+  "group_comparison": {
+    "deny_wr": 25.5,
+    "allow_wr": 94.8,
+    "deny_mean_pnl": -1.2,
+    "allow_mean_pnl": 9.22,
+    "deny_sum_pnl": -281.0,
+    "allow_sum_pnl": 535.0
+  },
+  "counterfactual": {
+    "current_pnl_ticks": 254.0,
+    "if_arg_blocked_pnl_ticks": 535.0,
+    "improvement_ticks": 281.0
+  },
+  "hypotheses": {
+    "H39a_deny_negative_ev": "SUPPORTED",
+    "H39b_deny_wr_below_20": "NOT SUPPORTED",
+    "H39c_allow_maintains_baseline": "NOT SUPPORTED",
+    "H39d_zombie_recovery_pattern": "NOT SUPPORTED"
+  },
+  "reason_counts": {
+    "ENERGY_COLLAPSE": 210,
+    "FAILED_OPEN": 198,
+    "FCL_EARLY_DEATH": 89,
+    "CLEAN_SHADOW_CONSECUTIVE": 55,
+    "AEP_DOWN_JUMP": 19
+  },
+  "trades": [
+    {
+      "trade_idx": 0,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -79.0
+    },
+    {
+      "trade_idx": 1,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -21.0
+    },
+    {
+      "trade_idx": 2,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 3,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 4,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 5,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 45.26
+    },
+    {
+      "trade_idx": 6,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 7,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 8,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -215.0
+    },
+    {
+      "trade_idx": 9,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -115.0
+    },
+    {
+      "trade_idx": 10,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": 55.0
+    },
+    {
+      "trade_idx": 11,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -133.86
+    },
+    {
+      "trade_idx": 12,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 5,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.5,
+      "e_after_arg": -15.0
+    },
+    {
+      "trade_idx": 13,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 14,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -212.0
+    },
+    {
+      "trade_idx": 15,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 16,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -30.26
+    },
+    {
+      "trade_idx": 17,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 98.51
+    },
+    {
+      "trade_idx": 18,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -221.0
+    },
+    {
+      "trade_idx": 19,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -144.26
+    },
+    {
+      "trade_idx": 20,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 258.0
+    },
+    {
+      "trade_idx": 21,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 22,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 201.0
+    },
+    {
+      "trade_idx": 23,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": 42.0
+    },
+    {
+      "trade_idx": 24,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 25,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 26,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -91.0
+    },
+    {
+      "trade_idx": 27,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -117.11
+    },
+    {
+      "trade_idx": 28,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": 47.0
+    },
+    {
+      "trade_idx": 29,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 30,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 31,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -46.87
+    },
+    {
+      "trade_idx": 32,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 140.0
+    },
+    {
+      "trade_idx": 33,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 197.0
+    },
+    {
+      "trade_idx": 34,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": -30.0
+    },
+    {
+      "trade_idx": 35,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -27.26
+    },
+    {
+      "trade_idx": 36,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -66.0
+    },
+    {
+      "trade_idx": 37,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 142.0
+    },
+    {
+      "trade_idx": 38,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 39,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -7.0
+    },
+    {
+      "trade_idx": 40,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 41,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 51.76
+    },
+    {
+      "trade_idx": 42,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 54.0
+    },
+    {
+      "trade_idx": 43,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 22.64
+    },
+    {
+      "trade_idx": 44,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 58.0
+    },
+    {
+      "trade_idx": 45,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 46,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 47,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 122.0
+    },
+    {
+      "trade_idx": 48,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -160.0
+    },
+    {
+      "trade_idx": 49,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 5,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.5,
+      "e_after_arg": 54.0
+    },
+    {
+      "trade_idx": 50,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -162.0
+    },
+    {
+      "trade_idx": 51,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 98.51
+    },
+    {
+      "trade_idx": 52,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 53,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -78.0
+    },
+    {
+      "trade_idx": 54,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 55,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 5,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.5,
+      "e_after_arg": 82.0
+    },
+    {
+      "trade_idx": 56,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 70.0
+    },
+    {
+      "trade_idx": 57,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 178.0
+    },
+    {
+      "trade_idx": 58,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -59.11
+    },
+    {
+      "trade_idx": 59,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -99.0
+    },
+    {
+      "trade_idx": 60,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -130.0
+    },
+    {
+      "trade_idx": 61,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -7.0
+    },
+    {
+      "trade_idx": 62,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 185.0
+    },
+    {
+      "trade_idx": 63,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -88.0
+    },
+    {
+      "trade_idx": 64,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -79.0
+    },
+    {
+      "trade_idx": 65,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 1.0,
+      "e_after_arg": 61.0
+    },
+    {
+      "trade_idx": 66,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -10.0
+    },
+    {
+      "trade_idx": 67,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 68,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 72.0
+    },
+    {
+      "trade_idx": 69,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -80.0
+    },
+    {
+      "trade_idx": 70,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -40.17
+    },
+    {
+      "trade_idx": 71,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 4.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 1.0,
+      "e_after_arg": 51.0
+    },
+    {
+      "trade_idx": 72,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -77.0
+    },
+    {
+      "trade_idx": 73,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -188.0
+    },
+    {
+      "trade_idx": 74,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -94.0
+    },
+    {
+      "trade_idx": 75,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": 23.0
+    },
+    {
+      "trade_idx": 76,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -87.0
+    },
+    {
+      "trade_idx": 77,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 78,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -192.0
+    },
+    {
+      "trade_idx": 79,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 80,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -493.0
+    },
+    {
+      "trade_idx": 81,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -305.84
+    },
+    {
+      "trade_idx": 82,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 427.25
+    },
+    {
+      "trade_idx": 83,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -179.0
+    },
+    {
+      "trade_idx": 84,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 85,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 8,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.2,
+      "e_after_arg": -15.84
+    },
+    {
+      "trade_idx": 86,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -279.62
+    },
+    {
+      "trade_idx": 87,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -344.0
+    },
+    {
+      "trade_idx": 88,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -201.0
+    },
+    {
+      "trade_idx": 89,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -202.0
+    },
+    {
+      "trade_idx": 90,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -268.0
+    },
+    {
+      "trade_idx": 91,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 220.74
+    },
+    {
+      "trade_idx": 92,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 10,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.0,
+      "e_after_arg": -13.0
+    },
+    {
+      "trade_idx": 93,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 94,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -222.0
+    },
+    {
+      "trade_idx": 95,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -112.0
+    },
+    {
+      "trade_idx": 96,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -109.0
+    },
+    {
+      "trade_idx": 97,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -391.0
+    },
+    {
+      "trade_idx": 98,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -253.0
+    },
+    {
+      "trade_idx": 99,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -241.0
+    },
+    {
+      "trade_idx": 100,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 304.25
+    },
+    {
+      "trade_idx": 101,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 102,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 103,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.4,
+      "e_after_arg": -41.0
+    },
+    {
+      "trade_idx": 104,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 52.33
+    },
+    {
+      "trade_idx": 105,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 399.19
+    },
+    {
+      "trade_idx": 106,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -457.0
+    },
+    {
+      "trade_idx": 107,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 108,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -169.0
+    },
+    {
+      "trade_idx": 109,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 110,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 5.0
+    },
+    {
+      "trade_idx": 111,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -91.0
+    },
+    {
+      "trade_idx": 112,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 113,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -114.0
+    },
+    {
+      "trade_idx": 114,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -146.0
+    },
+    {
+      "trade_idx": 115,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 1.0,
+      "e_after_arg": 90.06
+    },
+    {
+      "trade_idx": 116,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": 37.26
+    },
+    {
+      "trade_idx": 117,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 171.5
+    },
+    {
+      "trade_idx": 118,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 119,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 113.0
+    },
+    {
+      "trade_idx": 120,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 121,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": -130.62
+    },
+    {
+      "trade_idx": 122,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -143.81
+    },
+    {
+      "trade_idx": 123,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -380.0
+    },
+    {
+      "trade_idx": 124,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -119.0
+    },
+    {
+      "trade_idx": 125,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": -480.0
+    },
+    {
+      "trade_idx": 126,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -366.0
+    },
+    {
+      "trade_idx": 127,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -644.0
+    },
+    {
+      "trade_idx": 128,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -117.26
+    },
+    {
+      "trade_idx": 129,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": 75.0
+    },
+    {
+      "trade_idx": 130,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -199.0
+    },
+    {
+      "trade_idx": 131,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 132,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": 41.19
+    },
+    {
+      "trade_idx": 133,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -207.77
+    },
+    {
+      "trade_idx": 134,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 135,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -96.0
+    },
+    {
+      "trade_idx": 136,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 4,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.6,
+      "e_after_arg": -112.4
+    },
+    {
+      "trade_idx": 137,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -81.0
+    },
+    {
+      "trade_idx": 138,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": 49.73
+    },
+    {
+      "trade_idx": 139,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 33.49
+    },
+    {
+      "trade_idx": 140,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -358.0
+    },
+    {
+      "trade_idx": 141,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 142,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -33.0
+    },
+    {
+      "trade_idx": 143,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -229.0
+    },
+    {
+      "trade_idx": 144,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 1.0,
+      "e_after_arg": 141.0
+    },
+    {
+      "trade_idx": 145,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -243.0
+    },
+    {
+      "trade_idx": 146,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -2.0
+    },
+    {
+      "trade_idx": 147,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 16.26
+    },
+    {
+      "trade_idx": 148,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 149,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 129.89
+    },
+    {
+      "trade_idx": 150,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -352.0
+    },
+    {
+      "trade_idx": 151,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 171.0
+    },
+    {
+      "trade_idx": 152,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -57.0
+    },
+    {
+      "trade_idx": 153,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -185.0
+    },
+    {
+      "trade_idx": 154,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -39.0
+    },
+    {
+      "trade_idx": 155,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -172.26
+    },
+    {
+      "trade_idx": 156,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -215.0
+    },
+    {
+      "trade_idx": 157,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": 85.07
+    },
+    {
+      "trade_idx": 158,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -218.0
+    },
+    {
+      "trade_idx": 159,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 4,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.6,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 160,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -85.0
+    },
+    {
+      "trade_idx": 161,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": -238.0
+    },
+    {
+      "trade_idx": 162,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 309.0
+    },
+    {
+      "trade_idx": 163,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -187.0
+    },
+    {
+      "trade_idx": 164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -205.0
+    },
+    {
+      "trade_idx": 165,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -47.0
+    },
+    {
+      "trade_idx": 166,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -276.0
+    },
+    {
+      "trade_idx": 167,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 116.1
+    },
+    {
+      "trade_idx": 168,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 159.0
+    },
+    {
+      "trade_idx": 169,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 170,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 171,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -78.26
+    },
+    {
+      "trade_idx": 172,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 173,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -81.0
+    },
+    {
+      "trade_idx": 174,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -134.51
+    },
+    {
+      "trade_idx": 175,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -205.0
+    },
+    {
+      "trade_idx": 176,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": 69.0
+    },
+    {
+      "trade_idx": 177,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -345.0
+    },
+    {
+      "trade_idx": 178,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 179,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -231.26
+    },
+    {
+      "trade_idx": 180,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 181,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 182,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": 76.06
+    },
+    {
+      "trade_idx": 183,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -245.0
+    },
+    {
+      "trade_idx": 184,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -264.0
+    },
+    {
+      "trade_idx": 185,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 196.0
+    },
+    {
+      "trade_idx": 186,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -26.0
+    },
+    {
+      "trade_idx": 187,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 153.0
+    },
+    {
+      "trade_idx": 188,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -269.0
+    },
+    {
+      "trade_idx": 189,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -321.0
+    },
+    {
+      "trade_idx": 190,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -73.22
+    },
+    {
+      "trade_idx": 191,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -74.81
+    },
+    {
+      "trade_idx": 192,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": 77.0
+    },
+    {
+      "trade_idx": 193,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 194,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 137.0
+    },
+    {
+      "trade_idx": 195,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 196,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 197,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 20.0
+    },
+    {
+      "trade_idx": 198,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -105.0
+    },
+    {
+      "trade_idx": 199,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -152.0
+    },
+    {
+      "trade_idx": 200,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 130.0
+    },
+    {
+      "trade_idx": 201,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -48.0
+    },
+    {
+      "trade_idx": 202,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 77.0
+    },
+    {
+      "trade_idx": 203,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 204,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -161.0
+    },
+    {
+      "trade_idx": 205,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 10,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.0,
+      "e_after_arg": -3.43
+    },
+    {
+      "trade_idx": 206,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -103.33
+    },
+    {
+      "trade_idx": 207,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": -4.7
+    },
+    {
+      "trade_idx": 208,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -268.0
+    },
+    {
+      "trade_idx": 209,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": 35.0
+    },
+    {
+      "trade_idx": 210,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 4,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.6,
+      "e_after_arg": -189.77
+    },
+    {
+      "trade_idx": 211,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -146.0
+    },
+    {
+      "trade_idx": 212,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 234.0
+    },
+    {
+      "trade_idx": 213,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 214,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -200.26
+    },
+    {
+      "trade_idx": 215,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -191.0
+    },
+    {
+      "trade_idx": 216,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 197.0
+    },
+    {
+      "trade_idx": 217,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -141.0
+    },
+    {
+      "trade_idx": 218,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -95.0
+    },
+    {
+      "trade_idx": 219,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -246.0
+    },
+    {
+      "trade_idx": 220,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -326.0
+    },
+    {
+      "trade_idx": 221,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 300.0
+    },
+    {
+      "trade_idx": 222,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 36.23
+    },
+    {
+      "trade_idx": 223,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 224,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -131.26
+    },
+    {
+      "trade_idx": 225,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 9,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.1,
+      "e_after_arg": -10.0
+    },
+    {
+      "trade_idx": 226,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -112.27
+    },
+    {
+      "trade_idx": 227,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -431.0
+    },
+    {
+      "trade_idx": 228,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -78.0
+    },
+    {
+      "trade_idx": 229,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -396.0
+    },
+    {
+      "trade_idx": 230,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": 16.26
+    },
+    {
+      "trade_idx": 231,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -94.0
+    },
+    {
+      "trade_idx": 232,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -79.24
+    },
+    {
+      "trade_idx": 233,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -227.0
+    },
+    {
+      "trade_idx": 234,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 140.73
+    },
+    {
+      "trade_idx": 235,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 236,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 7,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.3,
+      "e_after_arg": 11.04
+    },
+    {
+      "trade_idx": 237,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": 48.2
+    },
+    {
+      "trade_idx": 238,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 223.0
+    },
+    {
+      "trade_idx": 239,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -203.0
+    },
+    {
+      "trade_idx": 240,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 241,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -255.0
+    },
+    {
+      "trade_idx": 242,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -54.0
+    },
+    {
+      "trade_idx": 243,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -104.0
+    },
+    {
+      "trade_idx": 244,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -183.0
+    },
+    {
+      "trade_idx": 245,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 127.0
+    },
+    {
+      "trade_idx": 246,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -170.0
+    },
+    {
+      "trade_idx": 247,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.4,
+      "e_after_arg": 47.42
+    },
+    {
+      "trade_idx": 248,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 249,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -252.0
+    },
+    {
+      "trade_idx": 250,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 251,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.9,
+      "e_after_arg": 4.0
+    },
+    {
+      "trade_idx": 252,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 253,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 4,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.6,
+      "e_after_arg": -149.0
+    },
+    {
+      "trade_idx": 254,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -233.0
+    },
+    {
+      "trade_idx": 255,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -1308.0
+    },
+    {
+      "trade_idx": 256,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": 842.26
+    },
+    {
+      "trade_idx": 257,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 258,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 5,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.5,
+      "e_after_arg": -395.26
+    },
+    {
+      "trade_idx": 259,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -1419.0
+    },
+    {
+      "trade_idx": 260,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 4,
+      "remaining_frac": 1.0,
+      "e_after_arg": -179.0
+    },
+    {
+      "trade_idx": 261,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 8,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.2,
+      "e_after_arg": -236.93
+    },
+    {
+      "trade_idx": 262,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 1.0,
+      "e_after_arg": 890.74
+    },
+    {
+      "trade_idx": 263,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 264,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 265,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -352.0
+    },
+    {
+      "trade_idx": 266,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -1799.0
+    },
+    {
+      "trade_idx": 267,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": -833.0
+    },
+    {
+      "trade_idx": 268,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -9.54
+    },
+    {
+      "trade_idx": 269,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 270,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": -16.8
+    },
+    {
+      "trade_idx": 271,
+      "fate": "SURVIVED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.7,
+      "e_after_arg": 6513.0
+    },
+    {
+      "trade_idx": 272,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": -138.0
+    },
+    {
+      "trade_idx": 273,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -109.81
+    },
+    {
+      "trade_idx": 274,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 275,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.9,
+      "e_after_arg": 5.0
+    },
+    {
+      "trade_idx": 276,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 277,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -212.0
+    },
+    {
+      "trade_idx": 278,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": 8.0
+    },
+    {
+      "trade_idx": 279,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -173.0
+    },
+    {
+      "trade_idx": 280,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 3,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.7,
+      "e_after_arg": 41.0
+    },
+    {
+      "trade_idx": 281,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -1236.0
+    },
+    {
+      "trade_idx": 282,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 526.26
+    },
+    {
+      "trade_idx": 283,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 7,
+      "deny_reasons": [
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.3,
+      "e_after_arg": 123.07
+    },
+    {
+      "trade_idx": 284,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 2,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 2,
+      "remaining_frac": 0.8,
+      "e_after_arg": -947.26
+    },
+    {
+      "trade_idx": 285,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -100.0
+    },
+    {
+      "trade_idx": 286,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": false,
+      "deny_bar": null,
+      "deny_reasons": [],
+      "n_deny_reasons": 0,
+      "remaining_frac": 0.0,
+      "e_after_arg": 0.0
+    },
+    {
+      "trade_idx": 287,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": 214.26
+    },
+    {
+      "trade_idx": 288,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "pnl_ticks": 10.0,
+      "arg_deny": true,
+      "deny_bar": 6,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE"
+      ],
+      "n_deny_reasons": 1,
+      "remaining_frac": 0.4,
+      "e_after_arg": -281.0
+    },
+    {
+      "trade_idx": 289,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -943.0
+    },
+    {
+      "trade_idx": 290,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 1.0,
+      "e_after_arg": -539.26
+    },
+    {
+      "trade_idx": 291,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 0,
+      "deny_reasons": [
+        "AEP_DOWN_JUMP",
+        "CLEAN_SHADOW_CONSECUTIVE",
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 5,
+      "remaining_frac": 1.0,
+      "e_after_arg": 258.26
+    },
+    {
+      "trade_idx": 292,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "pnl_ticks": -5.0,
+      "arg_deny": true,
+      "deny_bar": 1,
+      "deny_reasons": [
+        "ENERGY_COLLAPSE",
+        "FAILED_OPEN",
+        "FCL_EARLY_DEATH"
+      ],
+      "n_deny_reasons": 3,
+      "remaining_frac": 0.9,
+      "e_after_arg": -625.0
+    }
+  ]
+}

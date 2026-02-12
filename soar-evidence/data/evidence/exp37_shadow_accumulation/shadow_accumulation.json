@@ -1,0 +1,5053 @@
+{
+  "overview": {
+    "n_trades": 291,
+    "aep_mean": 0.8516,
+    "aep_std": 0.2049,
+    "window": 5,
+    "gamma1": 0.01,
+    "gamma2": 0.001,
+    "gamma3": 0.2
+  },
+  "hypotheses": {
+    "H37a_higher_aep_higher_wr": "SUPPORTED",
+    "H37b_winners_more_shadow_drift": "SUPPORTED",
+    "H37c_penumbra_predicts_alpha": "SUPPORTED",
+    "H37d_immortal_higher_aep": "SUPPORTED"
+  },
+  "quartiles": [
+    {
+      "qi": 0,
+      "n": 72,
+      "aep_min": 0.0522,
+      "aep_max": 0.7977,
+      "wr": 26.38888888888889,
+      "imm_pct": 8.333333333333332,
+      "term_pct": 40.27777777777778,
+      "still_pct": 30.555555555555557,
+      "alpha_pct": 16.666666666666664
+    },
+    {
+      "qi": 1,
+      "n": 72,
+      "aep_min": 0.8123,
+      "aep_max": 0.9471,
+      "wr": 41.66666666666667,
+      "imm_pct": 15.277777777777779,
+      "term_pct": 34.72222222222222,
+      "still_pct": 22.22222222222222,
+      "alpha_pct": 23.61111111111111
+    },
+    {
+      "qi": 2,
+      "n": 72,
+      "aep_min": 0.9474,
+      "aep_max": 0.9922,
+      "wr": 47.22222222222222,
+      "imm_pct": 26.38888888888889,
+      "term_pct": 34.72222222222222,
+      "still_pct": 19.444444444444446,
+      "alpha_pct": 34.72222222222222
+    },
+    {
+      "qi": 3,
+      "n": 75,
+      "aep_min": 0.993,
+      "aep_max": 1.0,
+      "wr": 42.66666666666667,
+      "imm_pct": 14.666666666666666,
+      "term_pct": 33.33333333333333,
+      "still_pct": 21.333333333333336,
+      "alpha_pct": 18.666666666666668
+    }
+  ],
+  "fate_summary": {
+    "IMMORTAL": {
+      "n": 47,
+      "aep_mean": 0.9001,
+      "aep_median": 0.9724,
+      "acc_theta_mean": 380.44,
+      "acc_se_mean": -217.51,
+      "acc_pen_mean": 1.45,
+      "wr": 95.7
+    },
+    "SURVIVED": {
+      "n": 21,
+      "aep_mean": 0.7992,
+      "aep_median": 0.9139,
+      "acc_theta_mean": 325.79,
+      "acc_se_mean": -565.35,
+      "acc_pen_mean": 1.05,
+      "wr": 95.2
+    },
+    "ZOMBIE": {
+      "n": 51,
+      "aep_mean": 0.8942,
+      "aep_median": 0.9833,
+      "acc_theta_mean": 401.11,
+      "acc_se_mean": -53.96,
+      "acc_pen_mean": 1.57,
+      "wr": 62.7
+    },
+    "TERMINATED": {
+      "n": 104,
+      "aep_mean": 0.8378,
+      "aep_median": 0.9291,
+      "acc_theta_mean": 317.79,
+      "acc_se_mean": -349.38,
+      "acc_pen_mean": 1.32,
+      "wr": 17.3
+    },
+    "STILLBORN": {
+      "n": 68,
+      "aep_mean": 0.8234,
+      "aep_median": 0.9292,
+      "acc_theta_mean": 311.93,
+      "acc_se_mean": -500.95,
+      "acc_pen_mean": 1.31,
+      "wr": 0.0
+    }
+  },
+  "trades": [
+    {
+      "trade_idx": 2,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9908,
+      "acc_theta_shadow": 478.17,
+      "acc_s_e": -100.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 2,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 3,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9908,
+      "acc_theta_shadow": 478.17,
+      "acc_s_e": -100.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 3,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 4,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9908,
+      "acc_theta_shadow": 478.17,
+      "acc_s_e": -100.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 4,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 5,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9908,
+      "acc_theta_shadow": 478.17,
+      "acc_s_e": -100.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 6,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9984,
+      "acc_theta_shadow": 621.35,
+      "acc_s_e": 24.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 7,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8928,
+      "acc_theta_shadow": 187.39,
+      "acc_s_e": 45.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 8,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8928,
+      "acc_theta_shadow": 187.39,
+      "acc_s_e": 45.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 9,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8707,
+      "acc_theta_shadow": 187.65,
+      "acc_s_e": -169.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 10,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8627,
+      "acc_theta_shadow": 192.27,
+      "acc_s_e": -284.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 11,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8741,
+      "acc_theta_shadow": 201.3,
+      "acc_s_e": -275.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 12,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.8731,
+      "acc_theta_shadow": 213.78,
+      "acc_s_e": -408.86,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 13,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9695,
+      "acc_theta_shadow": 368.43,
+      "acc_s_e": -423.86,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 14,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9752,
+      "acc_theta_shadow": 368.17,
+      "acc_s_e": -208.86,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 15,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9724,
+      "acc_theta_shadow": 366.77,
+      "acc_s_e": -305.86,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 16,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7929,
+      "acc_theta_shadow": 170.35,
+      "acc_s_e": -360.86,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 17,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9589,
+      "acc_theta_shadow": 341.16,
+      "acc_s_e": -262.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 18,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9759,
+      "acc_theta_shadow": 364.93,
+      "acc_s_e": -148.75,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 19,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9703,
+      "acc_theta_shadow": 365.59,
+      "acc_s_e": -369.75,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 20,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9788,
+      "acc_theta_shadow": 393.2,
+      "acc_s_e": -302.01,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 21,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9788,
+      "acc_theta_shadow": 393.2,
+      "acc_s_e": -302.01,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 22,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8842,
+      "acc_theta_shadow": 209.91,
+      "acc_s_e": -266.75,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 23,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9042,
+      "acc_theta_shadow": 220.95,
+      "acc_s_e": -164.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 24,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9977,
+      "acc_theta_shadow": 556.14,
+      "acc_s_e": 98.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 25,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9978,
+      "acc_theta_shadow": 526.85,
+      "acc_s_e": 257.94,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 26,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9978,
+      "acc_theta_shadow": 526.85,
+      "acc_s_e": 257.94,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 27,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9984,
+      "acc_theta_shadow": 564.98,
+      "acc_s_e": 166.94,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 28,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9876,
+      "acc_theta_shadow": 412.53,
+      "acc_s_e": -151.17,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 29,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9189,
+      "acc_theta_shadow": 220.65,
+      "acc_s_e": -179.17,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 30,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9,
+      "acc_theta_shadow": 219.11,
+      "acc_s_e": -194.11,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 31,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9,
+      "acc_theta_shadow": 219.11,
+      "acc_s_e": -194.11,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 32,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9731,
+      "acc_theta_shadow": 353.89,
+      "acc_s_e": -149.98,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 33,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9959,
+      "acc_theta_shadow": 497.6,
+      "acc_s_e": 107.13,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 34,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9978,
+      "acc_theta_shadow": 543.9,
+      "acc_s_e": 290.13,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 35,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9979,
+      "acc_theta_shadow": 549.81,
+      "acc_s_e": 260.13,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 36,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9995,
+      "acc_theta_shadow": 691.76,
+      "acc_s_e": 232.87,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 37,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.999,
+      "acc_theta_shadow": 629.85,
+      "acc_s_e": 213.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 38,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9944,
+      "acc_theta_shadow": 456.09,
+      "acc_s_e": 215.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 39,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9645,
+      "acc_theta_shadow": 286.11,
+      "acc_s_e": 40.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 40,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9997,
+      "acc_theta_shadow": 740.68,
+      "acc_s_e": 63.74,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 41,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9987,
+      "acc_theta_shadow": 598.73,
+      "acc_s_e": 91.0,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 42,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9996,
+      "acc_theta_shadow": 685.44,
+      "acc_s_e": 208.76,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 43,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 925.42,
+      "acc_s_e": 120.76,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 44,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 1293.31,
+      "acc_s_e": 121.4,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 45,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9999,
+      "acc_theta_shadow": 854.89,
+      "acc_s_e": 186.4,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 46,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9999,
+      "acc_theta_shadow": 854.89,
+      "acc_s_e": 186.4,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 47,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9993,
+      "acc_theta_shadow": 657.18,
+      "acc_s_e": 134.64,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 48,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.999,
+      "acc_theta_shadow": 606.42,
+      "acc_s_e": 202.64,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 49,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.931,
+      "acc_theta_shadow": 218.24,
+      "acc_s_e": 20.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 50,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9166,
+      "acc_theta_shadow": 198.11,
+      "acc_s_e": 16.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 51,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9062,
+      "acc_theta_shadow": 201.44,
+      "acc_s_e": -146.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 52,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9872,
+      "acc_theta_shadow": 379.63,
+      "acc_s_e": -47.49,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 53,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8875,
+      "acc_theta_shadow": 183.45,
+      "acc_s_e": -169.49,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 54,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9245,
+      "acc_theta_shadow": 219.24,
+      "acc_s_e": -87.49,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 55,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9031,
+      "acc_theta_shadow": 217.31,
+      "acc_s_e": -141.49,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 56,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9374,
+      "acc_theta_shadow": 220.39,
+      "acc_s_e": 102.51,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 57,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9885,
+      "acc_theta_shadow": 398.02,
+      "acc_s_e": 74.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 58,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9971,
+      "acc_theta_shadow": 498.35,
+      "acc_s_e": 252.0,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 59,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9992,
+      "acc_theta_shadow": 624.88,
+      "acc_s_e": 270.89,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 60,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9997,
+      "acc_theta_shadow": 731.16,
+      "acc_s_e": 171.89,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 61,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9995,
+      "acc_theta_shadow": 724.75,
+      "acc_s_e": -40.11,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 62,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9951,
+      "acc_theta_shadow": 522.36,
+      "acc_s_e": -117.11,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 63,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9979,
+      "acc_theta_shadow": 606.27,
+      "acc_s_e": -110.11,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 64,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9922,
+      "acc_theta_shadow": 478.4,
+      "acc_s_e": -139.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 65,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9833,
+      "acc_theta_shadow": 399.17,
+      "acc_s_e": -119.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 66,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9932,
+      "acc_theta_shadow": 477.86,
+      "acc_s_e": 0.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 67,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 1.0,
+      "acc_theta_shadow": 954.43,
+      "acc_s_e": -3.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 68,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9996,
+      "acc_theta_shadow": 770.19,
+      "acc_s_e": -188.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 69,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9999,
+      "acc_theta_shadow": 911.25,
+      "acc_s_e": -28.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 70,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9999,
+      "acc_theta_shadow": 889.83,
+      "acc_s_e": -29.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 71,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9999,
+      "acc_theta_shadow": 862.31,
+      "acc_s_e": -58.17,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 72,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9443,
+      "acc_theta_shadow": 245.68,
+      "acc_s_e": -26.17,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 73,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9419,
+      "acc_theta_shadow": 248.8,
+      "acc_s_e": -103.17,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 74,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.6459,
+      "acc_theta_shadow": 76.43,
+      "acc_s_e": -363.17,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 75,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.6442,
+      "acc_theta_shadow": 77.1,
+      "acc_s_e": -377.17,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 76,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9826,
+      "acc_theta_shadow": 394.85,
+      "acc_s_e": -314.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 77,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9732,
+      "acc_theta_shadow": 381.48,
+      "acc_s_e": -423.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 78,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9744,
+      "acc_theta_shadow": 378.36,
+      "acc_s_e": -346.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 79,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9743,
+      "acc_theta_shadow": 378.35,
+      "acc_s_e": -350.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 80,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.975,
+      "acc_theta_shadow": 372.05,
+      "acc_s_e": -256.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 81,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.3251,
+      "acc_theta_shadow": 4.15,
+      "acc_s_e": -772.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 82,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.2969,
+      "acc_theta_shadow": 12.85,
+      "acc_s_e": -990.84,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 83,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.2969,
+      "acc_theta_shadow": 12.85,
+      "acc_s_e": -990.84,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 84,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.3016,
+      "acc_theta_shadow": 13.83,
+      "acc_s_e": -977.84,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 85,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.3016,
+      "acc_theta_shadow": 13.83,
+      "acc_s_e": -977.84,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 86,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7261,
+      "acc_theta_shadow": 147.55,
+      "acc_s_e": -500.35,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 87,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.7393,
+      "acc_theta_shadow": 151.67,
+      "acc_s_e": -474.13,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 88,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.6724,
+      "acc_theta_shadow": 153.74,
+      "acc_s_e": -818.13,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 89,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9735,
+      "acc_theta_shadow": 424.2,
+      "acc_s_e": -840.13,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 90,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9692,
+      "acc_theta_shadow": 429.1,
+      "acc_s_e": -1042.13,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 91,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.8684,
+      "acc_theta_shadow": 298.16,
+      "acc_s_e": -1294.62,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 92,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8848,
+      "acc_theta_shadow": 285.34,
+      "acc_s_e": -1015.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 93,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9139,
+      "acc_theta_shadow": 283.27,
+      "acc_s_e": -671.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 94,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.4054,
+      "acc_theta_shadow": 8.7,
+      "acc_s_e": -470.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 95,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.4145,
+      "acc_theta_shadow": 14.46,
+      "acc_s_e": -490.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 96,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.4522,
+      "acc_theta_shadow": 14.24,
+      "acc_s_e": -334.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 97,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.4842,
+      "acc_theta_shadow": 38.49,
+      "acc_s_e": -448.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 98,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.6185,
+      "acc_theta_shadow": 132.22,
+      "acc_s_e": -839.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 99,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.5634,
+      "acc_theta_shadow": 134.71,
+      "acc_s_e": -1092.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 100,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.5448,
+      "acc_theta_shadow": 129.05,
+      "acc_s_e": -1111.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 101,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.5636,
+      "acc_theta_shadow": 125.47,
+      "acc_s_e": -999.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 102,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.5318,
+      "acc_theta_shadow": 101.22,
+      "acc_s_e": -885.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 103,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.3967,
+      "acc_theta_shadow": 7.49,
+      "acc_s_e": -494.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 104,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.6543,
+      "acc_theta_shadow": 91.99,
+      "acc_s_e": -282.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 105,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9536,
+      "acc_theta_shadow": 281.09,
+      "acc_s_e": 11.33,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 106,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9954,
+      "acc_theta_shadow": 456.88,
+      "acc_s_e": 410.52,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 107,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.993,
+      "acc_theta_shadow": 459.9,
+      "acc_s_e": -46.48,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 108,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.993,
+      "acc_theta_shadow": 459.9,
+      "acc_s_e": -46.48,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 109,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9819,
+      "acc_theta_shadow": 376.88,
+      "acc_s_e": -174.48,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 110,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8583,
+      "acc_theta_shadow": 182.78,
+      "acc_s_e": -226.81,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 111,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8941,
+      "acc_theta_shadow": 255.47,
+      "acc_s_e": -621.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 112,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9507,
+      "acc_theta_shadow": 301.48,
+      "acc_s_e": -255.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 113,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9507,
+      "acc_theta_shadow": 301.48,
+      "acc_s_e": -255.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 114,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9584,
+      "acc_theta_shadow": 313.79,
+      "acc_s_e": -200.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 115,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9546,
+      "acc_theta_shadow": 319.13,
+      "acc_s_e": -346.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 116,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.5874,
+      "acc_theta_shadow": 72.33,
+      "acc_s_e": -370.24,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 117,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.8769,
+      "acc_theta_shadow": 200.51,
+      "acc_s_e": -241.98,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 118,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9191,
+      "acc_theta_shadow": 210.02,
+      "acc_s_e": -70.48,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 119,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.938,
+      "acc_theta_shadow": 193.84,
+      "acc_s_e": 178.99,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 120,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9975,
+      "acc_theta_shadow": 474.23,
+      "acc_s_e": 437.99,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 121,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9975,
+      "acc_theta_shadow": 472.55,
+      "acc_s_e": 457.23,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 122,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9801,
+      "acc_theta_shadow": 300.68,
+      "acc_s_e": 289.35,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 123,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9896,
+      "acc_theta_shadow": 418.04,
+      "acc_s_e": -25.96,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 124,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9795,
+      "acc_theta_shadow": 420.75,
+      "acc_s_e": -541.43,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 125,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.6937,
+      "acc_theta_shadow": 159.1,
+      "acc_s_e": -773.43,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 126,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.5847,
+      "acc_theta_shadow": 159.57,
+      "acc_s_e": -1253.43,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 127,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.5244,
+      "acc_theta_shadow": 158.64,
+      "acc_s_e": -1488.81,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 128,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.1603,
+      "acc_theta_shadow": 33.28,
+      "acc_s_e": -1989.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 129,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.5296,
+      "acc_theta_shadow": 185.76,
+      "acc_s_e": -1739.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 130,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.577,
+      "acc_theta_shadow": 165.56,
+      "acc_s_e": -1545.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 131,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.6574,
+      "acc_theta_shadow": 171.61,
+      "acc_s_e": -1264.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 132,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7761,
+      "acc_theta_shadow": 167.41,
+      "acc_s_e": -830.79,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 133,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9871,
+      "acc_theta_shadow": 388.04,
+      "acc_s_e": -145.6,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 134,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.942,
+      "acc_theta_shadow": 241.1,
+      "acc_s_e": -223.11,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 135,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9223,
+      "acc_theta_shadow": 237.22,
+      "acc_s_e": -298.11,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 136,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.925,
+      "acc_theta_shadow": 230.7,
+      "acc_s_e": -195.11,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 137,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9041,
+      "acc_theta_shadow": 241.89,
+      "acc_s_e": -374.98,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 138,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.5205,
+      "acc_theta_shadow": 57.94,
+      "acc_s_e": -497.17,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 139,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9044,
+      "acc_theta_shadow": 228.63,
+      "acc_s_e": -239.67,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 140,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9873,
+      "acc_theta_shadow": 415.77,
+      "acc_s_e": -206.18,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 141,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9838,
+      "acc_theta_shadow": 417.48,
+      "acc_s_e": -468.18,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 142,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9879,
+      "acc_theta_shadow": 411.46,
+      "acc_s_e": -313.78,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 143,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9953,
+      "acc_theta_shadow": 502.26,
+      "acc_s_e": -265.78,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 144,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9582,
+      "acc_theta_shadow": 327.64,
+      "acc_s_e": -544.51,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 145,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9142,
+      "acc_theta_shadow": 240.27,
+      "acc_s_e": -437.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 146,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.923,
+      "acc_theta_shadow": 240.6,
+      "acc_s_e": -322.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 147,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9939,
+      "acc_theta_shadow": 505.22,
+      "acc_s_e": -366.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 148,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9973,
+      "acc_theta_shadow": 561.13,
+      "acc_s_e": -316.74,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 149,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9977,
+      "acc_theta_shadow": 556.71,
+      "acc_s_e": -87.74,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 150,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9989,
+      "acc_theta_shadow": 633.07,
+      "acc_s_e": -98.85,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 151,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9988,
+      "acc_theta_shadow": 631.23,
+      "acc_s_e": -207.85,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 152,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9866,
+      "acc_theta_shadow": 373.01,
+      "acc_s_e": -34.85,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 153,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9982,
+      "acc_theta_shadow": 580.58,
+      "acc_s_e": -108.11,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 154,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9979,
+      "acc_theta_shadow": 584.63,
+      "acc_s_e": -293.11,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 155,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9824,
+      "acc_theta_shadow": 408.5,
+      "acc_s_e": -462.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 156,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9968,
+      "acc_theta_shadow": 564.12,
+      "acc_s_e": -291.26,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 157,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9938,
+      "acc_theta_shadow": 555.41,
+      "acc_s_e": -677.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 158,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7925,
+      "acc_theta_shadow": 167.53,
+      "acc_s_e": -535.19,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 159,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.7913,
+      "acc_theta_shadow": 170.1,
+      "acc_s_e": -568.19,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 160,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7977,
+      "acc_theta_shadow": 170.1,
+      "acc_s_e": -529.19,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 161,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.4933,
+      "acc_theta_shadow": 20.62,
+      "acc_s_e": -432.93,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 162,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.4931,
+      "acc_theta_shadow": 22.83,
+      "acc_s_e": -455.93,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 163,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.4113,
+      "acc_theta_shadow": 18.24,
+      "acc_s_e": -541.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.412,
+      "acc_theta_shadow": 15.44,
+      "acc_s_e": -510.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 165,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.3652,
+      "acc_theta_shadow": 16.2,
+      "acc_s_e": -715.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 166,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.695,
+      "acc_theta_shadow": 150.05,
+      "acc_s_e": -677.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 167,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.686,
+      "acc_theta_shadow": 149.64,
+      "acc_s_e": -715.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 168,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.686,
+      "acc_theta_shadow": 149.64,
+      "acc_s_e": -715.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 169,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9601,
+      "acc_theta_shadow": 334.97,
+      "acc_s_e": -369.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 170,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.967,
+      "acc_theta_shadow": 334.21,
+      "acc_s_e": -164.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 171,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8832,
+      "acc_theta_shadow": 194.02,
+      "acc_s_e": -117.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 172,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9164,
+      "acc_theta_shadow": 211.43,
+      "acc_s_e": 80.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 173,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9373,
+      "acc_theta_shadow": 219.13,
+      "acc_s_e": 113.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 174,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.5923,
+      "acc_theta_shadow": 29.98,
+      "acc_s_e": -126.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 175,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.5688,
+      "acc_theta_shadow": 35.16,
+      "acc_s_e": -274.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 176,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.5228,
+      "acc_theta_shadow": 37.72,
+      "acc_s_e": -485.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 177,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9154,
+      "acc_theta_shadow": 232.04,
+      "acc_s_e": -338.51,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 178,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8518,
+      "acc_theta_shadow": 226.56,
+      "acc_s_e": -716.51,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 179,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8618,
+      "acc_theta_shadow": 226.56,
+      "acc_s_e": -635.51,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 180,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8505,
+      "acc_theta_shadow": 225.64,
+      "acc_s_e": -718.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 181,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8725,
+      "acc_theta_shadow": 223.08,
+      "acc_s_e": -507.26,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 182,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.3749,
+      "acc_theta_shadow": 6.48,
+      "acc_s_e": -576.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 183,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.4489,
+      "acc_theta_shadow": 5.23,
+      "acc_s_e": -257.5,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 184,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.3942,
+      "acc_theta_shadow": 7.29,
+      "acc_s_e": -502.5,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 185,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.3772,
+      "acc_theta_shadow": 3.37,
+      "acc_s_e": -535.24,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 186,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.3772,
+      "acc_theta_shadow": 3.37,
+      "acc_s_e": -535.24,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 187,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9792,
+      "acc_theta_shadow": 421.08,
+      "acc_s_e": -561.24,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 188,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9952,
+      "acc_theta_shadow": 531.12,
+      "acc_s_e": -382.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 189,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.995,
+      "acc_theta_shadow": 530.88,
+      "acc_s_e": -406.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 190,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.995,
+      "acc_theta_shadow": 534.98,
+      "acc_s_e": -463.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 191,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9991,
+      "acc_theta_shadow": 710.1,
+      "acc_s_e": -536.22,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 192,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9859,
+      "acc_theta_shadow": 463.0,
+      "acc_s_e": -585.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 193,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9578,
+      "acc_theta_shadow": 358.37,
+      "acc_s_e": -661.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 194,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9669,
+      "acc_theta_shadow": 356.55,
+      "acc_s_e": -392.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 195,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.9933,
+      "acc_theta_shadow": 452.63,
+      "acc_s_e": 65.97,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 196,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9649,
+      "acc_theta_shadow": 277.51,
+      "acc_s_e": 139.19,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 197,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.8433,
+      "acc_theta_shadow": 106.9,
+      "acc_s_e": 214.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 198,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.998,
+      "acc_theta_shadow": 567.55,
+      "acc_s_e": 157.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 199,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9987,
+      "acc_theta_shadow": 617.35,
+      "acc_s_e": 52.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 200,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9942,
+      "acc_theta_shadow": 517.65,
+      "acc_s_e": -237.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 201,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9942,
+      "acc_theta_shadow": 517.65,
+      "acc_s_e": -237.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 202,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "aep": 0.9986,
+      "acc_theta_shadow": 665.29,
+      "acc_s_e": -285.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 203,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9863,
+      "acc_theta_shadow": 430.6,
+      "acc_s_e": -228.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 204,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9799,
+      "acc_theta_shadow": 380.8,
+      "acc_s_e": -123.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 205,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9809,
+      "acc_theta_shadow": 387.02,
+      "acc_s_e": -132.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 206,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9809,
+      "acc_theta_shadow": 387.02,
+      "acc_s_e": -132.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 207,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9748,
+      "acc_theta_shadow": 364.39,
+      "acc_s_e": -187.33,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 208,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9471,
+      "acc_theta_shadow": 315.49,
+      "acc_s_e": -269.03,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 209,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9332,
+      "acc_theta_shadow": 317.33,
+      "acc_s_e": -537.03,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 210,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9914,
+      "acc_theta_shadow": 489.36,
+      "acc_s_e": -341.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 211,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9921,
+      "acc_theta_shadow": 516.3,
+      "acc_s_e": -530.8,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 212,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9744,
+      "acc_theta_shadow": 401.25,
+      "acc_s_e": -573.47,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 213,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.8593,
+      "acc_theta_shadow": 217.81,
+      "acc_s_e": -568.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 214,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8868,
+      "acc_theta_shadow": 215.97,
+      "acc_s_e": -300.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 215,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.5088,
+      "acc_theta_shadow": 57.12,
+      "acc_s_e": -536.03,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 216,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.4706,
+      "acc_theta_shadow": 41.95,
+      "acc_s_e": -537.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 217,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.4822,
+      "acc_theta_shadow": 31.99,
+      "acc_s_e": -391.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 218,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.5403,
+      "acc_theta_shadow": 69.38,
+      "acc_s_e": -532.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 219,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.7244,
+      "acc_theta_shadow": 159.38,
+      "acc_s_e": -627.26,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 220,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.6932,
+      "acc_theta_shadow": 148.79,
+      "acc_s_e": -673.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 221,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.6406,
+      "acc_theta_shadow": 138.61,
+      "acc_s_e": -808.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 222,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.6406,
+      "acc_theta_shadow": 138.61,
+      "acc_s_e": -808.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 223,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9135,
+      "acc_theta_shadow": 278.78,
+      "acc_s_e": -630.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 224,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8252,
+      "acc_theta_shadow": 188.78,
+      "acc_s_e": -535.77,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 225,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8562,
+      "acc_theta_shadow": 200.5,
+      "acc_s_e": -421.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 226,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9492,
+      "acc_theta_shadow": 283.2,
+      "acc_s_e": -105.03,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 227,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9903,
+      "acc_theta_shadow": 464.82,
+      "acc_s_e": -217.3,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 228,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9044,
+      "acc_theta_shadow": 293.17,
+      "acc_s_e": -684.53,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 229,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9142,
+      "acc_theta_shadow": 312.84,
+      "acc_s_e": -762.53,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 230,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8728,
+      "acc_theta_shadow": 295.28,
+      "acc_s_e": -1027.27,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 231,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9573,
+      "acc_theta_shadow": 391.17,
+      "acc_s_e": -1001.01,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 232,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.8432,
+      "acc_theta_shadow": 246.47,
+      "acc_s_e": -982.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 233,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9967,
+      "acc_theta_shadow": 594.35,
+      "acc_s_e": -630.98,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 234,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9962,
+      "acc_theta_shadow": 593.65,
+      "acc_s_e": -779.98,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 235,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9999,
+      "acc_theta_shadow": 863.85,
+      "acc_s_e": -243.25,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 236,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9991,
+      "acc_theta_shadow": 683.67,
+      "acc_s_e": -259.51,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 237,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9996,
+      "acc_theta_shadow": 734.98,
+      "acc_s_e": -154.47,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 238,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.998,
+      "acc_theta_shadow": 561.61,
+      "acc_s_e": -27.03,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 239,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9988,
+      "acc_theta_shadow": 547.56,
+      "acc_s_e": 422.97,
+      "acc_t_penumbra": 4,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 240,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.97,
+      "acc_theta_shadow": 279.82,
+      "acc_s_e": 79.24,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 241,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.97,
+      "acc_theta_shadow": 279.82,
+      "acc_s_e": 79.24,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 242,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8942,
+      "acc_theta_shadow": 192.11,
+      "acc_s_e": -186.8,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 243,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8525,
+      "acc_theta_shadow": 184.34,
+      "acc_s_e": -289.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 244,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.7938,
+      "acc_theta_shadow": 196.37,
+      "acc_s_e": -616.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 245,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.7885,
+      "acc_theta_shadow": 191.21,
+      "acc_s_e": -596.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 246,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7885,
+      "acc_theta_shadow": 191.21,
+      "acc_s_e": -596.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 247,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.8166,
+      "acc_theta_shadow": 200.48,
+      "acc_s_e": -511.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 248,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8619,
+      "acc_theta_shadow": 204.11,
+      "acc_s_e": -409.58,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 249,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.854,
+      "acc_theta_shadow": 187.16,
+      "acc_s_e": -305.58,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 250,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8487,
+      "acc_theta_shadow": 189.87,
+      "acc_s_e": -374.58,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 251,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8762,
+      "acc_theta_shadow": 189.87,
+      "acc_s_e": -341.58,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 252,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9846,
+      "acc_theta_shadow": 372.85,
+      "acc_s_e": -167.58,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 253,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.8957,
+      "acc_theta_shadow": 196.57,
+      "acc_s_e": -215.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 254,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.8911,
+      "acc_theta_shadow": 206.56,
+      "acc_s_e": -364.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 255,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9137,
+      "acc_theta_shadow": 230.46,
+      "acc_s_e": -345.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 256,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.7068,
+      "acc_theta_shadow": 236.6,
+      "acc_s_e": -1686.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 257,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8268,
+      "acc_theta_shadow": 221.08,
+      "acc_s_e": -847.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 258,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.8268,
+      "acc_theta_shadow": 221.08,
+      "acc_s_e": -847.74,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 259,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.7726,
+      "acc_theta_shadow": 211.72,
+      "acc_s_e": -1094.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 260,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.4431,
+      "acc_theta_shadow": 185.16,
+      "acc_s_e": -2280.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 261,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9891,
+      "acc_theta_shadow": 526.29,
+      "acc_s_e": -1151.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 262,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.8123,
+      "acc_theta_shadow": 349.51,
+      "acc_s_e": -2230.19,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 263,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.8123,
+      "acc_theta_shadow": 349.51,
+      "acc_s_e": -2230.19,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 264,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.8646,
+      "acc_theta_shadow": 348.88,
+      "acc_s_e": -1834.93,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 265,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9631,
+      "acc_theta_shadow": 347.74,
+      "acc_s_e": -415.93,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 266,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.3737,
+      "acc_theta_shadow": 7.25,
+      "acc_s_e": -588.93,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 267,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.1107,
+      "acc_theta_shadow": 7.14,
+      "acc_s_e": -2155.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 268,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.0522,
+      "acc_theta_shadow": 8.97,
+      "acc_s_e": -2988.0,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 269,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 0.3055,
+      "acc_theta_shadow": 218.95,
+      "acc_s_e": -3010.54,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 270,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.3055,
+      "acc_theta_shadow": 218.95,
+      "acc_s_e": -3010.54,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 271,
+      "fate": "SURVIVED",
+      "is_win": false,
+      "aep": 0.6247,
+      "acc_theta_shadow": 318.48,
+      "acc_s_e": -2675.34,
+      "acc_t_penumbra": 0,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 272,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 497.22,
+      "acc_s_e": 5640.66,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 273,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 872.36,
+      "acc_s_e": 6335.66,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 274,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 677.0,
+      "acc_s_e": 6248.39,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 275,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 1.0,
+      "acc_theta_shadow": 677.0,
+      "acc_s_e": 6248.39,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "FRACTURED_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 276,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "aep": 1.0,
+      "acc_theta_shadow": 1009.35,
+      "acc_s_e": 6270.19,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 277,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9998,
+      "acc_theta_shadow": 830.25,
+      "acc_s_e": -242.81,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 278,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9884,
+      "acc_theta_shadow": 456.35,
+      "acc_s_e": -316.81,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 279,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9978,
+      "acc_theta_shadow": 591.99,
+      "acc_s_e": -199.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 280,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "aep": 0.9975,
+      "acc_theta_shadow": 594.24,
+      "acc_s_e": -372.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 281,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9725,
+      "acc_theta_shadow": 350.01,
+      "acc_s_e": -336.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 282,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9128,
+      "acc_theta_shadow": 352.02,
+      "acc_s_e": -1572.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 283,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "aep": 0.9936,
+      "acc_theta_shadow": 527.43,
+      "acc_s_e": -833.74,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 284,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9752,
+      "acc_theta_shadow": 379.17,
+      "acc_s_e": -718.67,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 285,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9474,
+      "acc_theta_shadow": 378.31,
+      "acc_s_e": -1492.93,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 286,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "aep": 0.9855,
+      "acc_theta_shadow": 525.33,
+      "acc_s_e": -1633.93,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 287,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9957,
+      "acc_theta_shadow": 523.32,
+      "acc_s_e": -397.93,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 288,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "aep": 0.9939,
+      "acc_theta_shadow": 520.32,
+      "acc_s_e": -709.93,
+      "acc_t_penumbra": 3,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA"
+      ]
+    },
+    {
+      "trade_idx": 289,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9895,
+      "acc_theta_shadow": 525.93,
+      "acc_s_e": -1114.0,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "CLEAN_SHADOW",
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 290,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.9896,
+      "acc_theta_shadow": 526.49,
+      "acc_s_e": -1109.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 291,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "aep": 0.6343,
+      "acc_theta_shadow": 190.65,
+      "acc_s_e": -1556.0,
+      "acc_t_penumbra": 1,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "NO_SHADOW",
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW"
+      ]
+    },
+    {
+      "trade_idx": 292,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "aep": 0.9437,
+      "acc_theta_shadow": 371.6,
+      "acc_s_e": -1297.74,
+      "acc_t_penumbra": 2,
+      "n_prev": 5,
+      "prev_shadow_classes": [
+        "PENUMBRA",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "CLEAN_SHADOW",
+        "PENUMBRA"
+      ]
+    }
+  ]
+}

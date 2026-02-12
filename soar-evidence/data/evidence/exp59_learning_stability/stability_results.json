@@ -1,0 +1,1182 @@
+{
+  "experiment": "EXP-59 Learning Stability Test",
+  "timestamp": "2026-02-12T14:16:20.010856",
+  "lock_version": "v2.0.0-PROD",
+  "stability_limits": {
+    "sharp_gap_min": 60.0,
+    "fate_sep_min": 70.0,
+    "aep_min": 0.7,
+    "false_exec_max": 15.0
+  },
+  "n_total_trades": 1344,
+  "rollback_needed": false,
+  "stability_log": [
+    {
+      "window_size": 50,
+      "n_windows": 52,
+      "stable_count": 34,
+      "stable_pct": 65.4,
+      "windows": [
+        {
+          "window_idx": 0,
+          "start": 0,
+          "end": 50,
+          "n_trades": 50,
+          "sharp_gap": 73.7,
+          "fate_sep": 100.0,
+          "aep": 0.7858,
+          "false_exec": 10.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 1,
+          "start": 25,
+          "end": 75,
+          "n_trades": 50,
+          "sharp_gap": 75.7,
+          "fate_sep": 100.0,
+          "aep": 0.6726,
+          "false_exec": 8.3,
+          "violations": [
+            "AEP 0.6726 < 0.7"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 2,
+          "start": 50,
+          "end": 100,
+          "n_trades": 50,
+          "sharp_gap": 93.9,
+          "fate_sep": 100.0,
+          "aep": 0.9405,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 3,
+          "start": 75,
+          "end": 125,
+          "n_trades": 50,
+          "sharp_gap": 86.7,
+          "fate_sep": 100.0,
+          "aep": 0.9893,
+          "false_exec": 5.9,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 4,
+          "start": 100,
+          "end": 150,
+          "n_trades": 50,
+          "sharp_gap": 83.9,
+          "fate_sep": 100.0,
+          "aep": 0.9795,
+          "false_exec": 11.8,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 5,
+          "start": 125,
+          "end": 175,
+          "n_trades": 50,
+          "sharp_gap": 92.9,
+          "fate_sep": 100.0,
+          "aep": 0.9852,
+          "false_exec": 7.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 6,
+          "start": 150,
+          "end": 200,
+          "n_trades": 50,
+          "sharp_gap": 94.1,
+          "fate_sep": 100.0,
+          "aep": 0.9927,
+          "false_exec": 5.9,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 7,
+          "start": 175,
+          "end": 225,
+          "n_trades": 50,
+          "sharp_gap": 85.6,
+          "fate_sep": 92.3,
+          "aep": 0.9937,
+          "false_exec": 10.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 8,
+          "start": 200,
+          "end": 250,
+          "n_trades": 50,
+          "sharp_gap": 90.2,
+          "fate_sep": 87.5,
+          "aep": 0.9889,
+          "false_exec": 6.2,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 9,
+          "start": 225,
+          "end": 275,
+          "n_trades": 50,
+          "sharp_gap": 79.8,
+          "fate_sep": 75.0,
+          "aep": 0.9945,
+          "false_exec": 12.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 10,
+          "start": 250,
+          "end": 300,
+          "n_trades": 50,
+          "sharp_gap": 75.0,
+          "fate_sep": 80.0,
+          "aep": 1.0,
+          "false_exec": 14.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 11,
+          "start": 275,
+          "end": 325,
+          "n_trades": 50,
+          "sharp_gap": 92.3,
+          "fate_sep": 100.0,
+          "aep": 0.9997,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 12,
+          "start": 300,
+          "end": 350,
+          "n_trades": 50,
+          "sharp_gap": 84.6,
+          "fate_sep": 100.0,
+          "aep": 0.9998,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 13,
+          "start": 325,
+          "end": 375,
+          "n_trades": 50,
+          "sharp_gap": 56.0,
+          "fate_sep": 100.0,
+          "aep": 0.9997,
+          "false_exec": 33.3,
+          "violations": [
+            "SharpGap 56.0 < 60.0",
+            "FalseExec 33.3 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 14,
+          "start": 350,
+          "end": 400,
+          "n_trades": 50,
+          "sharp_gap": 64.0,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 28.6,
+          "violations": [
+            "FalseExec 28.6 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 15,
+          "start": 375,
+          "end": 425,
+          "n_trades": 50,
+          "sharp_gap": 76.0,
+          "fate_sep": 100.0,
+          "aep": 0.9991,
+          "false_exec": 12.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 16,
+          "start": 400,
+          "end": 450,
+          "n_trades": 50,
+          "sharp_gap": 85.8,
+          "fate_sep": 100.0,
+          "aep": 0.9929,
+          "false_exec": 5.9,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 17,
+          "start": 425,
+          "end": 475,
+          "n_trades": 50,
+          "sharp_gap": 95.7,
+          "fate_sep": 100.0,
+          "aep": 0.9999,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 18,
+          "start": 450,
+          "end": 500,
+          "n_trades": 50,
+          "sharp_gap": 100.0,
+          "fate_sep": 100.0,
+          "aep": 0.9999,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 19,
+          "start": 475,
+          "end": 525,
+          "n_trades": 50,
+          "sharp_gap": 88.9,
+          "fate_sep": 0.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [
+            "FateSep 0.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 20,
+          "start": 500,
+          "end": 550,
+          "n_trades": 50,
+          "sharp_gap": 87.1,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 21,
+          "start": 525,
+          "end": 575,
+          "n_trades": 50,
+          "sharp_gap": 88.9,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 22,
+          "start": 550,
+          "end": 600,
+          "n_trades": 50,
+          "sharp_gap": 82.2,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 4.2,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 23,
+          "start": 575,
+          "end": 625,
+          "n_trades": 50,
+          "sharp_gap": 82.4,
+          "fate_sep": 100.0,
+          "aep": 0.9775,
+          "false_exec": 13.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 24,
+          "start": 600,
+          "end": 650,
+          "n_trades": 50,
+          "sharp_gap": 83.1,
+          "fate_sep": 100.0,
+          "aep": 0.9989,
+          "false_exec": 13.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 25,
+          "start": 625,
+          "end": 675,
+          "n_trades": 50,
+          "sharp_gap": 85.2,
+          "fate_sep": -66.7,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [
+            "FateSep -66.7 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 26,
+          "start": 650,
+          "end": 700,
+          "n_trades": 50,
+          "sharp_gap": 66.4,
+          "fate_sep": 50.0,
+          "aep": 1.0,
+          "false_exec": 6.7,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 27,
+          "start": 675,
+          "end": 725,
+          "n_trades": 50,
+          "sharp_gap": 68.2,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 7.7,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 28,
+          "start": 700,
+          "end": 750,
+          "n_trades": 50,
+          "sharp_gap": 80.0,
+          "fate_sep": 0.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [
+            "FateSep 0.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 29,
+          "start": 725,
+          "end": 775,
+          "n_trades": 50,
+          "sharp_gap": 86.2,
+          "fate_sep": 0.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [
+            "FateSep 0.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 30,
+          "start": 750,
+          "end": 800,
+          "n_trades": 50,
+          "sharp_gap": 93.1,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 31,
+          "start": 775,
+          "end": 825,
+          "n_trades": 50,
+          "sharp_gap": 91.7,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 32,
+          "start": 800,
+          "end": 850,
+          "n_trades": 50,
+          "sharp_gap": 84.0,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 33,
+          "start": 825,
+          "end": 875,
+          "n_trades": 50,
+          "sharp_gap": 83.3,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 34,
+          "start": 850,
+          "end": 900,
+          "n_trades": 50,
+          "sharp_gap": 78.8,
+          "fate_sep": 50.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 35,
+          "start": 875,
+          "end": 925,
+          "n_trades": 50,
+          "sharp_gap": 72.2,
+          "fate_sep": 0.0,
+          "aep": 1.0,
+          "false_exec": 9.1,
+          "violations": [
+            "FateSep 0.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 36,
+          "start": 900,
+          "end": 950,
+          "n_trades": 50,
+          "sharp_gap": 78.6,
+          "fate_sep": 100.0,
+          "aep": 0.995,
+          "false_exec": 14.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 37,
+          "start": 925,
+          "end": 975,
+          "n_trades": 50,
+          "sharp_gap": 63.1,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 23.1,
+          "violations": [
+            "FalseExec 23.1 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 38,
+          "start": 950,
+          "end": 1000,
+          "n_trades": 50,
+          "sharp_gap": 50.7,
+          "fate_sep": 100.0,
+          "aep": 0.997,
+          "false_exec": 30.8,
+          "violations": [
+            "SharpGap 50.7 < 60.0",
+            "FalseExec 30.8 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 39,
+          "start": 975,
+          "end": 1025,
+          "n_trades": 50,
+          "sharp_gap": 69.9,
+          "fate_sep": 100.0,
+          "aep": 0.9905,
+          "false_exec": 15.8,
+          "violations": [
+            "FalseExec 15.8 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 40,
+          "start": 1000,
+          "end": 1050,
+          "n_trades": 50,
+          "sharp_gap": 90.1,
+          "fate_sep": 100.0,
+          "aep": 0.9906,
+          "false_exec": 5.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 41,
+          "start": 1025,
+          "end": 1075,
+          "n_trades": 50,
+          "sharp_gap": 89.7,
+          "fate_sep": 100.0,
+          "aep": 0.9859,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 42,
+          "start": 1050,
+          "end": 1100,
+          "n_trades": 50,
+          "sharp_gap": 77.3,
+          "fate_sep": 100.0,
+          "aep": 0.9389,
+          "false_exec": 6.7,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 43,
+          "start": 1075,
+          "end": 1125,
+          "n_trades": 50,
+          "sharp_gap": 78.0,
+          "fate_sep": 100.0,
+          "aep": 0.9919,
+          "false_exec": 7.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 44,
+          "start": 1100,
+          "end": 1150,
+          "n_trades": 50,
+          "sharp_gap": 64.8,
+          "fate_sep": 100.0,
+          "aep": 0.9993,
+          "false_exec": 16.7,
+          "violations": [
+            "FalseExec 16.7 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 45,
+          "start": 1125,
+          "end": 1175,
+          "n_trades": 50,
+          "sharp_gap": 58.7,
+          "fate_sep": 100.0,
+          "aep": 0.9962,
+          "false_exec": 23.1,
+          "violations": [
+            "SharpGap 58.7 < 60.0",
+            "FalseExec 23.1 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 46,
+          "start": 1150,
+          "end": 1200,
+          "n_trades": 50,
+          "sharp_gap": 74.6,
+          "fate_sep": 100.0,
+          "aep": 0.9934,
+          "false_exec": 11.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 47,
+          "start": 1175,
+          "end": 1225,
+          "n_trades": 50,
+          "sharp_gap": 86.4,
+          "fate_sep": 100.0,
+          "aep": 0.9405,
+          "false_exec": 5.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 48,
+          "start": 1200,
+          "end": 1250,
+          "n_trades": 50,
+          "sharp_gap": 83.8,
+          "fate_sep": 100.0,
+          "aep": 0.9877,
+          "false_exec": 6.2,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 49,
+          "start": 1225,
+          "end": 1275,
+          "n_trades": 50,
+          "sharp_gap": 77.1,
+          "fate_sep": 0.0,
+          "aep": 0.9997,
+          "false_exec": 9.1,
+          "violations": [
+            "FateSep 0.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 50,
+          "start": 1250,
+          "end": 1300,
+          "n_trades": 50,
+          "sharp_gap": 72.8,
+          "fate_sep": 33.3,
+          "aep": 0.9995,
+          "false_exec": 10.0,
+          "violations": [
+            "FateSep 33.3 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 51,
+          "start": 1275,
+          "end": 1325,
+          "n_trades": 50,
+          "sharp_gap": 80.3,
+          "fate_sep": 50.0,
+          "aep": 0.9999,
+          "false_exec": 5.9,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        }
+      ]
+    },
+    {
+      "window_size": 100,
+      "n_windows": 25,
+      "stable_count": 17,
+      "stable_pct": 68.0,
+      "windows": [
+        {
+          "window_idx": 0,
+          "start": 0,
+          "end": 100,
+          "n_trades": 100,
+          "sharp_gap": 83.7,
+          "fate_sep": 100.0,
+          "aep": 0.8537,
+          "false_exec": 6.7,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 1,
+          "start": 50,
+          "end": 150,
+          "n_trades": 100,
+          "sharp_gap": 86.0,
+          "fate_sep": 100.0,
+          "aep": 0.9734,
+          "false_exec": 7.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 2,
+          "start": 100,
+          "end": 200,
+          "n_trades": 100,
+          "sharp_gap": 89.3,
+          "fate_sep": 100.0,
+          "aep": 0.9879,
+          "false_exec": 8.8,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 3,
+          "start": 150,
+          "end": 250,
+          "n_trades": 100,
+          "sharp_gap": 92.2,
+          "fate_sep": 94.1,
+          "aep": 0.9915,
+          "false_exec": 6.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 4,
+          "start": 200,
+          "end": 300,
+          "n_trades": 100,
+          "sharp_gap": 82.9,
+          "fate_sep": 84.6,
+          "aep": 0.9982,
+          "false_exec": 10.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 5,
+          "start": 250,
+          "end": 350,
+          "n_trades": 100,
+          "sharp_gap": 79.3,
+          "fate_sep": 87.5,
+          "aep": 1.0,
+          "false_exec": 7.7,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 6,
+          "start": 300,
+          "end": 400,
+          "n_trades": 100,
+          "sharp_gap": 73.3,
+          "fate_sep": 100.0,
+          "aep": 0.9998,
+          "false_exec": 15.4,
+          "violations": [
+            "FalseExec 15.4 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 7,
+          "start": 350,
+          "end": 450,
+          "n_trades": 100,
+          "sharp_gap": 73.4,
+          "fate_sep": 100.0,
+          "aep": 0.9998,
+          "false_exec": 18.8,
+          "violations": [
+            "FalseExec 18.8 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 8,
+          "start": 400,
+          "end": 500,
+          "n_trades": 100,
+          "sharp_gap": 93.2,
+          "fate_sep": 100.0,
+          "aep": 0.9997,
+          "false_exec": 2.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 9,
+          "start": 450,
+          "end": 550,
+          "n_trades": 100,
+          "sharp_gap": 92.6,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 10,
+          "start": 500,
+          "end": 600,
+          "n_trades": 100,
+          "sharp_gap": 84.2,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 2.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 11,
+          "start": 550,
+          "end": 650,
+          "n_trades": 100,
+          "sharp_gap": 84.1,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 7.7,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 12,
+          "start": 600,
+          "end": 700,
+          "n_trades": 100,
+          "sharp_gap": 75.2,
+          "fate_sep": 50.0,
+          "aep": 1.0,
+          "false_exec": 10.0,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 13,
+          "start": 650,
+          "end": 750,
+          "n_trades": 100,
+          "sharp_gap": 72.8,
+          "fate_sep": 50.0,
+          "aep": 1.0,
+          "false_exec": 4.0,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 14,
+          "start": 700,
+          "end": 800,
+          "n_trades": 100,
+          "sharp_gap": 86.4,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 15,
+          "start": 750,
+          "end": 850,
+          "n_trades": 100,
+          "sharp_gap": 88.9,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 16,
+          "start": 800,
+          "end": 900,
+          "n_trades": 100,
+          "sharp_gap": 81.0,
+          "fate_sep": 75.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 17,
+          "start": 850,
+          "end": 950,
+          "n_trades": 100,
+          "sharp_gap": 77.8,
+          "fate_sep": 66.7,
+          "aep": 1.0,
+          "false_exec": 7.4,
+          "violations": [
+            "FateSep 66.7 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 18,
+          "start": 900,
+          "end": 1000,
+          "n_trades": 100,
+          "sharp_gap": 65.1,
+          "fate_sep": 100.0,
+          "aep": 0.9963,
+          "false_exec": 22.2,
+          "violations": [
+            "FalseExec 22.2 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 19,
+          "start": 950,
+          "end": 1050,
+          "n_trades": 100,
+          "sharp_gap": 71.9,
+          "fate_sep": 100.0,
+          "aep": 0.9952,
+          "false_exec": 16.1,
+          "violations": [
+            "FalseExec 16.1 > 15.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 20,
+          "start": 1000,
+          "end": 1100,
+          "n_trades": 100,
+          "sharp_gap": 83.5,
+          "fate_sep": 100.0,
+          "aep": 0.97,
+          "false_exec": 6.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 21,
+          "start": 1050,
+          "end": 1150,
+          "n_trades": 100,
+          "sharp_gap": 71.6,
+          "fate_sep": 100.0,
+          "aep": 0.9845,
+          "false_exec": 11.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 22,
+          "start": 1100,
+          "end": 1200,
+          "n_trades": 100,
+          "sharp_gap": 70.0,
+          "fate_sep": 100.0,
+          "aep": 0.9972,
+          "false_exec": 13.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 23,
+          "start": 1150,
+          "end": 1250,
+          "n_trades": 100,
+          "sharp_gap": 79.4,
+          "fate_sep": 100.0,
+          "aep": 0.9916,
+          "false_exec": 8.8,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 24,
+          "start": 1200,
+          "end": 1300,
+          "n_trades": 100,
+          "sharp_gap": 78.7,
+          "fate_sep": 50.0,
+          "aep": 0.9988,
+          "false_exec": 7.7,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        }
+      ]
+    },
+    {
+      "window_size": 200,
+      "n_windows": 12,
+      "stable_count": 11,
+      "stable_pct": 91.7,
+      "windows": [
+        {
+          "window_idx": 0,
+          "start": 0,
+          "end": 200,
+          "n_trades": 200,
+          "sharp_gap": 85.6,
+          "fate_sep": 100.0,
+          "aep": 0.9509,
+          "false_exec": 7.8,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 1,
+          "start": 100,
+          "end": 300,
+          "n_trades": 200,
+          "sharp_gap": 86.0,
+          "fate_sep": 92.6,
+          "aep": 0.9929,
+          "false_exec": 9.4,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 2,
+          "start": 200,
+          "end": 400,
+          "n_trades": 200,
+          "sharp_gap": 78.3,
+          "fate_sep": 89.5,
+          "aep": 0.9996,
+          "false_exec": 12.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 3,
+          "start": 300,
+          "end": 500,
+          "n_trades": 200,
+          "sharp_gap": 82.9,
+          "fate_sep": 100.0,
+          "aep": 0.9998,
+          "false_exec": 9.1,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 4,
+          "start": 400,
+          "end": 600,
+          "n_trades": 200,
+          "sharp_gap": 88.4,
+          "fate_sep": 100.0,
+          "aep": 1.0,
+          "false_exec": 2.6,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 5,
+          "start": 500,
+          "end": 700,
+          "n_trades": 200,
+          "sharp_gap": 80.1,
+          "fate_sep": 71.4,
+          "aep": 1.0,
+          "false_exec": 5.8,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 6,
+          "start": 600,
+          "end": 800,
+          "n_trades": 200,
+          "sharp_gap": 80.5,
+          "fate_sep": 50.0,
+          "aep": 1.0,
+          "false_exec": 5.4,
+          "violations": [
+            "FateSep 50.0 < 70.0"
+          ],
+          "stable": false
+        },
+        {
+          "window_idx": 7,
+          "start": 700,
+          "end": 900,
+          "n_trades": 200,
+          "sharp_gap": 83.8,
+          "fate_sep": 75.0,
+          "aep": 1.0,
+          "false_exec": 0.0,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 8,
+          "start": 800,
+          "end": 1000,
+          "n_trades": 200,
+          "sharp_gap": 73.7,
+          "fate_sep": 83.3,
+          "aep": 1.0,
+          "false_exec": 10.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 9,
+          "start": 900,
+          "end": 1100,
+          "n_trades": 200,
+          "sharp_gap": 75.0,
+          "fate_sep": 100.0,
+          "aep": 0.9856,
+          "false_exec": 13.3,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 10,
+          "start": 1000,
+          "end": 1200,
+          "n_trades": 200,
+          "sharp_gap": 76.9,
+          "fate_sep": 100.0,
+          "aep": 0.9877,
+          "false_exec": 9.5,
+          "violations": [],
+          "stable": true
+        },
+        {
+          "window_idx": 11,
+          "start": 1100,
+          "end": 1300,
+          "n_trades": 200,
+          "sharp_gap": 74.3,
+          "fate_sep": 75.0,
+          "aep": 0.998,
+          "false_exec": 10.7,
+          "violations": [],
+          "stable": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "sharp_gap": {
+      "mean": 80.5,
+      "std": 9.2
+    },
+    "fate_sep": {
+      "mean": 84.8,
+      "std": 30.9
+    },
+    "aep": {
+      "mean": 0.9859,
+      "std": 0.0443
+    },
+    "false_exec": {
+      "mean": 8.0,
+      "std": 7.1
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "overview": {
+    "n_trades": 293,
+    "n_deny": 235,
+    "n_allow": 58,
+    "mc_iterations": 500
+  },
+  "baseline": {
+    "n": 293,
+    "wr": 39.249146757679185,
+    "pf": 1.2853932584269663,
+    "net": 1270.0,
+    "max_dd": 0.44
+  },
+  "sweep": {
+    "0.0": {
+      "avg_n": 58.0,
+      "avg_wr": 94.8,
+      "avg_pf": 36.67,
+      "avg_net": 2675.0,
+      "avg_max_dd": 0.02,
+      "avg_per_trade": 46.12,
+      "delta_wr": 55.6,
+      "delta_net": 1405.0
+    },
+    "0.1": {
+      "avg_n": 81.6,
+      "avg_wr": 75.0,
+      "avg_pf": 6.19,
+      "avg_net": 2540.0,
+      "avg_max_dd": 0.06,
+      "avg_per_trade": 31.24,
+      "delta_wr": 35.8,
+      "delta_net": 1270.0
+    },
+    "0.2": {
+      "avg_n": 104.7,
+      "avg_wr": 64.1,
+      "avg_pf": 3.62,
+      "avg_net": 2402.0,
+      "avg_max_dd": 0.09,
+      "avg_per_trade": 23.04,
+      "delta_wr": 24.9,
+      "delta_net": 1132.0
+    },
+    "0.3": {
+      "avg_n": 128.4,
+      "avg_wr": 56.8,
+      "avg_pf": 2.65,
+      "avg_net": 2245.0,
+      "avg_max_dd": 0.12,
+      "avg_per_trade": 17.57,
+      "delta_wr": 17.6,
+      "delta_net": 975.0
+    },
+    "0.5": {
+      "avg_n": 175.7,
+      "avg_wr": 48.4,
+      "avg_pf": 1.88,
+      "avg_net": 1965.0,
+      "avg_max_dd": 0.2,
+      "avg_per_trade": 11.22,
+      "delta_wr": 9.2,
+      "delta_net": 695.0
+    },
+    "0.7": {
+      "avg_n": 222.4,
+      "avg_wr": 43.5,
+      "avg_pf": 1.54,
+      "avg_net": 1678.0,
+      "avg_max_dd": 0.28,
+      "avg_per_trade": 7.56,
+      "delta_wr": 4.3,
+      "delta_net": 408.0
+    },
+    "1.0": {
+      "avg_n": 293.0,
+      "avg_wr": 39.2,
+      "avg_pf": 1.29,
+      "avg_net": 1270.0,
+      "avg_max_dd": 0.44,
+      "avg_per_trade": 4.33,
+      "delta_wr": 0.0,
+      "delta_net": 0.0
+    }
+  },
+  "graduated": {
+    "avg_n": 96.0,
+    "avg_wr": 81.5,
+    "avg_pf": 9.05,
+    "avg_net": 3448.0,
+    "avg_max_dd": 0.06
+  },
+  "prop_sim": {
+    "account": 50000.0,
+    "daily_dd_limit": 0.02,
+    "trailing_dd_limit": 0.03,
+    "contracts": 2,
+    "baseline_blown": false,
+    "baseline_pnl": 2540.0,
+    "allow_only_blown": false,
+    "allow_only_pnl": 5350.0,
+    "graduated_blown_rate": 0.0
+  },
+  "inside_view": {
+    "gate": "Gate\ub294 \uc0b4\uc544\ub0a8\uac8c \ub9cc\ub4e4\uc5c8\ub2e4. \uc774\uae30\uac8c\ub294 \uc548 \ud588\ub2e4.",
+    "alpha_layer": "ARG-ALLOW WR=94.8% \u2014 \ubd84\ub9ac\ub294 \uc644\ubcbd. \uc5f0\uacb0\ub9cc \uc548 \ub410\ub2e4.",
+    "judge": "attach(p=0.0) WR=94.8% \u2014 \uc5f0\uacb0\ud558\uba74 \uc0c1\uc804\uc774."
+  },
+  "hypotheses": {
+    "H40a_allow_wr_exceeds_baseline": "SUPPORTED",
+    "H40b_allow_reduces_dd": "SUPPORTED",
+    "H40c_filtering_improves_net": "SUPPORTED",
+    "H40d_graduated_outperforms_uniform": "SUPPORTED"
+  }
+}

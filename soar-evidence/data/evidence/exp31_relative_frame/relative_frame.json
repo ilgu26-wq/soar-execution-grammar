@@ -1,0 +1,439 @@
+{
+  "config": {
+    "window_size": 20,
+    "step_size": 5,
+    "atp_range": 3
+  },
+  "frame_stats": {
+    "0": {
+      "theta_mean": 21.3806,
+      "theta_std": 10.9131,
+      "theta_max": 55.0965,
+      "oss_mean": 0.7624,
+      "oss_std": 0.1213
+    },
+    "1": {
+      "theta_mean": 0.0,
+      "theta_std": 0.0,
+      "theta_max": 0.0,
+      "oss_mean": 1.0,
+      "oss_std": 0.0
+    },
+    "2": {
+      "theta_mean": 39.51,
+      "theta_std": 21.4926,
+      "theta_max": 109.4862,
+      "oss_mean": 0.5649,
+      "oss_std": 0.2275
+    }
+  },
+  "hypotheses": {
+    "H31a_terminated_all_unstable": "PARTIAL",
+    "H31b_zombie_comoving_stable": "SUPPORTED",
+    "H31c_contested_market_stable": "INSUFFICIENT DATA"
+  },
+  "fate_aligned_by_frame": {
+    "0": {
+      "STILLBORN": {
+        "-3": {
+          "oss_mean": 0.7493,
+          "delta_theta_mean": 22.562,
+          "e_mean": 16.2034,
+          "n": 63
+        },
+        "-2": {
+          "oss_mean": 0.7442,
+          "delta_theta_mean": 23.0244,
+          "e_mean": 16.5578,
+          "n": 63
+        },
+        "-1": {
+          "oss_mean": 0.7436,
+          "delta_theta_mean": 23.0738,
+          "e_mean": 18.7217,
+          "n": 63
+        },
+        "0": {
+          "oss_mean": 0.7928,
+          "delta_theta_mean": 18.6481,
+          "e_mean": 16.9785,
+          "n": 67
+        },
+        "1": {
+          "oss_mean": 0.7323,
+          "delta_theta_mean": 24.0956,
+          "e_mean": 17.932,
+          "n": 65
+        },
+        "2": {
+          "oss_mean": 0.7668,
+          "delta_theta_mean": 20.9872,
+          "e_mean": 17.9097,
+          "n": 64
+        },
+        "3": {
+          "oss_mean": 0.72,
+          "delta_theta_mean": 25.2016,
+          "e_mean": 18.8054,
+          "n": 62
+        }
+      },
+      "TERMINATED": {
+        "-3": {
+          "oss_mean": 0.7668,
+          "delta_theta_mean": 20.9862,
+          "e_mean": 13.7902,
+          "n": 94
+        },
+        "-2": {
+          "oss_mean": 0.7406,
+          "delta_theta_mean": 23.349,
+          "e_mean": 15.5184,
+          "n": 96
+        },
+        "-1": {
+          "oss_mean": 0.765,
+          "delta_theta_mean": 21.1483,
+          "e_mean": 15.3869,
+          "n": 98
+        },
+        "0": {
+          "oss_mean": 0.7624,
+          "delta_theta_mean": 21.3835,
+          "e_mean": 15.9303,
+          "n": 103
+        },
+        "1": {
+          "oss_mean": 0.7544,
+          "delta_theta_mean": 22.1053,
+          "e_mean": 16.56,
+          "n": 102
+        },
+        "2": {
+          "oss_mean": 0.7564,
+          "delta_theta_mean": 21.9247,
+          "e_mean": 15.3745,
+          "n": 99
+        },
+        "3": {
+          "oss_mean": 0.762,
+          "delta_theta_mean": 21.4172,
+          "e_mean": 15.9551,
+          "n": 99
+        }
+      },
+      "ZOMBIE": {
+        "-3": {
+          "oss_mean": 0.7473,
+          "delta_theta_mean": 22.7411,
+          "e_mean": 16.4298,
+          "n": 46
+        },
+        "-2": {
+          "oss_mean": 0.7668,
+          "delta_theta_mean": 20.9917,
+          "e_mean": 18.1664,
+          "n": 47
+        },
+        "-1": {
+          "oss_mean": 0.7567,
+          "delta_theta_mean": 21.8981,
+          "e_mean": 19.0937,
+          "n": 47
+        },
+        "0": {
+          "oss_mean": 0.7827,
+          "delta_theta_mean": 19.5549,
+          "e_mean": 19.4792,
+          "n": 51
+        },
+        "1": {
+          "oss_mean": 0.7531,
+          "delta_theta_mean": 22.2202,
+          "e_mean": 17.8785,
+          "n": 50
+        },
+        "2": {
+          "oss_mean": 0.77,
+          "delta_theta_mean": 20.6999,
+          "e_mean": 17.317,
+          "n": 49
+        },
+        "3": {
+          "oss_mean": 0.7783,
+          "delta_theta_mean": 19.9487,
+          "e_mean": 16.5255,
+          "n": 47
+        }
+      }
+    },
+    "1": {
+      "STILLBORN": {
+        "-3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.2034,
+          "n": 63
+        },
+        "-2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.5578,
+          "n": 63
+        },
+        "-1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 18.7217,
+          "n": 63
+        },
+        "0": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.9785,
+          "n": 67
+        },
+        "1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 17.932,
+          "n": 65
+        },
+        "2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 17.9097,
+          "n": 64
+        },
+        "3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 18.8054,
+          "n": 62
+        }
+      },
+      "TERMINATED": {
+        "-3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 13.7902,
+          "n": 94
+        },
+        "-2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 15.5184,
+          "n": 96
+        },
+        "-1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 15.3869,
+          "n": 98
+        },
+        "0": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 15.9303,
+          "n": 103
+        },
+        "1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.56,
+          "n": 102
+        },
+        "2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 15.3745,
+          "n": 99
+        },
+        "3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 15.9551,
+          "n": 99
+        }
+      },
+      "ZOMBIE": {
+        "-3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.4298,
+          "n": 46
+        },
+        "-2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 18.1664,
+          "n": 47
+        },
+        "-1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 19.0937,
+          "n": 47
+        },
+        "0": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 19.4792,
+          "n": 51
+        },
+        "1": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 17.8785,
+          "n": 50
+        },
+        "2": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 17.317,
+          "n": 49
+        },
+        "3": {
+          "oss_mean": 1.0,
+          "delta_theta_mean": 0.0,
+          "e_mean": 16.5255,
+          "n": 47
+        }
+      }
+    },
+    "2": {
+      "STILLBORN": {
+        "-3": {
+          "oss_mean": 0.5111,
+          "delta_theta_mean": 44.0001,
+          "e_mean": 16.2034,
+          "n": 63
+        },
+        "-2": {
+          "oss_mean": 0.5199,
+          "delta_theta_mean": 43.8258,
+          "e_mean": 16.5578,
+          "n": 63
+        },
+        "-1": {
+          "oss_mean": 0.5625,
+          "delta_theta_mean": 39.6807,
+          "e_mean": 18.7217,
+          "n": 63
+        },
+        "0": {
+          "oss_mean": 0.5834,
+          "delta_theta_mean": 38.0713,
+          "e_mean": 16.9785,
+          "n": 67
+        },
+        "1": {
+          "oss_mean": 0.5657,
+          "delta_theta_mean": 39.3888,
+          "e_mean": 17.932,
+          "n": 65
+        },
+        "2": {
+          "oss_mean": 0.5633,
+          "delta_theta_mean": 39.6064,
+          "e_mean": 17.9097,
+          "n": 64
+        },
+        "3": {
+          "oss_mean": 0.5813,
+          "delta_theta_mean": 38.9412,
+          "e_mean": 18.8054,
+          "n": 62
+        }
+      },
+      "TERMINATED": {
+        "-3": {
+          "oss_mean": 0.5808,
+          "delta_theta_mean": 37.9324,
+          "e_mean": 13.7902,
+          "n": 94
+        },
+        "-2": {
+          "oss_mean": 0.5487,
+          "delta_theta_mean": 41.0214,
+          "e_mean": 15.5184,
+          "n": 96
+        },
+        "-1": {
+          "oss_mean": 0.5463,
+          "delta_theta_mean": 41.0338,
+          "e_mean": 15.3869,
+          "n": 98
+        },
+        "0": {
+          "oss_mean": 0.5604,
+          "delta_theta_mean": 39.9451,
+          "e_mean": 15.9303,
+          "n": 103
+        },
+        "1": {
+          "oss_mean": 0.5661,
+          "delta_theta_mean": 39.0476,
+          "e_mean": 16.56,
+          "n": 102
+        },
+        "2": {
+          "oss_mean": 0.5378,
+          "delta_theta_mean": 41.9924,
+          "e_mean": 15.3745,
+          "n": 99
+        },
+        "3": {
+          "oss_mean": 0.5545,
+          "delta_theta_mean": 40.0979,
+          "e_mean": 15.9551,
+          "n": 99
+        }
+      },
+      "ZOMBIE": {
+        "-3": {
+          "oss_mean": 0.5584,
+          "delta_theta_mean": 40.5867,
+          "e_mean": 16.4298,
+          "n": 46
+        },
+        "-2": {
+          "oss_mean": 0.5673,
+          "delta_theta_mean": 38.9448,
+          "e_mean": 18.1664,
+          "n": 47
+        },
+        "-1": {
+          "oss_mean": 0.5511,
+          "delta_theta_mean": 40.4041,
+          "e_mean": 19.0937,
+          "n": 47
+        },
+        "0": {
+          "oss_mean": 0.6122,
+          "delta_theta_mean": 34.9023,
+          "e_mean": 19.4792,
+          "n": 51
+        },
+        "1": {
+          "oss_mean": 0.5473,
+          "delta_theta_mean": 41.5252,
+          "e_mean": 17.8785,
+          "n": 50
+        },
+        "2": {
+          "oss_mean": 0.5438,
+          "delta_theta_mean": 41.4527,
+          "e_mean": 17.317,
+          "n": 49
+        },
+        "3": {
+          "oss_mean": 0.579,
+          "delta_theta_mean": 37.8878,
+          "e_mean": 16.5255,
+          "n": 47
+        }
+      }
+    }
+  }
+}

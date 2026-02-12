@@ -1,0 +1,2154 @@
+{
+  "report": "LIVE-DATA-REPORT-FULL-CYCLE",
+  "timestamp": "2026-02-12T12:39:21.594915",
+  "lock_version": "v2.0.0-PROD",
+  "force_engine_version": "v2.0.0",
+  "alpha_layer_version": "v1.4.0",
+  "regime_layer_version": "v0.1.0",
+  "ticks": 233132,
+  "bars_5s": 7285,
+  "signals": 500,
+  "total_trades": 293,
+  "total_denied": 193,
+  "pf": 1.28,
+  "win_rate": 39.2,
+  "max_dd_pct": 0.42,
+  "net_pnl": 1200.0,
+  "avg_pnl_per_trade": 4.1,
+  "final_equity": 101200.0,
+  "trading_days": 2,
+  "daily_pnls": [
+    1410.0,
+    -210.0
+  ],
+  "max_loss_streak": 10,
+  "regime_memory": {
+    "TREND": {
+      "n": 256,
+      "WR": 39.5,
+      "EV": 4.2,
+      "PF": 1.3,
+      "size_hint": 0.9,
+      "hint_active": true
+    },
+    "CHOP": {
+      "n": 4,
+      "WR": 100.0,
+      "EV": 50.0,
+      "PF": Infinity,
+      "size_hint": 1.0,
+      "hint_active": false
+    },
+    "STORM": {
+      "n": 5,
+      "WR": 20.0,
+      "EV": -10.0,
+      "PF": 0.5,
+      "size_hint": 1.0,
+      "hint_active": false
+    },
+    "DEAD": {
+      "n": 28,
+      "WR": 32.1,
+      "EV": -0.89,
+      "PF": 0.95,
+      "size_hint": 1.0,
+      "hint_active": false
+    }
+  },
+  "force_summary": {
+    "bars": 7285,
+    "force_mag_mean": 14.7082,
+    "force_mag_std": 50.7321,
+    "force_grad_mean": 0.0007,
+    "force_curv_mean": -0.0111,
+    "dir_consistency_mean": 0.6565,
+    "dir_consistency_min": 0.1
+  },
+  "alpha_memory": {
+    "Z_MOMENTUM": {
+      "proposed": 486,
+      "allowed": 293,
+      "denied": 193,
+      "legitimacy": 0.603,
+      "suppressed": false
+    },
+    "RANGE_BREAKOUT": {
+      "proposed": 88,
+      "allowed": 60,
+      "denied": 28,
+      "legitimacy": 0.682,
+      "suppressed": false
+    },
+    "VOL_CONTRACTION": {
+      "proposed": 0,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "suppressed": false
+    },
+    "MEAN_REVERT": {
+      "proposed": 72,
+      "allowed": 2,
+      "denied": 3,
+      "legitimacy": 0.028,
+      "suppressed": false
+    },
+    "MICRO_MOMENTUM": {
+      "proposed": 307,
+      "allowed": 171,
+      "denied": 124,
+      "legitimacy": 0.557,
+      "suppressed": false
+    },
+    "FLOW_IMBALANCE": {
+      "proposed": 104,
+      "allowed": 56,
+      "denied": 45,
+      "legitimacy": 0.538,
+      "suppressed": false
+    },
+    "_conditions": {
+      "Z_MOMENTUM.LOW_CURV": {
+        "proposed": 147,
+        "allowed": 87,
+        "denied": 60,
+        "legitimacy": 0.592,
+        "score": 0.6086,
+        "weight": 0.9959
+      },
+      "MICRO_MOMENTUM.MISALIGNED": {
+        "proposed": 147,
+        "allowed": 78,
+        "denied": 65,
+        "legitimacy": 0.531,
+        "score": 0.5465,
+        "weight": 0.9896
+      },
+      "Z_MOMENTUM.HIGH_CURV": {
+        "proposed": 339,
+        "allowed": 206,
+        "denied": 133,
+        "legitimacy": 0.608,
+        "score": 0.5953,
+        "weight": 0.9945
+      },
+      "RANGE_BREAKOUT.WIDE_RNG": {
+        "proposed": 83,
+        "allowed": 56,
+        "denied": 27,
+        "legitimacy": 0.675,
+        "score": 0.6742,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.WEAK_F": {
+        "proposed": 75,
+        "allowed": 37,
+        "denied": 35,
+        "legitimacy": 0.493,
+        "score": 0.6267,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.ALIGNED": {
+        "proposed": 160,
+        "allowed": 93,
+        "denied": 59,
+        "legitimacy": 0.581,
+        "score": 0.5854,
+        "weight": 0.9935
+      },
+      "MEAN_REVERT.HIGH_CURV": {
+        "proposed": 64,
+        "allowed": 2,
+        "denied": 3,
+        "legitimacy": 0.031,
+        "score": 0.45,
+        "weight": 1.0
+      },
+      "MEAN_REVERT.LOW_CURV": {
+        "proposed": 8,
+        "allowed": 0,
+        "denied": 0,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.STRONG_F": {
+        "proposed": 29,
+        "allowed": 19,
+        "denied": 10,
+        "legitimacy": 0.655,
+        "score": null,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.NARROW_RNG": {
+        "proposed": 5,
+        "allowed": 4,
+        "denied": 1,
+        "legitimacy": 0.8,
+        "score": null,
+        "weight": 1.0
+      }
+    },
+    "_rc": {
+      "Z_MOMENTUM.LOW_CURV@TREND": {
+        "proposed": 122,
+        "allowed": 73,
+        "denied": 49,
+        "legitimacy": 0.598,
+        "score": 0.6004,
+        "weight": 0.975
+      },
+      "MICRO_MOMENTUM.MISALIGNED@TREND": {
+        "proposed": 126,
+        "allowed": 70,
+        "denied": 52,
+        "legitimacy": 0.556,
+        "score": 0.5612,
+        "weight": 0.9711
+      },
+      "Z_MOMENTUM.HIGH_CURV@TREND": {
+        "proposed": 301,
+        "allowed": 183,
+        "denied": 118,
+        "legitimacy": 0.608,
+        "score": 0.6036,
+        "weight": 0.9754
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@TREND": {
+        "proposed": 69,
+        "allowed": 45,
+        "denied": 24,
+        "legitimacy": 0.652,
+        "score": 0.6603,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.WEAK_F@TREND": {
+        "proposed": 68,
+        "allowed": 34,
+        "denied": 31,
+        "legitimacy": 0.5,
+        "score": 0.6316,
+        "weight": 0.9982
+      },
+      "Z_MOMENTUM.LOW_CURV@DEAD": {
+        "proposed": 23,
+        "allowed": 13,
+        "denied": 10,
+        "legitimacy": 0.565,
+        "score": 0.6447,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@DEAD": {
+        "proposed": 11,
+        "allowed": 9,
+        "denied": 2,
+        "legitimacy": 0.818,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.WEAK_F@DEAD": {
+        "proposed": 6,
+        "allowed": 2,
+        "denied": 4,
+        "legitimacy": 0.333,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.ALIGNED@TREND": {
+        "proposed": 145,
+        "allowed": 83,
+        "denied": 55,
+        "legitimacy": 0.572,
+        "score": 0.5921,
+        "weight": 0.9742
+      },
+      "Z_MOMENTUM.LOW_CURV@CHOP": {
+        "proposed": 2,
+        "allowed": 1,
+        "denied": 1,
+        "legitimacy": 0.5,
+        "score": null,
+        "weight": 1.0
+      },
+      "Z_MOMENTUM.HIGH_CURV@CHOP": {
+        "proposed": 3,
+        "allowed": 3,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@CHOP": {
+        "proposed": 2,
+        "allowed": 2,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.ALIGNED@CHOP": {
+        "proposed": 2,
+        "allowed": 2,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.WEAK_F@CHOP": {
+        "proposed": 1,
+        "allowed": 1,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MEAN_REVERT.HIGH_CURV@TREND": {
+        "proposed": 57,
+        "allowed": 2,
+        "denied": 3,
+        "legitimacy": 0.035,
+        "score": 0.4519,
+        "weight": 0.9802
+      },
+      "MEAN_REVERT.LOW_CURV@TREND": {
+        "proposed": 7,
+        "allowed": 0,
+        "denied": 0,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.STRONG_F@TREND": {
+        "proposed": 27,
+        "allowed": 19,
+        "denied": 8,
+        "legitimacy": 0.704,
+        "score": 0.6426,
+        "weight": 1.0
+      },
+      "Z_MOMENTUM.HIGH_CURV@DEAD": {
+        "proposed": 26,
+        "allowed": 15,
+        "denied": 11,
+        "legitimacy": 0.577,
+        "score": 0.4726,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.NARROW_RNG@TREND": {
+        "proposed": 4,
+        "allowed": 3,
+        "denied": 1,
+        "legitimacy": 0.75,
+        "score": null,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.NARROW_RNG@DEAD": {
+        "proposed": 1,
+        "allowed": 1,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.MISALIGNED@DEAD": {
+        "proposed": 15,
+        "allowed": 6,
+        "denied": 9,
+        "legitimacy": 0.4,
+        "score": 0.5326,
+        "weight": 1.0
+      },
+      "Z_MOMENTUM.HIGH_CURV@STORM": {
+        "proposed": 9,
+        "allowed": 5,
+        "denied": 4,
+        "legitimacy": 0.556,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.MISALIGNED@STORM": {
+        "proposed": 6,
+        "allowed": 2,
+        "denied": 4,
+        "legitimacy": 0.333,
+        "score": null,
+        "weight": 1.0
+      },
+      "MEAN_REVERT.HIGH_CURV@DEAD": {
+        "proposed": 3,
+        "allowed": 0,
+        "denied": 0,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.ALIGNED@DEAD": {
+        "proposed": 11,
+        "allowed": 6,
+        "denied": 4,
+        "legitimacy": 0.545,
+        "score": null,
+        "weight": 1.0
+      },
+      "MEAN_REVERT.HIGH_CURV@STORM": {
+        "proposed": 4,
+        "allowed": 0,
+        "denied": 0,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.STRONG_F@STORM": {
+        "proposed": 1,
+        "allowed": 0,
+        "denied": 1,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@STORM": {
+        "proposed": 1,
+        "allowed": 0,
+        "denied": 1,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MEAN_REVERT.LOW_CURV@DEAD": {
+        "proposed": 1,
+        "allowed": 0,
+        "denied": 0,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "MICRO_MOMENTUM.ALIGNED@STORM": {
+        "proposed": 2,
+        "allowed": 2,
+        "denied": 0,
+        "legitimacy": 1.0,
+        "score": null,
+        "weight": 1.0
+      },
+      "FLOW_IMBALANCE.STRONG_F@DEAD": {
+        "proposed": 1,
+        "allowed": 0,
+        "denied": 1,
+        "legitimacy": 0.0,
+        "score": null,
+        "weight": 1.0
+      }
+    },
+    "_proposal_weights": {
+      "Z_MOMENTUM.LOW_CURV": 0.9959,
+      "MICRO_MOMENTUM.MISALIGNED": 0.9896,
+      "Z_MOMENTUM.HIGH_CURV": 0.9945,
+      "MICRO_MOMENTUM.ALIGNED": 0.9935
+    },
+    "_rc_weights": {
+      "Z_MOMENTUM.HIGH_CURV@TREND": 0.9754,
+      "Z_MOMENTUM.LOW_CURV@TREND": 0.975,
+      "MICRO_MOMENTUM.ALIGNED@TREND": 0.9742,
+      "FLOW_IMBALANCE.WEAK_F@TREND": 0.9982,
+      "MICRO_MOMENTUM.MISALIGNED@TREND": 0.9711,
+      "MEAN_REVERT.HIGH_CURV@TREND": 0.9802
+    },
+    "_motion": {
+      "Z_MOMENTUM.LOW_CURV": {
+        "FAST_ADVERSE": 38,
+        "HEALTHY": 36,
+        "LOW_FORCE": 12,
+        "NO_FOLLOW": 1
+      },
+      "Z_MOMENTUM.LOW_CURV@TREND": {
+        "FAST_ADVERSE": 33,
+        "HEALTHY": 29,
+        "LOW_FORCE": 10,
+        "NO_FOLLOW": 1
+      },
+      "MICRO_MOMENTUM.MISALIGNED": {
+        "FAST_ADVERSE": 34,
+        "HEALTHY": 20,
+        "LOW_FORCE": 22,
+        "NO_FOLLOW": 2
+      },
+      "MICRO_MOMENTUM.MISALIGNED@TREND": {
+        "FAST_ADVERSE": 33,
+        "HEALTHY": 19,
+        "LOW_FORCE": 16,
+        "NO_FOLLOW": 2
+      },
+      "Z_MOMENTUM.HIGH_CURV": {
+        "HEALTHY": 76,
+        "FAST_ADVERSE": 103,
+        "NO_FOLLOW": 4,
+        "LOW_FORCE": 23
+      },
+      "Z_MOMENTUM.HIGH_CURV@TREND": {
+        "HEALTHY": 72,
+        "FAST_ADVERSE": 89,
+        "NO_FOLLOW": 4,
+        "LOW_FORCE": 18
+      },
+      "RANGE_BREAKOUT.WIDE_RNG": {
+        "HEALTHY": 21,
+        "FAST_ADVERSE": 26,
+        "NO_FOLLOW": 2,
+        "LOW_FORCE": 7
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@TREND": {
+        "HEALTHY": 20,
+        "FAST_ADVERSE": 19,
+        "NO_FOLLOW": 2,
+        "LOW_FORCE": 4
+      },
+      "FLOW_IMBALANCE.WEAK_F": {
+        "HEALTHY": 21,
+        "FAST_ADVERSE": 15,
+        "NO_FOLLOW": 1
+      },
+      "FLOW_IMBALANCE.WEAK_F@TREND": {
+        "HEALTHY": 20,
+        "FAST_ADVERSE": 13,
+        "NO_FOLLOW": 1
+      },
+      "Z_MOMENTUM.LOW_CURV@DEAD": {
+        "HEALTHY": 6,
+        "FAST_ADVERSE": 5,
+        "LOW_FORCE": 2
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@DEAD": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 5,
+        "LOW_FORCE": 3
+      },
+      "FLOW_IMBALANCE.WEAK_F@DEAD": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 1
+      },
+      "MICRO_MOMENTUM.ALIGNED": {
+        "FAST_ADVERSE": 51,
+        "HEALTHY": 41,
+        "NO_FOLLOW": 1
+      },
+      "MICRO_MOMENTUM.ALIGNED@TREND": {
+        "FAST_ADVERSE": 43,
+        "HEALTHY": 39,
+        "NO_FOLLOW": 1
+      },
+      "Z_MOMENTUM.LOW_CURV@CHOP": {
+        "HEALTHY": 1
+      },
+      "Z_MOMENTUM.HIGH_CURV@CHOP": {
+        "FAST_ADVERSE": 2,
+        "HEALTHY": 1
+      },
+      "RANGE_BREAKOUT.WIDE_RNG@CHOP": {
+        "FAST_ADVERSE": 2
+      },
+      "MICRO_MOMENTUM.ALIGNED@CHOP": {
+        "FAST_ADVERSE": 2
+      },
+      "FLOW_IMBALANCE.WEAK_F@CHOP": {
+        "FAST_ADVERSE": 1
+      },
+      "FLOW_IMBALANCE.STRONG_F": {
+        "FAST_ADVERSE": 10,
+        "HEALTHY": 7,
+        "LOW_FORCE": 2
+      },
+      "FLOW_IMBALANCE.STRONG_F@TREND": {
+        "FAST_ADVERSE": 10,
+        "HEALTHY": 7,
+        "LOW_FORCE": 2
+      },
+      "Z_MOMENTUM.HIGH_CURV@DEAD": {
+        "FAST_ADVERSE": 9,
+        "LOW_FORCE": 4,
+        "HEALTHY": 2
+      },
+      "RANGE_BREAKOUT.NARROW_RNG": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 2,
+        "LOW_FORCE": 1
+      },
+      "RANGE_BREAKOUT.NARROW_RNG@TREND": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 2
+      },
+      "RANGE_BREAKOUT.NARROW_RNG@DEAD": {
+        "LOW_FORCE": 1
+      },
+      "MICRO_MOMENTUM.MISALIGNED@DEAD": {
+        "LOW_FORCE": 5,
+        "HEALTHY": 1
+      },
+      "Z_MOMENTUM.HIGH_CURV@STORM": {
+        "LOW_FORCE": 1,
+        "FAST_ADVERSE": 3,
+        "HEALTHY": 1
+      },
+      "MICRO_MOMENTUM.MISALIGNED@STORM": {
+        "LOW_FORCE": 1,
+        "FAST_ADVERSE": 1
+      },
+      "MICRO_MOMENTUM.ALIGNED@DEAD": {
+        "FAST_ADVERSE": 4,
+        "HEALTHY": 2
+      },
+      "MEAN_REVERT.HIGH_CURV": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 1
+      },
+      "MEAN_REVERT.HIGH_CURV@TREND": {
+        "HEALTHY": 1,
+        "FAST_ADVERSE": 1
+      },
+      "MICRO_MOMENTUM.ALIGNED@STORM": {
+        "FAST_ADVERSE": 2
+      }
+    },
+    "_update_count": 1
+  },
+  "condition_table": [
+    {
+      "alpha": "Z_MOMENTUM",
+      "condition": "LOW_CURV",
+      "tag": "Z_MOMENTUM.LOW_CURV",
+      "proposed": 147,
+      "allowed": 87,
+      "denied": 60,
+      "legitimacy": 0.592,
+      "WR": 41.4,
+      "EV": 5.69,
+      "score": 0.6086,
+      "weight": 0.9959
+    },
+    {
+      "alpha": "Z_MOMENTUM",
+      "condition": "HIGH_CURV",
+      "tag": "Z_MOMENTUM.HIGH_CURV",
+      "proposed": 339,
+      "allowed": 206,
+      "denied": 133,
+      "legitimacy": 0.608,
+      "WR": 38.3,
+      "EV": 3.42,
+      "score": 0.5953,
+      "weight": 0.9945
+    },
+    {
+      "alpha": "RANGE_BREAKOUT",
+      "condition": "NARROW_RNG",
+      "tag": "RANGE_BREAKOUT.NARROW_RNG",
+      "proposed": 5,
+      "allowed": 4,
+      "denied": 1,
+      "legitimacy": 0.8,
+      "WR": 25.0,
+      "EV": -13.75,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "alpha": "RANGE_BREAKOUT",
+      "condition": "WIDE_RNG",
+      "tag": "RANGE_BREAKOUT.WIDE_RNG",
+      "proposed": 83,
+      "allowed": 56,
+      "denied": 27,
+      "legitimacy": 0.675,
+      "WR": 44.6,
+      "EV": 8.12,
+      "score": 0.6742,
+      "weight": 1.0
+    },
+    {
+      "alpha": "MEAN_REVERT",
+      "condition": "LOW_CURV",
+      "tag": "MEAN_REVERT.LOW_CURV",
+      "proposed": 8,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "alpha": "MEAN_REVERT",
+      "condition": "HIGH_CURV",
+      "tag": "MEAN_REVERT.HIGH_CURV",
+      "proposed": 64,
+      "allowed": 2,
+      "denied": 3,
+      "legitimacy": 0.031,
+      "WR": 50.0,
+      "EV": 11.25,
+      "score": 0.45,
+      "weight": 1.0
+    },
+    {
+      "alpha": "MICRO_MOMENTUM",
+      "condition": "ALIGNED",
+      "tag": "MICRO_MOMENTUM.ALIGNED",
+      "proposed": 160,
+      "allowed": 93,
+      "denied": 59,
+      "legitimacy": 0.581,
+      "WR": 40.9,
+      "EV": 5.3,
+      "score": 0.5854,
+      "weight": 0.9935
+    },
+    {
+      "alpha": "MICRO_MOMENTUM",
+      "condition": "MISALIGNED",
+      "tag": "MICRO_MOMENTUM.MISALIGNED",
+      "proposed": 147,
+      "allowed": 78,
+      "denied": 65,
+      "legitimacy": 0.531,
+      "WR": 34.6,
+      "EV": 0.67,
+      "score": 0.5465,
+      "weight": 0.9896
+    },
+    {
+      "alpha": "FLOW_IMBALANCE",
+      "condition": "STRONG_F",
+      "tag": "FLOW_IMBALANCE.STRONG_F",
+      "proposed": 29,
+      "allowed": 19,
+      "denied": 10,
+      "legitimacy": 0.655,
+      "WR": 36.8,
+      "EV": 2.11,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "alpha": "FLOW_IMBALANCE",
+      "condition": "WEAK_F",
+      "tag": "FLOW_IMBALANCE.WEAK_F",
+      "proposed": 75,
+      "allowed": 37,
+      "denied": 35,
+      "legitimacy": 0.493,
+      "WR": 56.8,
+      "EV": 16.96,
+      "score": 0.6267,
+      "weight": 1.0
+    }
+  ],
+  "weight_updates": {
+    "Z_MOMENTUM.LOW_CURV": {
+      "old": 1.0,
+      "new": 0.9959,
+      "score": 0.6086,
+      "delta": -0.0041
+    },
+    "MICRO_MOMENTUM.MISALIGNED": {
+      "old": 1.0,
+      "new": 0.9896,
+      "score": 0.5465,
+      "delta": -0.0104
+    },
+    "Z_MOMENTUM.HIGH_CURV": {
+      "old": 1.0,
+      "new": 0.9945,
+      "score": 0.5953,
+      "delta": -0.0055
+    },
+    "MICRO_MOMENTUM.ALIGNED": {
+      "old": 1.0,
+      "new": 0.9935,
+      "score": 0.5854,
+      "delta": -0.0065
+    }
+  },
+  "rc_weight_updates": {
+    "Z_MOMENTUM.LOW_CURV@TREND": {
+      "old": 1.0,
+      "new": 0.995,
+      "score": 0.6004,
+      "delta": -0.005
+    },
+    "MICRO_MOMENTUM.MISALIGNED@TREND": {
+      "old": 1.0,
+      "new": 0.9911,
+      "score": 0.5612,
+      "delta": -0.0089
+    },
+    "Z_MOMENTUM.HIGH_CURV@TREND": {
+      "old": 1.0,
+      "new": 0.9954,
+      "score": 0.6036,
+      "delta": -0.0046
+    },
+    "FLOW_IMBALANCE.WEAK_F@TREND": {
+      "old": 1.0,
+      "new": 0.9982,
+      "score": 0.6316,
+      "delta": -0.0018
+    },
+    "MICRO_MOMENTUM.ALIGNED@TREND": {
+      "old": 1.0,
+      "new": 0.9942,
+      "score": 0.5921,
+      "delta": -0.0058
+    },
+    "MEAN_REVERT.HIGH_CURV@TREND": {
+      "old": 1.0,
+      "new": 0.9802,
+      "score": 0.4519,
+      "delta": -0.0198
+    }
+  },
+  "rc_table": [
+    {
+      "rc_key": "FLOW_IMBALANCE.STRONG_F@DEAD",
+      "proposed": 1,
+      "allowed": 0,
+      "denied": 1,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.STRONG_F@STORM",
+      "proposed": 1,
+      "allowed": 0,
+      "denied": 1,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.STRONG_F@TREND",
+      "proposed": 27,
+      "allowed": 19,
+      "denied": 8,
+      "legitimacy": 0.704,
+      "WR": 36.8,
+      "EV": 2.11,
+      "score": 0.6426,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@CHOP",
+      "proposed": 1,
+      "allowed": 1,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 100.0,
+      "EV": 50.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@DEAD",
+      "proposed": 6,
+      "allowed": 2,
+      "denied": 4,
+      "legitimacy": 0.333,
+      "WR": 50.0,
+      "EV": 12.5,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@TREND",
+      "proposed": 68,
+      "allowed": 34,
+      "denied": 31,
+      "legitimacy": 0.5,
+      "WR": 55.9,
+      "EV": 16.25,
+      "score": 0.6316,
+      "weight": 0.9982
+    },
+    {
+      "rc_key": "MEAN_REVERT.HIGH_CURV@DEAD",
+      "proposed": 3,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MEAN_REVERT.HIGH_CURV@STORM",
+      "proposed": 4,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MEAN_REVERT.HIGH_CURV@TREND",
+      "proposed": 57,
+      "allowed": 2,
+      "denied": 3,
+      "legitimacy": 0.035,
+      "WR": 50.0,
+      "EV": 11.25,
+      "score": 0.4519,
+      "weight": 0.9802
+    },
+    {
+      "rc_key": "MEAN_REVERT.LOW_CURV@DEAD",
+      "proposed": 1,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MEAN_REVERT.LOW_CURV@TREND",
+      "proposed": 7,
+      "allowed": 0,
+      "denied": 0,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@CHOP",
+      "proposed": 2,
+      "allowed": 2,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 100.0,
+      "EV": 50.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@DEAD",
+      "proposed": 11,
+      "allowed": 6,
+      "denied": 4,
+      "legitimacy": 0.545,
+      "WR": 16.7,
+      "EV": -12.5,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@STORM",
+      "proposed": 2,
+      "allowed": 2,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 0.0,
+      "EV": -25.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@TREND",
+      "proposed": 145,
+      "allowed": 83,
+      "denied": 55,
+      "legitimacy": 0.572,
+      "WR": 42.2,
+      "EV": 6.23,
+      "score": 0.5921,
+      "weight": 0.9742
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@DEAD",
+      "proposed": 15,
+      "allowed": 6,
+      "denied": 9,
+      "legitimacy": 0.4,
+      "WR": 50.0,
+      "EV": 12.5,
+      "score": 0.5326,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@STORM",
+      "proposed": 6,
+      "allowed": 2,
+      "denied": 4,
+      "legitimacy": 0.333,
+      "WR": 50.0,
+      "EV": 12.5,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@TREND",
+      "proposed": 126,
+      "allowed": 70,
+      "denied": 52,
+      "legitimacy": 0.556,
+      "WR": 32.9,
+      "EV": -0.68,
+      "score": 0.5612,
+      "weight": 0.9711
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@DEAD",
+      "proposed": 1,
+      "allowed": 1,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 0.0,
+      "EV": -25.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@TREND",
+      "proposed": 4,
+      "allowed": 3,
+      "denied": 1,
+      "legitimacy": 0.75,
+      "WR": 33.3,
+      "EV": -10.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@CHOP",
+      "proposed": 2,
+      "allowed": 2,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 100.0,
+      "EV": 50.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@DEAD",
+      "proposed": 11,
+      "allowed": 9,
+      "denied": 2,
+      "legitimacy": 0.818,
+      "WR": 33.3,
+      "EV": 0.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@STORM",
+      "proposed": 1,
+      "allowed": 0,
+      "denied": 1,
+      "legitimacy": 0.0,
+      "WR": 0,
+      "EV": 0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@TREND",
+      "proposed": 69,
+      "allowed": 45,
+      "denied": 24,
+      "legitimacy": 0.652,
+      "WR": 44.4,
+      "EV": 7.89,
+      "score": 0.6603,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@CHOP",
+      "proposed": 3,
+      "allowed": 3,
+      "denied": 0,
+      "legitimacy": 1.0,
+      "WR": 100.0,
+      "EV": 50.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@DEAD",
+      "proposed": 26,
+      "allowed": 15,
+      "denied": 11,
+      "legitimacy": 0.577,
+      "WR": 20.0,
+      "EV": -10.0,
+      "score": 0.4726,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@STORM",
+      "proposed": 9,
+      "allowed": 5,
+      "denied": 4,
+      "legitimacy": 0.556,
+      "WR": 20.0,
+      "EV": -10.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@TREND",
+      "proposed": 301,
+      "allowed": 183,
+      "denied": 118,
+      "legitimacy": 0.608,
+      "WR": 39.3,
+      "EV": 4.13,
+      "score": 0.6036,
+      "weight": 0.9754
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@CHOP",
+      "proposed": 2,
+      "allowed": 1,
+      "denied": 1,
+      "legitimacy": 0.5,
+      "WR": 100.0,
+      "EV": 50.0,
+      "score": null,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@DEAD",
+      "proposed": 23,
+      "allowed": 13,
+      "denied": 10,
+      "legitimacy": 0.565,
+      "WR": 46.2,
+      "EV": 9.62,
+      "score": 0.6447,
+      "weight": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@TREND",
+      "proposed": 122,
+      "allowed": 73,
+      "denied": 49,
+      "legitimacy": 0.598,
+      "WR": 39.7,
+      "EV": 4.38,
+      "score": 0.6004,
+      "weight": 0.975
+    }
+  ],
+  "rc_gaps": [
+    {
+      "condition": "MICRO_MOMENTUM.MISALIGNED",
+      "gap": 0.156,
+      "regimes": [
+        {
+          "regime": "TREND",
+          "legitimacy": 0.556,
+          "proposed": 126,
+          "rc_key": "MICRO_MOMENTUM.MISALIGNED@TREND"
+        },
+        {
+          "regime": "DEAD",
+          "legitimacy": 0.4,
+          "proposed": 15,
+          "rc_key": "MICRO_MOMENTUM.MISALIGNED@DEAD"
+        }
+      ]
+    },
+    {
+      "condition": "Z_MOMENTUM.LOW_CURV",
+      "gap": 0.033,
+      "regimes": [
+        {
+          "regime": "TREND",
+          "legitimacy": 0.598,
+          "proposed": 122,
+          "rc_key": "Z_MOMENTUM.LOW_CURV@TREND"
+        },
+        {
+          "regime": "DEAD",
+          "legitimacy": 0.565,
+          "proposed": 23,
+          "rc_key": "Z_MOMENTUM.LOW_CURV@DEAD"
+        }
+      ]
+    },
+    {
+      "condition": "Z_MOMENTUM.HIGH_CURV",
+      "gap": 0.031,
+      "regimes": [
+        {
+          "regime": "TREND",
+          "legitimacy": 0.608,
+          "proposed": 301,
+          "rc_key": "Z_MOMENTUM.HIGH_CURV@TREND"
+        },
+        {
+          "regime": "DEAD",
+          "legitimacy": 0.577,
+          "proposed": 26,
+          "rc_key": "Z_MOMENTUM.HIGH_CURV@DEAD"
+        }
+      ]
+    }
+  ],
+  "motion_version": "v0.1.0",
+  "motion_table": [
+    {
+      "key": "FLOW_IMBALANCE.STRONG_F",
+      "total": 19,
+      "healthy": 7,
+      "no_follow": 0,
+      "fast_adverse": 10,
+      "low_force": 2,
+      "stall": 0,
+      "failure_rate": 0.632,
+      "healthy_rate": 0.368
+    },
+    {
+      "key": "FLOW_IMBALANCE.STRONG_F@TREND",
+      "total": 19,
+      "healthy": 7,
+      "no_follow": 0,
+      "fast_adverse": 10,
+      "low_force": 2,
+      "stall": 0,
+      "failure_rate": 0.632,
+      "healthy_rate": 0.368
+    },
+    {
+      "key": "FLOW_IMBALANCE.WEAK_F",
+      "total": 37,
+      "healthy": 21,
+      "no_follow": 1,
+      "fast_adverse": 15,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.432,
+      "healthy_rate": 0.568
+    },
+    {
+      "key": "FLOW_IMBALANCE.WEAK_F@CHOP",
+      "total": 1,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 1,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "FLOW_IMBALANCE.WEAK_F@DEAD",
+      "total": 2,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 1,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.5,
+      "healthy_rate": 0.5
+    },
+    {
+      "key": "FLOW_IMBALANCE.WEAK_F@TREND",
+      "total": 34,
+      "healthy": 20,
+      "no_follow": 1,
+      "fast_adverse": 13,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.412,
+      "healthy_rate": 0.588
+    },
+    {
+      "key": "MEAN_REVERT.HIGH_CURV",
+      "total": 2,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 1,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.5,
+      "healthy_rate": 0.5
+    },
+    {
+      "key": "MEAN_REVERT.HIGH_CURV@TREND",
+      "total": 2,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 1,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.5,
+      "healthy_rate": 0.5
+    },
+    {
+      "key": "MICRO_MOMENTUM.ALIGNED",
+      "total": 93,
+      "healthy": 41,
+      "no_follow": 1,
+      "fast_adverse": 51,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.559,
+      "healthy_rate": 0.441
+    },
+    {
+      "key": "MICRO_MOMENTUM.ALIGNED@CHOP",
+      "total": 2,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "MICRO_MOMENTUM.ALIGNED@DEAD",
+      "total": 6,
+      "healthy": 2,
+      "no_follow": 0,
+      "fast_adverse": 4,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.667,
+      "healthy_rate": 0.333
+    },
+    {
+      "key": "MICRO_MOMENTUM.ALIGNED@STORM",
+      "total": 2,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "MICRO_MOMENTUM.ALIGNED@TREND",
+      "total": 83,
+      "healthy": 39,
+      "no_follow": 1,
+      "fast_adverse": 43,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.53,
+      "healthy_rate": 0.47
+    },
+    {
+      "key": "MICRO_MOMENTUM.MISALIGNED",
+      "total": 78,
+      "healthy": 20,
+      "no_follow": 2,
+      "fast_adverse": 34,
+      "low_force": 22,
+      "stall": 0,
+      "failure_rate": 0.744,
+      "healthy_rate": 0.256
+    },
+    {
+      "key": "MICRO_MOMENTUM.MISALIGNED@DEAD",
+      "total": 6,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 0,
+      "low_force": 5,
+      "stall": 0,
+      "failure_rate": 0.833,
+      "healthy_rate": 0.167
+    },
+    {
+      "key": "MICRO_MOMENTUM.MISALIGNED@STORM",
+      "total": 2,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 1,
+      "low_force": 1,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "MICRO_MOMENTUM.MISALIGNED@TREND",
+      "total": 70,
+      "healthy": 19,
+      "no_follow": 2,
+      "fast_adverse": 33,
+      "low_force": 16,
+      "stall": 0,
+      "failure_rate": 0.729,
+      "healthy_rate": 0.271
+    },
+    {
+      "key": "RANGE_BREAKOUT.NARROW_RNG",
+      "total": 4,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 1,
+      "stall": 0,
+      "failure_rate": 0.75,
+      "healthy_rate": 0.25
+    },
+    {
+      "key": "RANGE_BREAKOUT.NARROW_RNG@DEAD",
+      "total": 1,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 0,
+      "low_force": 1,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "RANGE_BREAKOUT.NARROW_RNG@TREND",
+      "total": 3,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.667,
+      "healthy_rate": 0.333
+    },
+    {
+      "key": "RANGE_BREAKOUT.WIDE_RNG",
+      "total": 56,
+      "healthy": 21,
+      "no_follow": 2,
+      "fast_adverse": 26,
+      "low_force": 7,
+      "stall": 0,
+      "failure_rate": 0.625,
+      "healthy_rate": 0.375
+    },
+    {
+      "key": "RANGE_BREAKOUT.WIDE_RNG@CHOP",
+      "total": 2,
+      "healthy": 0,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 1.0,
+      "healthy_rate": 0.0
+    },
+    {
+      "key": "RANGE_BREAKOUT.WIDE_RNG@DEAD",
+      "total": 9,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 5,
+      "low_force": 3,
+      "stall": 0,
+      "failure_rate": 0.889,
+      "healthy_rate": 0.111
+    },
+    {
+      "key": "RANGE_BREAKOUT.WIDE_RNG@TREND",
+      "total": 45,
+      "healthy": 20,
+      "no_follow": 2,
+      "fast_adverse": 19,
+      "low_force": 4,
+      "stall": 0,
+      "failure_rate": 0.556,
+      "healthy_rate": 0.444
+    },
+    {
+      "key": "Z_MOMENTUM.HIGH_CURV",
+      "total": 206,
+      "healthy": 76,
+      "no_follow": 4,
+      "fast_adverse": 103,
+      "low_force": 23,
+      "stall": 0,
+      "failure_rate": 0.631,
+      "healthy_rate": 0.369
+    },
+    {
+      "key": "Z_MOMENTUM.HIGH_CURV@CHOP",
+      "total": 3,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 2,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.667,
+      "healthy_rate": 0.333
+    },
+    {
+      "key": "Z_MOMENTUM.HIGH_CURV@DEAD",
+      "total": 15,
+      "healthy": 2,
+      "no_follow": 0,
+      "fast_adverse": 9,
+      "low_force": 4,
+      "stall": 0,
+      "failure_rate": 0.867,
+      "healthy_rate": 0.133
+    },
+    {
+      "key": "Z_MOMENTUM.HIGH_CURV@STORM",
+      "total": 5,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 3,
+      "low_force": 1,
+      "stall": 0,
+      "failure_rate": 0.8,
+      "healthy_rate": 0.2
+    },
+    {
+      "key": "Z_MOMENTUM.HIGH_CURV@TREND",
+      "total": 183,
+      "healthy": 72,
+      "no_follow": 4,
+      "fast_adverse": 89,
+      "low_force": 18,
+      "stall": 0,
+      "failure_rate": 0.607,
+      "healthy_rate": 0.393
+    },
+    {
+      "key": "Z_MOMENTUM.LOW_CURV",
+      "total": 87,
+      "healthy": 36,
+      "no_follow": 1,
+      "fast_adverse": 38,
+      "low_force": 12,
+      "stall": 0,
+      "failure_rate": 0.586,
+      "healthy_rate": 0.414
+    },
+    {
+      "key": "Z_MOMENTUM.LOW_CURV@CHOP",
+      "total": 1,
+      "healthy": 1,
+      "no_follow": 0,
+      "fast_adverse": 0,
+      "low_force": 0,
+      "stall": 0,
+      "failure_rate": 0.0,
+      "healthy_rate": 1.0
+    },
+    {
+      "key": "Z_MOMENTUM.LOW_CURV@DEAD",
+      "total": 13,
+      "healthy": 6,
+      "no_follow": 0,
+      "fast_adverse": 5,
+      "low_force": 2,
+      "stall": 0,
+      "failure_rate": 0.538,
+      "healthy_rate": 0.462
+    },
+    {
+      "key": "Z_MOMENTUM.LOW_CURV@TREND",
+      "total": 73,
+      "healthy": 29,
+      "no_follow": 1,
+      "fast_adverse": 33,
+      "low_force": 10,
+      "stall": 0,
+      "failure_rate": 0.603,
+      "healthy_rate": 0.397
+    }
+  ],
+  "motion_failure_gaps": [
+    {
+      "condition": "Z_MOMENTUM.HIGH_CURV",
+      "gap": 0.26,
+      "regimes": [
+        {
+          "regime": "TREND",
+          "failure_rate": 0.607,
+          "total": 183,
+          "rc_key": "Z_MOMENTUM.HIGH_CURV@TREND"
+        },
+        {
+          "regime": "DEAD",
+          "failure_rate": 0.867,
+          "total": 15,
+          "rc_key": "Z_MOMENTUM.HIGH_CURV@DEAD"
+        }
+      ]
+    },
+    {
+      "condition": "Z_MOMENTUM.LOW_CURV",
+      "gap": 0.065,
+      "regimes": [
+        {
+          "regime": "TREND",
+          "failure_rate": 0.603,
+          "total": 73,
+          "rc_key": "Z_MOMENTUM.LOW_CURV@TREND"
+        },
+        {
+          "regime": "DEAD",
+          "failure_rate": 0.538,
+          "total": 13,
+          "rc_key": "Z_MOMENTUM.LOW_CURV@DEAD"
+        }
+      ]
+    }
+  ],
+  "motion_weight_updates": {
+    "Z_MOMENTUM.LOW_CURV@TREND": {
+      "old": 0.995,
+      "new": 0.975,
+      "motion_score": -0.0548,
+      "penalty": 0.02,
+      "healthy_pct": 39.7,
+      "fast_adv_pct": 45.2,
+      "n": 73
+    },
+    "MICRO_MOMENTUM.MISALIGNED@TREND": {
+      "old": 0.9911,
+      "new": 0.9711,
+      "motion_score": -0.2,
+      "penalty": 0.02,
+      "healthy_pct": 27.1,
+      "fast_adv_pct": 47.1,
+      "n": 70
+    },
+    "Z_MOMENTUM.HIGH_CURV@TREND": {
+      "old": 0.9954,
+      "new": 0.9754,
+      "motion_score": -0.0929,
+      "penalty": 0.02,
+      "healthy_pct": 39.3,
+      "fast_adv_pct": 48.6,
+      "n": 183
+    },
+    "MICRO_MOMENTUM.ALIGNED@TREND": {
+      "old": 0.9942,
+      "new": 0.9742,
+      "motion_score": -0.0482,
+      "penalty": 0.02,
+      "healthy_pct": 47.0,
+      "fast_adv_pct": 51.8,
+      "n": 83
+    }
+  },
+  "fcl_version": "v0.1.0",
+  "fcl_summary": {
+    "total_trades": 582,
+    "total_commits": 282,
+    "commitment_rate": 0.485,
+    "survived_count": 8,
+    "survived_pnl": 375.0,
+    "true_failure_count": 274,
+    "true_failure_pnl": -6490.0,
+    "condition_frequency": {
+      "FAST_ADVERSE": 252,
+      "LOW_MFE_MAE": 231,
+      "FORCE_FLIP": 21,
+      "HIGH_ADVERSE_SPEED": 251,
+      "LOW_FORCE_ENTRY": 7
+    }
+  },
+  "fcl_rc_table": [
+    {
+      "rc_key": "FLOW_IMBALANCE.STRONG_F@TREND",
+      "total": 19,
+      "commits": 8,
+      "commitment_rate": 0.421
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@CHOP",
+      "total": 1,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@DEAD",
+      "total": 2,
+      "commits": 1,
+      "commitment_rate": 0.5
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@TREND",
+      "total": 34,
+      "commits": 14,
+      "commitment_rate": 0.412
+    },
+    {
+      "rc_key": "MEAN_REVERT.HIGH_CURV@TREND",
+      "total": 2,
+      "commits": 1,
+      "commitment_rate": 0.5
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@CHOP",
+      "total": 2,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@DEAD",
+      "total": 6,
+      "commits": 3,
+      "commitment_rate": 0.5
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@STORM",
+      "total": 2,
+      "commits": 2,
+      "commitment_rate": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@TREND",
+      "total": 83,
+      "commits": 42,
+      "commitment_rate": 0.506
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@DEAD",
+      "total": 6,
+      "commits": 2,
+      "commitment_rate": 0.333
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@STORM",
+      "total": 2,
+      "commits": 1,
+      "commitment_rate": 0.5
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@TREND",
+      "total": 70,
+      "commits": 39,
+      "commitment_rate": 0.557
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@DEAD",
+      "total": 1,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@TREND",
+      "total": 3,
+      "commits": 2,
+      "commitment_rate": 0.667
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@CHOP",
+      "total": 2,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@DEAD",
+      "total": 9,
+      "commits": 5,
+      "commitment_rate": 0.556
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@TREND",
+      "total": 45,
+      "commits": 18,
+      "commitment_rate": 0.4
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@CHOP",
+      "total": 3,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@DEAD",
+      "total": 15,
+      "commits": 8,
+      "commitment_rate": 0.533
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@STORM",
+      "total": 5,
+      "commits": 3,
+      "commitment_rate": 0.6
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@TREND",
+      "total": 183,
+      "commits": 93,
+      "commitment_rate": 0.508
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@CHOP",
+      "total": 1,
+      "commits": 0,
+      "commitment_rate": 0.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@DEAD",
+      "total": 13,
+      "commits": 6,
+      "commitment_rate": 0.462
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@TREND",
+      "total": 73,
+      "commits": 34,
+      "commitment_rate": 0.466
+    }
+  ],
+  "aocl_version": "v0.1.0",
+  "aocl_summary": {
+    "total_trades": 582,
+    "total_commits": 441,
+    "alpha_orbit_rate": 0.758,
+    "won_count": 231,
+    "won_pnl": 10875.0,
+    "lost_despite_orbit_count": 210,
+    "lost_despite_orbit_pnl": -5000.0,
+    "condition_frequency": {
+      "HEALTHY_MOTION": 222,
+      "HIGH_MFE_MAE": 246,
+      "FORCE_SUSTAINED": 429,
+      "LOW_INITIAL_ADVERSE": 218,
+      "HIGH_FORCE_ENTRY": 318
+    }
+  },
+  "aocl_rc_table": [
+    {
+      "rc_key": "FLOW_IMBALANCE.STRONG_F@TREND",
+      "total": 19,
+      "commits": 13,
+      "alpha_orbit_rate": 0.684
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@CHOP",
+      "total": 1,
+      "commits": 1,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@DEAD",
+      "total": 2,
+      "commits": 2,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "FLOW_IMBALANCE.WEAK_F@TREND",
+      "total": 34,
+      "commits": 31,
+      "alpha_orbit_rate": 0.912
+    },
+    {
+      "rc_key": "MEAN_REVERT.HIGH_CURV@TREND",
+      "total": 2,
+      "commits": 2,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@CHOP",
+      "total": 2,
+      "commits": 2,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@DEAD",
+      "total": 6,
+      "commits": 6,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@STORM",
+      "total": 2,
+      "commits": 2,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.ALIGNED@TREND",
+      "total": 83,
+      "commits": 82,
+      "alpha_orbit_rate": 0.988
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@DEAD",
+      "total": 6,
+      "commits": 3,
+      "alpha_orbit_rate": 0.5
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@STORM",
+      "total": 2,
+      "commits": 1,
+      "alpha_orbit_rate": 0.5
+    },
+    {
+      "rc_key": "MICRO_MOMENTUM.MISALIGNED@TREND",
+      "total": 70,
+      "commits": 26,
+      "alpha_orbit_rate": 0.371
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@DEAD",
+      "total": 1,
+      "commits": 0,
+      "alpha_orbit_rate": 0.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.NARROW_RNG@TREND",
+      "total": 3,
+      "commits": 2,
+      "alpha_orbit_rate": 0.667
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@CHOP",
+      "total": 2,
+      "commits": 2,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@DEAD",
+      "total": 9,
+      "commits": 8,
+      "alpha_orbit_rate": 0.889
+    },
+    {
+      "rc_key": "RANGE_BREAKOUT.WIDE_RNG@TREND",
+      "total": 45,
+      "commits": 36,
+      "alpha_orbit_rate": 0.8
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@CHOP",
+      "total": 3,
+      "commits": 3,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@DEAD",
+      "total": 15,
+      "commits": 11,
+      "alpha_orbit_rate": 0.733
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@STORM",
+      "total": 5,
+      "commits": 4,
+      "alpha_orbit_rate": 0.8
+    },
+    {
+      "rc_key": "Z_MOMENTUM.HIGH_CURV@TREND",
+      "total": 183,
+      "commits": 133,
+      "alpha_orbit_rate": 0.727
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@CHOP",
+      "total": 1,
+      "commits": 1,
+      "alpha_orbit_rate": 1.0
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@DEAD",
+      "total": 13,
+      "commits": 11,
+      "alpha_orbit_rate": 0.846
+    },
+    {
+      "rc_key": "Z_MOMENTUM.LOW_CURV@TREND",
+      "total": 73,
+      "commits": 59,
+      "alpha_orbit_rate": 0.808
+    }
+  ],
+  "orbit_version": "v0.4.0",
+  "gauge_eval_window": 10,
+  "fcl_oct_stats": {
+    "n": 200,
+    "mean": 2.0,
+    "p50": 2.0,
+    "p75": 3.0,
+    "p90": 3.0
+  },
+  "aocl_oct_stats": {
+    "n": 243,
+    "mean": 1.86,
+    "p50": 1.0,
+    "p75": 3.0,
+    "p90": 3.0
+  },
+  "oss_fcl_stats": {
+    "n": 200,
+    "mean": 0.411,
+    "p50": 0.2
+  },
+  "oss_aocl_stats": {
+    "n": 243,
+    "mean": 0.472,
+    "p50": 0.2
+  },
+  "gauge_lock_version": "v0.1.0",
+  "stab_fcl_oct_stats": {
+    "n": 196,
+    "mean": 2.94
+  },
+  "stab_aocl_oct_stats": {
+    "n": 183,
+    "mean": 2.73
+  },
+  "stab_oss_fcl_stats": {
+    "n": 196,
+    "mean": 0.762
+  },
+  "stab_oss_aocl_stats": {
+    "n": 183,
+    "mean": 0.657
+  },
+  "orbit_dominance": {
+    "FAILURE": 135,
+    "ALPHA": 98,
+    "CONTESTED": 54,
+    "NEUTRAL": 6
+  },
+  "total_shadow_events": 67,
+  "proposal_skipped": 0,
+  "proposal_pre_filter": 0,
+  "anti_soar_entries": 193,
+  "anti_soar_sample": [
+    {
+      "bar": 754,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 8.485,
+      "force_curv": 8.485,
+      "alphas": [
+        "Z_MOMENTUM.HIGH_CURV",
+        "RANGE_BREAKOUT.WIDE_RNG",
+        "MICRO_MOMENTUM.MISALIGNED",
+        "FLOW_IMBALANCE.WEAK_F"
+      ]
+    },
+    {
+      "bar": 764,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": -0.299,
+      "force_curv": 2.732,
+      "alphas": [
+        "Z_MOMENTUM.LOW_CURV"
+      ]
+    },
+    {
+      "bar": 1295,
+      "regime": "CHOP",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": 50.0,
+      "force_grad": 1.299,
+      "force_curv": 1.425,
+      "alphas": [
+        "Z_MOMENTUM.LOW_CURV"
+      ]
+    },
+    {
+      "bar": 1313,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 2.082,
+      "force_curv": 3.889,
+      "alphas": [
+        "Z_MOMENTUM.LOW_CURV",
+        "MICRO_MOMENTUM.ALIGNED",
+        "FLOW_IMBALANCE.WEAK_F"
+      ]
+    },
+    {
+      "bar": 1323,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": 50.0,
+      "force_grad": 3.482,
+      "force_curv": 2.273,
+      "alphas": [
+        "Z_MOMENTUM.LOW_CURV"
+      ]
+    },
+    {
+      "bar": 1348,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 1.915,
+      "force_curv": 5.618,
+      "alphas": [
+        "Z_MOMENTUM.HIGH_CURV"
+      ]
+    },
+    {
+      "bar": 1360,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 4.899,
+      "force_curv": 6.631,
+      "alphas": [
+        "Z_MOMENTUM.HIGH_CURV",
+        "RANGE_BREAKOUT.WIDE_RNG",
+        "MICRO_MOMENTUM.ALIGNED",
+        "FLOW_IMBALANCE.WEAK_F"
+      ]
+    },
+    {
+      "bar": 1383,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": -4.557,
+      "force_curv": -10.881,
+      "alphas": [
+        "Z_MOMENTUM.HIGH_CURV",
+        "RANGE_BREAKOUT.WIDE_RNG",
+        "MICRO_MOMENTUM.MISALIGNED"
+      ]
+    },
+    {
+      "bar": 1552,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 1.354,
+      "force_curv": 1.409,
+      "alphas": [
+        "Z_MOMENTUM.LOW_CURV"
+      ]
+    },
+    {
+      "bar": 1563,
+      "regime": "TREND",
+      "deny": "CONSEC_LOSS_PAUSE",
+      "pnl_if_executed": -25.0,
+      "force_grad": 4.007,
+      "force_curv": 5.507,
+      "alphas": [
+        "Z_MOMENTUM.HIGH_CURV",
+        "FLOW_IMBALANCE.WEAK_F"
+      ]
+    }
+  ],
+  "regime_log_total": 486
+}

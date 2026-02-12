@@ -1,0 +1,82 @@
+{
+  "experiment": "EXP-56 Market-Specific Calibration",
+  "timestamp": "2026-02-12T13:54:51.828417",
+  "lock_version": "v2.0.0-PROD",
+  "nq_baseline": {
+    "min_conditions": 2,
+    "force_threshold": 0.3,
+    "mae_ratio": 0.5,
+    "fpr": 8.4,
+    "false_exec": 8.7,
+    "all_pass": true,
+    "status": "v3_runtime_frozen"
+  },
+  "ES": {
+    "n_bars": 29619,
+    "n_signals": 555,
+    "exp55_baseline": {
+      "fpr": 27.0,
+      "false_exec": 21.0,
+      "all_pass": false
+    },
+    "best_pruning_config": {
+      "min_conditions": 3,
+      "force_threshold": 0.3,
+      "mae_ratio": 0.3,
+      "fpr": 19.2,
+      "false_exec": 20.4,
+      "orbit_saved": 44.8,
+      "all_pass": false
+    },
+    "calibration_outcome": "PARTIAL — FPR improved 27→19.2%, but M4 (FalseExec 20.4%) unchanged",
+    "root_cause": "M4 is NOT driven by pruning parameters. FalseExec is Sharp Boundary quality metric, independent of prune thresholds."
+  },
+  "BTC": {
+    "n_bars": 29781,
+    "n_signals": 1914,
+    "exp55_baseline": {
+      "fpr": 29.7,
+      "false_exec": 15.4,
+      "all_pass": false
+    },
+    "best_pruning_config": {
+      "min_conditions": 3,
+      "force_threshold": 0.2,
+      "mae_ratio": 0.3,
+      "fpr": 22.1,
+      "false_exec": 14.9,
+      "orbit_saved": 47.1,
+      "all_pass": false
+    },
+    "calibration_outcome": "PARTIAL — FPR improved 29.7→22.1%, but M4 (FalseExec 14.9%) barely changed",
+    "root_cause": "Same as ES. M4 failure is market-structural, not pruning-related."
+  },
+  "engineering_analysis": {
+    "key_discovery": "FalseExec rate (M4) is independent of pruning parameters",
+    "explanation": [
+      "Pruning controls WHICH trades get full orbit vs fast computation",
+      "FalseExec measures WHICH EXECUTE-classified trades actually lose",
+      "Sharp Boundary classification is stable regardless of pruning config",
+      "ES/BTC have structurally higher false execution profiles than NQ"
+    ],
+    "law_invariant_status": {
+      "M1_sharp_boundary": "PASS all markets (SharpGap 71-84%)",
+      "M2_fate_separation": "PASS all markets (FateSep 80-100%)",
+      "M3_aep_stability": "PASS all markets (AEP 0.85-1.0)",
+      "M4_false_execute": "PASS NQ only (8.7%). ES=20.4%, BTC=14.9%",
+      "M5_fate_distribution": "PASS all markets"
+    },
+    "conclusion": "M4 threshold 10% is NQ-calibrated. ES/BTC need either (a) signal generation calibration, (b) market-specific M4 threshold, or (c) acceptance as market-structural difference."
+  },
+  "options_forward": {
+    "option_A": "Calibrate signal generation parameters (ER_FLOOR, Z_NORM_THRESHOLD) per market → reduces false executions at source",
+    "option_B": "Accept market-specific M4 thresholds: NQ≤10%, ES≤25%, BTC≤20%",
+    "option_C": "Accept NQ-only deployment, defer ES/BTC to Phase 2",
+    "recommended": "Option C for v3_runtime_freeze. Option A as Phase 2 research."
+  },
+  "v3_freeze_verdict": {
+    "NQ": "FREEZE CONFIRMED — ALL PASS, FPR 8.4-10.8%",
+    "ES": "DEFERRED — M4 structural, needs signal calibration or threshold adjustment",
+    "BTC": "DEFERRED — M4 structural, same root cause as ES"
+  }
+}

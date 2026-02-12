@@ -1,0 +1,297 @@
+{
+  "experiment": "EXP-54 Deferred Compute for Marginal HARD_DEAD",
+  "timestamp": "2026-02-12T13:34:20.715802",
+  "lock_version": "v2.0.0-PROD",
+  "design": {
+    "instant_dead_threshold": -10.0,
+    "deferred_lower": -3.0,
+    "deferred_upper": -1.0,
+    "deferred_window_bars": 3,
+    "zone_A": "E \u2264 -10.0 \u2192 INSTANT DEAD",
+    "zone_B": "E \u2208 (-10.0, -3.0] \u2192 CONFIRMED DEAD",
+    "zone_C": "E \u2208 (-3.0, -1.0] \u2192 DEFERRED",
+    "zone_D": "E > -1.0 \u2192 ALIVE"
+  },
+  "stats": {
+    "total_signals": 486,
+    "gate_denied": 193,
+    "traded": 293,
+    "hard_dead": 123,
+    "instant_dead": 62,
+    "confirmed_dead": 57,
+    "deferred_total": 13,
+    "deferred_promoted": 9,
+    "deferred_dead": 4,
+    "soft_dead": 8,
+    "alive": 162,
+    "total_pruned": 131,
+    "prune_rate": 44.7,
+    "false_prunes_total": 11,
+    "false_prune_rate": 8.4
+  },
+  "zombie_recovery": {
+    "exp53_mismatches": 21,
+    "exp54_mismatches": 14,
+    "zombies_recovered": 7,
+    "recovery_rate": 33.3,
+    "remaining_mismatches": [
+      {
+        "time": "2026-02-04 14:46:00",
+        "direction": 1,
+        "pnl_ticks": -5.0,
+        "full_fate": "ZOMBIE",
+        "is_win": false,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -10.0,
+        "zone": "INSTANT_DEAD"
+      },
+      {
+        "time": "2026-02-04 15:04:25",
+        "direction": 1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -8.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 15:34:30",
+        "direction": 1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -3.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 15:46:55",
+        "direction": 1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -4.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 15:56:00",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "IMMORTAL",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -3.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 16:04:20",
+        "direction": 1,
+        "pnl_ticks": -5.0,
+        "full_fate": "ZOMBIE",
+        "is_win": false,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -4.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 16:30:20",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -3.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 16:37:55",
+        "direction": 1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -3.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 18:00:15",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -3.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 21:39:25",
+        "direction": -1,
+        "pnl_ticks": -5.0,
+        "full_fate": "ZOMBIE",
+        "is_win": false,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -4.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 22:59:35",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -1.0,
+        "zone": "DEFERRED"
+      },
+      {
+        "time": "2026-02-04 23:02:15",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "ZOMBIE",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -4.0,
+        "zone": "CONFIRMED_DEAD"
+      },
+      {
+        "time": "2026-02-04 23:45:15",
+        "direction": -1,
+        "pnl_ticks": 10.0,
+        "full_fate": "IMMORTAL",
+        "is_win": true,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -10.0,
+        "zone": "INSTANT_DEAD"
+      },
+      {
+        "time": "2026-02-11 22:59:25",
+        "direction": 1,
+        "pnl_ticks": -5.0,
+        "full_fate": "ZOMBIE",
+        "is_win": false,
+        "tier": "HARD_DEAD",
+        "e_excursion_1": -4.0,
+        "zone": "CONFIRMED_DEAD"
+      }
+    ]
+  },
+  "speed": {
+    "full_time_s": 0.95,
+    "deferred_time_s": 0.85,
+    "speedup": 1.11,
+    "orbit_calls_full": 162,
+    "orbit_calls_fast": 131,
+    "deferred_orbit_calls": 13,
+    "orbit_saved_pct": 44.7,
+    "deferred_overhead_pct": 4.4
+  },
+  "law_preservation": {
+    "full_invariants": {
+      "n_trades": 293,
+      "n_exec": 92,
+      "n_deny": 160,
+      "exec_wr": 91.3,
+      "deny_wr": 5.0,
+      "sharp_gap": 86.3,
+      "imm_wr": 95.7,
+      "stb_wr": 0.0,
+      "fate_separation": 95.7,
+      "aep_median": 0.9882,
+      "aep_q95": 1.0,
+      "aep_in_critical_pct": 69.8,
+      "false_exec_rate": 8.7,
+      "fate_distribution": {
+        "IMMORTAL": 0.16,
+        "SURVIVED": 0.072,
+        "ZOMBIE": 0.174,
+        "TERMINATED": 0.358,
+        "STILLBORN": 0.235
+      },
+      "metrics_pass": {
+        "M1_sharp_boundary": true,
+        "M2_fate_separation": true,
+        "M3_aep_stability": true,
+        "M4_false_execute": true,
+        "M5_fate_distribution": true
+      },
+      "all_pass": true,
+      "pass_count": 5
+    },
+    "deferred_invariants": {
+      "n_trades": 293,
+      "n_exec": 92,
+      "n_deny": 156,
+      "exec_wr": 91.3,
+      "deny_wr": 7.1,
+      "sharp_gap": 84.3,
+      "imm_wr": 95.6,
+      "stb_wr": 0.0,
+      "fate_separation": 95.6,
+      "aep_median": 0.9733,
+      "aep_q95": 1.0,
+      "aep_in_critical_pct": 64.6,
+      "false_exec_rate": 8.7,
+      "fate_distribution": {
+        "IMMORTAL": 0.154,
+        "SURVIVED": 0.072,
+        "ZOMBIE": 0.133,
+        "TERMINATED": 0.628,
+        "STILLBORN": 0.014
+      },
+      "metrics_pass": {
+        "M1_sharp_boundary": true,
+        "M2_fate_separation": true,
+        "M3_aep_stability": true,
+        "M4_false_execute": true,
+        "M5_fate_distribution": true
+      },
+      "all_pass": true,
+      "pass_count": 5
+    },
+    "all_preserved": true
+  },
+  "hypotheses": {
+    "H54a_zombie_recovery": {
+      "threshold": "\u226550% of 21",
+      "value": 7,
+      "supported": false
+    },
+    "H54b_false_prune_improvement": {
+      "threshold": "< 10.0%",
+      "value": 8.4,
+      "supported": true
+    },
+    "H54c_law_preserved": {
+      "supported": true
+    },
+    "H54d_deferred_overhead": {
+      "threshold": "\u226410%",
+      "value": 4.4,
+      "supported": true
+    },
+    "H54e_promoted_quality": {
+      "supported": false
+    }
+  },
+  "supported_count": "3/5",
+  "zombie_seal": {
+    "sealed": true,
+    "seal_reason": "Deferred beyond observation horizon",
+    "seal_statement": "bar 0-2 \uae30\uc900\uc73c\ub85c\ub9cc \uc138\uacc4\uc120\uc744 \ubd84\ub958\ud55c\ub2e4. \uadf8 \uc774\ud6c4\uc5d0 \uc0b4\uc544\ub098\ub294 \uc54c\ud30c\ub294 \uc774 \uc5d4\uc9c4\uc758 \ucc45\uc784 \ubc94\uc704\uac00 \uc544\ub2c8\ub2e4.",
+    "remaining_count": 14,
+    "zone_distribution": {
+      "INSTANT_DEAD": 2,
+      "CONFIRMED_DEAD": 10,
+      "DEFERRED_still_dead": 2
+    },
+    "pnl_impact": {
+      "winners_lost": 10,
+      "losers_avoided": 4,
+      "net_pnl_missed": 80.0
+    },
+    "engineering_decision": "SEAL \u2014 \uad00\uce21 \uc2dc\uac04 \ubd80\uc871\uc740 \ubaa8\ub378 \ud55c\uacc4\uac00 \uc544\ub2c8\ub77c \ubb3c\ub9ac \ud55c\uacc4",
+    "future_option": "CONFIRMED_DEAD \uacbd\uacc4 -5 \ud655\uc7a5\uc740 EXP-55 \ub300\uaddc\ubaa8 \uacb0\uacfc \ud655\uc778 \ud6c4 \uc635\uc158 \ud50c\ub798\uadf8\ub85c \uac80\ud1a0"
+  }
+}

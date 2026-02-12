@@ -1,0 +1,2074 @@
+{
+  "law": "Energy Conservation Law (ECL)",
+  "principle": "p_exec proportional to energy integral, NOT win rate",
+  "normalization": {
+    "median": 4.0,
+    "iqr": 320.0
+  },
+  "results": {
+    "n": 135,
+    "wr": 70.8,
+    "pf": 4.84,
+    "net": 3770,
+    "mdd": 0.07,
+    "per_trade": 27.94
+  },
+  "hypotheses": {
+    "H44a_monotonic": "NOT SUPPORTED",
+    "H44b_fate_separation": "SUPPORTED",
+    "H44c_beats_baseline": "SUPPORTED"
+  },
+  "per_trade_ecl": [
+    {
+      "idx": 0,
+      "p_exec": 0.05,
+      "e_integral": -79.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 1,
+      "p_exec": 0.05,
+      "e_integral": -21.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 2,
+      "p_exec": 0.9934,
+      "e_integral": 201.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 3,
+      "p_exec": 0.9966,
+      "e_integral": 224.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 4,
+      "p_exec": 0.8951,
+      "e_integral": 114.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 5,
+      "p_exec": 0.836,
+      "e_integral": 45.26,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 6,
+      "p_exec": 0.9642,
+      "e_integral": 161.91,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 7,
+      "p_exec": 0.9811,
+      "e_integral": 179.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 8,
+      "p_exec": 0.0136,
+      "e_integral": -215.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 9,
+      "p_exec": 0.0402,
+      "e_integral": -115.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 10,
+      "p_exec": 0.8114,
+      "e_integral": 55.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 11,
+      "p_exec": 0.05,
+      "e_integral": -133.86,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 12,
+      "p_exec": 0.1711,
+      "e_integral": 11.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 13,
+      "p_exec": 0.9724,
+      "e_integral": 184.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 14,
+      "p_exec": 0.0113,
+      "e_integral": -212.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 15,
+      "p_exec": 0.9987,
+      "e_integral": 219.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 16,
+      "p_exec": 0.5232,
+      "e_integral": -30.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 17,
+      "p_exec": 0.997,
+      "e_integral": 98.51,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 18,
+      "p_exec": 0.006,
+      "e_integral": -221.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 19,
+      "p_exec": 0.0043,
+      "e_integral": -138.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 20,
+      "p_exec": 0.9996,
+      "e_integral": 258.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 21,
+      "p_exec": 0.9708,
+      "e_integral": 165.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 22,
+      "p_exec": 0.9967,
+      "e_integral": 201.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 23,
+      "p_exec": 0.9057,
+      "e_integral": 56.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 24,
+      "p_exec": 0.8274,
+      "e_integral": 153.54,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 25,
+      "p_exec": 0.9815,
+      "e_integral": 187.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 26,
+      "p_exec": 0.05,
+      "e_integral": -91.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 27,
+      "p_exec": 0.0272,
+      "e_integral": -117.11,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 28,
+      "p_exec": 0.2962,
+      "e_integral": 47.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 29,
+      "p_exec": 0.9845,
+      "e_integral": 181.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 30,
+      "p_exec": 0.9626,
+      "e_integral": 147.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 31,
+      "p_exec": 0.9335,
+      "e_integral": -46.87,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 32,
+      "p_exec": 0.9765,
+      "e_integral": 140.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 33,
+      "p_exec": 0.9982,
+      "e_integral": 197.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 34,
+      "p_exec": 0.1315,
+      "e_integral": 40.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 35,
+      "p_exec": 0.05,
+      "e_integral": -14.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 36,
+      "p_exec": 0.05,
+      "e_integral": -66.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 37,
+      "p_exec": 0.9773,
+      "e_integral": 152.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 38,
+      "p_exec": 0.8,
+      "e_integral": 52.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 39,
+      "p_exec": 0.5429,
+      "e_integral": -5.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 40,
+      "p_exec": 0.9819,
+      "e_integral": 194.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 41,
+      "p_exec": 0.8388,
+      "e_integral": 51.76,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 42,
+      "p_exec": 0.8649,
+      "e_integral": 54.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 43,
+      "p_exec": 0.7955,
+      "e_integral": 22.64,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 44,
+      "p_exec": 0.8208,
+      "e_integral": 75.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 45,
+      "p_exec": 0.9975,
+      "e_integral": 257.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 46,
+      "p_exec": 0.8,
+      "e_integral": 133.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 47,
+      "p_exec": 0.9463,
+      "e_integral": 122.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 48,
+      "p_exec": 0.05,
+      "e_integral": -160.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 49,
+      "p_exec": 0.8402,
+      "e_integral": 119.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 50,
+      "p_exec": 0.0288,
+      "e_integral": -162.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 51,
+      "p_exec": 0.9852,
+      "e_integral": 98.51,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 52,
+      "p_exec": 0.9301,
+      "e_integral": 128.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 53,
+      "p_exec": 0.05,
+      "e_integral": -78.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 54,
+      "p_exec": 0.9348,
+      "e_integral": 152.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 55,
+      "p_exec": 0.9683,
+      "e_integral": 106.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 56,
+      "p_exec": 0.2702,
+      "e_integral": 70.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 57,
+      "p_exec": 0.9936,
+      "e_integral": 178.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 58,
+      "p_exec": 0.6463,
+      "e_integral": -59.11,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 59,
+      "p_exec": 0.05,
+      "e_integral": -99.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 60,
+      "p_exec": 0.05,
+      "e_integral": -130.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 61,
+      "p_exec": 0.05,
+      "e_integral": -7.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 62,
+      "p_exec": 0.9999,
+      "e_integral": 185.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 63,
+      "p_exec": 0.05,
+      "e_integral": -88.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 64,
+      "p_exec": 0.05,
+      "e_integral": -79.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 65,
+      "p_exec": 0.1944,
+      "e_integral": 61.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 66,
+      "p_exec": 0.05,
+      "e_integral": -10.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 67,
+      "p_exec": 0.976,
+      "e_integral": 166.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 68,
+      "p_exec": 0.9574,
+      "e_integral": 72.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 69,
+      "p_exec": 0.05,
+      "e_integral": -77.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 70,
+      "p_exec": 0.05,
+      "e_integral": -40.17,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 71,
+      "p_exec": 0.6563,
+      "e_integral": 51.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 72,
+      "p_exec": 0.05,
+      "e_integral": -77.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 73,
+      "p_exec": 0.0121,
+      "e_integral": -188.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 74,
+      "p_exec": 0.05,
+      "e_integral": -94.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 75,
+      "p_exec": 0.2422,
+      "e_integral": 23.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 76,
+      "p_exec": 0.0201,
+      "e_integral": -87.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 77,
+      "p_exec": 0.9882,
+      "e_integral": 204.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 78,
+      "p_exec": 0.003,
+      "e_integral": -185.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 79,
+      "p_exec": 0.9999,
+      "e_integral": 327.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 80,
+      "p_exec": 0.0,
+      "e_integral": -493.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 81,
+      "p_exec": 0.0026,
+      "e_integral": -305.84,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 82,
+      "p_exec": 1.0,
+      "e_integral": 427.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 83,
+      "p_exec": 0.0273,
+      "e_integral": -179.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 84,
+      "p_exec": 0.9359,
+      "e_integral": 157.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 85,
+      "p_exec": 0.2989,
+      "e_integral": 115.16,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 86,
+      "p_exec": 0.0009,
+      "e_integral": -273.62,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 87,
+      "p_exec": 0.0,
+      "e_integral": -344.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 88,
+      "p_exec": 0.0024,
+      "e_integral": -201.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 89,
+      "p_exec": 0.0016,
+      "e_integral": -202.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 90,
+      "p_exec": 0.0003,
+      "e_integral": -268.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 91,
+      "p_exec": 0.9981,
+      "e_integral": 220.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 92,
+      "p_exec": 0.067,
+      "e_integral": 185.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 93,
+      "p_exec": 1.0,
+      "e_integral": 436.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 94,
+      "p_exec": 0.05,
+      "e_integral": -222.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 95,
+      "p_exec": 0.05,
+      "e_integral": -99.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 96,
+      "p_exec": 0.05,
+      "e_integral": -109.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 97,
+      "p_exec": 0.0,
+      "e_integral": -391.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 98,
+      "p_exec": 0.0025,
+      "e_integral": -253.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 99,
+      "p_exec": 0.0047,
+      "e_integral": -241.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 100,
+      "p_exec": 0.999,
+      "e_integral": 304.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 101,
+      "p_exec": 0.9989,
+      "e_integral": 214.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 102,
+      "p_exec": 0.9776,
+      "e_integral": 188.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 103,
+      "p_exec": 0.0121,
+      "e_integral": 3.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 104,
+      "p_exec": 0.8,
+      "e_integral": 52.33,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 105,
+      "p_exec": 1.0,
+      "e_integral": 399.19,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 106,
+      "p_exec": 0.0,
+      "e_integral": -457.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 107,
+      "p_exec": 0.8791,
+      "e_integral": 191.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 108,
+      "p_exec": 0.013,
+      "e_integral": -166.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 109,
+      "p_exec": 0.9964,
+      "e_integral": 270.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 110,
+      "p_exec": 0.9867,
+      "e_integral": 5.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 111,
+      "p_exec": 0.05,
+      "e_integral": -86.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 112,
+      "p_exec": 0.9995,
+      "e_integral": 335.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 113,
+      "p_exec": 0.05,
+      "e_integral": -114.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 114,
+      "p_exec": 0.0113,
+      "e_integral": -146.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 115,
+      "p_exec": 0.325,
+      "e_integral": 90.06,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 116,
+      "p_exec": 0.9945,
+      "e_integral": 37.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 117,
+      "p_exec": 0.9987,
+      "e_integral": 188.5,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 118,
+      "p_exec": 1.0,
+      "e_integral": 452.74,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 119,
+      "p_exec": 0.9989,
+      "e_integral": 113.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 120,
+      "p_exec": 0.8688,
+      "e_integral": 289.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 121,
+      "p_exec": 0.0004,
+      "e_integral": -26.62,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 122,
+      "p_exec": 0.4845,
+      "e_integral": -143.81,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 123,
+      "p_exec": 0.0001,
+      "e_integral": -380.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 124,
+      "p_exec": 0.05,
+      "e_integral": -119.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 125,
+      "p_exec": 0.0,
+      "e_integral": -480.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 126,
+      "p_exec": 0.0001,
+      "e_integral": -366.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 127,
+      "p_exec": 0.0,
+      "e_integral": -644.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 128,
+      "p_exec": 0.0046,
+      "e_integral": -117.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 129,
+      "p_exec": 0.9538,
+      "e_integral": 173.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 130,
+      "p_exec": 0.0011,
+      "e_integral": -199.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 131,
+      "p_exec": 0.9943,
+      "e_integral": 281.74,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 132,
+      "p_exec": 0.9827,
+      "e_integral": 49.19,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 133,
+      "p_exec": 0.05,
+      "e_integral": -207.77,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 134,
+      "p_exec": 1.0,
+      "e_integral": 344.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 135,
+      "p_exec": 0.0426,
+      "e_integral": -96.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 136,
+      "p_exec": 0.0292,
+      "e_integral": -93.4,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 137,
+      "p_exec": 0.05,
+      "e_integral": -81.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 138,
+      "p_exec": 0.9984,
+      "e_integral": 49.73,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 139,
+      "p_exec": 0.8309,
+      "e_integral": 33.49,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 140,
+      "p_exec": 0.0003,
+      "e_integral": -358.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 141,
+      "p_exec": 0.8,
+      "e_integral": 126.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 142,
+      "p_exec": 0.05,
+      "e_integral": -31.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 143,
+      "p_exec": 0.0107,
+      "e_integral": -229.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 144,
+      "p_exec": 0.9654,
+      "e_integral": 141.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 145,
+      "p_exec": 0.0038,
+      "e_integral": -243.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 146,
+      "p_exec": 0.7827,
+      "e_integral": -2.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 147,
+      "p_exec": 0.8742,
+      "e_integral": 16.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 148,
+      "p_exec": 0.9998,
+      "e_integral": 304.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 149,
+      "p_exec": 0.9995,
+      "e_integral": 129.89,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 150,
+      "p_exec": 0.0005,
+      "e_integral": -352.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 151,
+      "p_exec": 0.9977,
+      "e_integral": 183.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 152,
+      "p_exec": 0.05,
+      "e_integral": -57.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 153,
+      "p_exec": 0.0082,
+      "e_integral": -185.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 154,
+      "p_exec": 0.05,
+      "e_integral": -39.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 155,
+      "p_exec": 0.0014,
+      "e_integral": -172.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 156,
+      "p_exec": 0.005,
+      "e_integral": -215.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 157,
+      "p_exec": 0.9888,
+      "e_integral": 188.4,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 158,
+      "p_exec": 0.0008,
+      "e_integral": -218.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 159,
+      "p_exec": 0.3673,
+      "e_integral": 22.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 160,
+      "p_exec": 0.05,
+      "e_integral": -85.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 161,
+      "p_exec": 0.0021,
+      "e_integral": -238.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 162,
+      "p_exec": 1.0,
+      "e_integral": 309.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 163,
+      "p_exec": 0.0037,
+      "e_integral": -187.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 164,
+      "p_exec": 0.014,
+      "e_integral": -205.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 165,
+      "p_exec": 0.05,
+      "e_integral": -47.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 166,
+      "p_exec": 0.0004,
+      "e_integral": -276.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 167,
+      "p_exec": 0.8957,
+      "e_integral": 116.1,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 168,
+      "p_exec": 0.9917,
+      "e_integral": 159.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 169,
+      "p_exec": 0.9873,
+      "e_integral": 182.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 170,
+      "p_exec": 0.9995,
+      "e_integral": 300.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 171,
+      "p_exec": 0.05,
+      "e_integral": -69.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 172,
+      "p_exec": 0.8,
+      "e_integral": 73.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 173,
+      "p_exec": 0.0445,
+      "e_integral": -81.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 174,
+      "p_exec": 0.0174,
+      "e_integral": -134.51,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 175,
+      "p_exec": 0.0016,
+      "e_integral": -205.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 176,
+      "p_exec": 0.818,
+      "e_integral": 69.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 177,
+      "p_exec": 0.0,
+      "e_integral": -345.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 178,
+      "p_exec": 1.0,
+      "e_integral": 302.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 179,
+      "p_exec": 0.004,
+      "e_integral": -225.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 180,
+      "p_exec": 0.9997,
+      "e_integral": 225.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 181,
+      "p_exec": 0.8,
+      "e_integral": 191.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 182,
+      "p_exec": 0.1449,
+      "e_integral": 76.06,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 183,
+      "p_exec": 0.0011,
+      "e_integral": -245.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 184,
+      "p_exec": 0.0035,
+      "e_integral": -264.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 185,
+      "p_exec": 0.9955,
+      "e_integral": 196.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 186,
+      "p_exec": 0.05,
+      "e_integral": -26.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 187,
+      "p_exec": 0.9847,
+      "e_integral": 153.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 188,
+      "p_exec": 0.0006,
+      "e_integral": -269.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 189,
+      "p_exec": 0.0001,
+      "e_integral": -321.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 190,
+      "p_exec": 0.853,
+      "e_integral": -73.22,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 191,
+      "p_exec": 0.8255,
+      "e_integral": -74.81,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 192,
+      "p_exec": 0.9865,
+      "e_integral": 130.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 193,
+      "p_exec": 0.9993,
+      "e_integral": 328.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 194,
+      "p_exec": 0.9762,
+      "e_integral": 137.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 195,
+      "p_exec": 1.0,
+      "e_integral": 406.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 196,
+      "p_exec": 0.9985,
+      "e_integral": 239.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 197,
+      "p_exec": 0.8,
+      "e_integral": 20.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 198,
+      "p_exec": 0.05,
+      "e_integral": -101.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 199,
+      "p_exec": 0.05,
+      "e_integral": -152.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 200,
+      "p_exec": 0.978,
+      "e_integral": 130.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 201,
+      "p_exec": 0.6979,
+      "e_integral": -48.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 202,
+      "p_exec": 0.8936,
+      "e_integral": 77.0,
+      "fate": "IMMORTAL",
+      "is_win": false
+    },
+    {
+      "idx": 203,
+      "p_exec": 0.9995,
+      "e_integral": 275.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 204,
+      "p_exec": 0.035,
+      "e_integral": -161.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 205,
+      "p_exec": 0.4387,
+      "e_integral": 117.09,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 206,
+      "p_exec": 0.05,
+      "e_integral": -103.33,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 207,
+      "p_exec": 0.0694,
+      "e_integral": 5.3,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 208,
+      "p_exec": 0.0013,
+      "e_integral": -268.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 209,
+      "p_exec": 0.9975,
+      "e_integral": 37.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 210,
+      "p_exec": 0.0005,
+      "e_integral": -134.77,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 211,
+      "p_exec": 0.05,
+      "e_integral": -142.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 212,
+      "p_exec": 0.9988,
+      "e_integral": 234.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 213,
+      "p_exec": 1.0,
+      "e_integral": 418.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 214,
+      "p_exec": 0.0097,
+      "e_integral": -195.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 215,
+      "p_exec": 0.032,
+      "e_integral": -191.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 216,
+      "p_exec": 0.9879,
+      "e_integral": 197.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 217,
+      "p_exec": 0.05,
+      "e_integral": -141.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 218,
+      "p_exec": 0.0109,
+      "e_integral": -95.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 219,
+      "p_exec": 0.0011,
+      "e_integral": -246.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 220,
+      "p_exec": 0.0006,
+      "e_integral": -326.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 221,
+      "p_exec": 0.9992,
+      "e_integral": 300.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 222,
+      "p_exec": 0.997,
+      "e_integral": 36.23,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 223,
+      "p_exec": 1.0,
+      "e_integral": 380.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 224,
+      "p_exec": 0.0179,
+      "e_integral": -126.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 225,
+      "p_exec": 0.0903,
+      "e_integral": 97.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 226,
+      "p_exec": 0.9332,
+      "e_integral": -112.27,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 227,
+      "p_exec": 0.0,
+      "e_integral": -431.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 228,
+      "p_exec": 0.05,
+      "e_integral": -78.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 229,
+      "p_exec": 0.0,
+      "e_integral": -396.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 230,
+      "p_exec": 0.8946,
+      "e_integral": 16.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 231,
+      "p_exec": 0.05,
+      "e_integral": -94.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 232,
+      "p_exec": 0.0001,
+      "e_integral": -79.24,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 233,
+      "p_exec": 0.0033,
+      "e_integral": -227.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 234,
+      "p_exec": 0.9992,
+      "e_integral": 140.73,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 235,
+      "p_exec": 0.8641,
+      "e_integral": 148.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 236,
+      "p_exec": 0.8,
+      "e_integral": 96.42,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 237,
+      "p_exec": 0.1378,
+      "e_integral": 57.2,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 238,
+      "p_exec": 0.9997,
+      "e_integral": 254.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 239,
+      "p_exec": 0.0078,
+      "e_integral": -203.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 240,
+      "p_exec": 0.9998,
+      "e_integral": 313.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 241,
+      "p_exec": 0.0146,
+      "e_integral": -255.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 242,
+      "p_exec": 0.05,
+      "e_integral": -54.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 243,
+      "p_exec": 0.05,
+      "e_integral": -104.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 244,
+      "p_exec": 0.0183,
+      "e_integral": -183.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 245,
+      "p_exec": 0.8298,
+      "e_integral": 127.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 246,
+      "p_exec": 0.0021,
+      "e_integral": -170.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 247,
+      "p_exec": 0.4657,
+      "e_integral": 152.09,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 248,
+      "p_exec": 1.0,
+      "e_integral": 332.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 249,
+      "p_exec": 0.0003,
+      "e_integral": -252.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 250,
+      "p_exec": 0.9076,
+      "e_integral": 127.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 251,
+      "p_exec": 0.7858,
+      "e_integral": 4.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 252,
+      "p_exec": 0.9999,
+      "e_integral": 341.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 253,
+      "p_exec": 0.0417,
+      "e_integral": -103.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 254,
+      "p_exec": 0.0039,
+      "e_integral": -233.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 255,
+      "p_exec": 0.0,
+      "e_integral": -1308.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 256,
+      "p_exec": 1.0,
+      "e_integral": 842.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 257,
+      "p_exec": 1.0,
+      "e_integral": 1450.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 258,
+      "p_exec": 0.0,
+      "e_integral": -272.26,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 259,
+      "p_exec": 0.0,
+      "e_integral": -1419.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 260,
+      "p_exec": 0.0006,
+      "e_integral": -179.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 261,
+      "p_exec": 0.0,
+      "e_integral": 182.34,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 262,
+      "p_exec": 1.0,
+      "e_integral": 890.74,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 263,
+      "p_exec": 1.0,
+      "e_integral": 747.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 264,
+      "p_exec": 1.0,
+      "e_integral": 645.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 265,
+      "p_exec": 0.0018,
+      "e_integral": -352.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 266,
+      "p_exec": 0.0,
+      "e_integral": -1799.0,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 267,
+      "p_exec": 0.0,
+      "e_integral": -833.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 268,
+      "p_exec": 0.0001,
+      "e_integral": -9.54,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 269,
+      "p_exec": 1.0,
+      "e_integral": 869.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 270,
+      "p_exec": 0.8,
+      "e_integral": 67.2,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 271,
+      "p_exec": 1.0,
+      "e_integral": 6531.0,
+      "fate": "SURVIVED",
+      "is_win": false
+    },
+    {
+      "idx": 272,
+      "p_exec": 0.0001,
+      "e_integral": -138.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 273,
+      "p_exec": 0.05,
+      "e_integral": -109.81,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 274,
+      "p_exec": 0.9737,
+      "e_integral": 136.0,
+      "fate": "IMMORTAL",
+      "is_win": false
+    },
+    {
+      "idx": 275,
+      "p_exec": 0.2696,
+      "e_integral": 5.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 276,
+      "p_exec": 0.9989,
+      "e_integral": 272.25,
+      "fate": "SURVIVED",
+      "is_win": true
+    },
+    {
+      "idx": 277,
+      "p_exec": 0.0051,
+      "e_integral": -212.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 278,
+      "p_exec": 0.1746,
+      "e_integral": 19.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 279,
+      "p_exec": 0.0496,
+      "e_integral": -173.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 280,
+      "p_exec": 0.1112,
+      "e_integral": 43.0,
+      "fate": "ZOMBIE",
+      "is_win": false
+    },
+    {
+      "idx": 281,
+      "p_exec": 0.0,
+      "e_integral": -1236.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 282,
+      "p_exec": 1.0,
+      "e_integral": 526.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 283,
+      "p_exec": 0.9995,
+      "e_integral": 437.74,
+      "fate": "TERMINATED",
+      "is_win": true
+    },
+    {
+      "idx": 284,
+      "p_exec": 0.0,
+      "e_integral": -938.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 285,
+      "p_exec": 0.05,
+      "e_integral": -100.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 286,
+      "p_exec": 1.0,
+      "e_integral": 420.0,
+      "fate": "IMMORTAL",
+      "is_win": true
+    },
+    {
+      "idx": 287,
+      "p_exec": 0.9998,
+      "e_integral": 214.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 288,
+      "p_exec": 0.0,
+      "e_integral": -154.0,
+      "fate": "ZOMBIE",
+      "is_win": true
+    },
+    {
+      "idx": 289,
+      "p_exec": 0.0,
+      "e_integral": -943.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    },
+    {
+      "idx": 290,
+      "p_exec": 0.0,
+      "e_integral": -539.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 291,
+      "p_exec": 1.0,
+      "e_integral": 258.26,
+      "fate": "TERMINATED",
+      "is_win": false
+    },
+    {
+      "idx": 292,
+      "p_exec": 0.0,
+      "e_integral": -625.0,
+      "fate": "STILLBORN",
+      "is_win": false
+    }
+  ]
+}

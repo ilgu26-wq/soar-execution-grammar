@@ -1,0 +1,247 @@
+{
+  "experiment": "EXP-55 Global Dataset Stress Test",
+  "timestamp": "2026-02-12T13:44:11.457888",
+  "lock_version": "v2.0.0-PROD",
+  "summary": {
+    "n_worlds": 4,
+    "total_bars": 90797,
+    "total_trades": 2910,
+    "all_pass_count": 2,
+    "all_pass_pct": 50.0
+  },
+  "worlds": [
+    {
+      "world": "NQ_Tick_5s",
+      "n_bars": 7285,
+      "n_signals": 500,
+      "n_trades": 293,
+      "n_denied": 193,
+      "elapsed_s": 0.96,
+      "bars_per_sec": 7592.0,
+      "wr": 39.2,
+      "net_pnl": 1200.0,
+      "prune_rate": 44.7,
+      "false_prune_rate": 8.4,
+      "false_prunes": 11,
+      "orbit_saved_pct": 44.7,
+      "max_dd": 0.42,
+      "deferred_total": 13,
+      "deferred_promoted": 9,
+      "invariants": {
+        "n_trades": 293,
+        "n_exec": 92,
+        "n_deny": 156,
+        "exec_wr": 91.3,
+        "deny_wr": 7.1,
+        "sharp_gap": 84.3,
+        "imm_wr": 95.6,
+        "stb_wr": 0.0,
+        "fate_separation": 95.6,
+        "aep_median": 0.9733,
+        "aep_q95": 1.0,
+        "aep_in_critical_pct": 64.6,
+        "false_exec_rate": 8.7,
+        "fate_distribution": {
+          "IMMORTAL": 0.154,
+          "SURVIVED": 0.072,
+          "ZOMBIE": 0.133,
+          "TERMINATED": 0.628,
+          "STILLBORN": 0.014
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": true,
+          "M5_fate_distribution": true
+        },
+        "all_pass": true,
+        "pass_count": 5
+      },
+      "stats_summary": {
+        "hard_dead": 123,
+        "soft_dead": 8,
+        "alive": 162,
+        "max_dd": 0.42,
+        "final_equity": 101200.0
+      }
+    },
+    {
+      "world": "NQ_1min_Large",
+      "n_bars": 24112,
+      "n_signals": 1665,
+      "n_trades": 1051,
+      "n_denied": 600,
+      "elapsed_s": 4.74,
+      "bars_per_sec": 5092.0,
+      "wr": 41.6,
+      "net_pnl": 6073.75,
+      "prune_rate": 54.5,
+      "false_prune_rate": 10.8,
+      "false_prunes": 62,
+      "orbit_saved_pct": 54.5,
+      "max_dd": 0.31,
+      "deferred_total": 46,
+      "deferred_promoted": 27,
+      "invariants": {
+        "n_trades": 1051,
+        "n_exec": 324,
+        "n_deny": 564,
+        "exec_wr": 92.6,
+        "deny_wr": 12.8,
+        "sharp_gap": 79.8,
+        "imm_wr": 100.0,
+        "stb_wr": 20.0,
+        "fate_separation": 80.0,
+        "aep_median": 0.9999,
+        "aep_q95": 1.0,
+        "aep_in_critical_pct": 86.7,
+        "false_exec_rate": 7.4,
+        "fate_distribution": {
+          "IMMORTAL": 0.052,
+          "SURVIVED": 0.145,
+          "ZOMBIE": 0.041,
+          "TERMINATED": 0.738,
+          "STILLBORN": 0.024
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": true,
+          "M5_fate_distribution": true
+        },
+        "all_pass": true,
+        "pass_count": 5
+      },
+      "stats_summary": {
+        "hard_dead": 565,
+        "soft_dead": 8,
+        "alive": 478,
+        "max_dd": 0.31,
+        "final_equity": 106073.75
+      }
+    },
+    {
+      "world": "ES_1min",
+      "n_bars": 29619,
+      "n_signals": 555,
+      "n_trades": 348,
+      "n_denied": 201,
+      "elapsed_s": 2.13,
+      "bars_per_sec": 13908.0,
+      "wr": 35.3,
+      "net_pnl": 370.58,
+      "prune_rate": 74.4,
+      "false_prune_rate": 27.0,
+      "false_prunes": 70,
+      "orbit_saved_pct": 74.4,
+      "max_dd": 1.04,
+      "deferred_total": 38,
+      "deferred_promoted": 12,
+      "invariants": {
+        "n_trades": 348,
+        "n_exec": 100,
+        "n_deny": 191,
+        "exec_wr": 79.0,
+        "deny_wr": 7.9,
+        "sharp_gap": 71.1,
+        "imm_wr": 85.7,
+        "stb_wr": 0.0,
+        "fate_separation": 85.7,
+        "aep_median": 0.8484,
+        "aep_q95": 0.9973,
+        "aep_in_critical_pct": 37.9,
+        "false_exec_rate": 21.0,
+        "fate_distribution": {
+          "IMMORTAL": 0.06,
+          "SURVIVED": 0.055,
+          "ZOMBIE": 0.08,
+          "TERMINATED": 0.802,
+          "STILLBORN": 0.003
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": false,
+          "M5_fate_distribution": true
+        },
+        "all_pass": false,
+        "pass_count": 4
+      },
+      "stats_summary": {
+        "hard_dead": 250,
+        "soft_dead": 9,
+        "alive": 89,
+        "max_dd": 1.04,
+        "final_equity": 100370.0
+      }
+    },
+    {
+      "world": "BTC_1min",
+      "n_bars": 29781,
+      "n_signals": 1914,
+      "n_trades": 1218,
+      "n_denied": 682,
+      "elapsed_s": 5.28,
+      "bars_per_sec": 5637.0,
+      "wr": 40.5,
+      "net_pnl": 5804.75,
+      "prune_rate": 75.5,
+      "false_prune_rate": 29.7,
+      "false_prunes": 273,
+      "orbit_saved_pct": 75.5,
+      "max_dd": 0.32,
+      "deferred_total": 68,
+      "deferred_promoted": 33,
+      "invariants": {
+        "n_trades": 1218,
+        "n_exec": 455,
+        "n_deny": 582,
+        "exec_wr": 84.6,
+        "deny_wr": 4.3,
+        "sharp_gap": 80.3,
+        "imm_wr": 100.0,
+        "stb_wr": 0.0,
+        "fate_separation": 100.0,
+        "aep_median": 0.9894,
+        "aep_q95": 1.0,
+        "aep_in_critical_pct": 77.6,
+        "false_exec_rate": 15.4,
+        "fate_distribution": {
+          "IMMORTAL": 0.053,
+          "SURVIVED": 0.034,
+          "ZOMBIE": 0.095,
+          "TERMINATED": 0.815,
+          "STILLBORN": 0.002
+        },
+        "metrics_pass": {
+          "M1_sharp_boundary": true,
+          "M2_fate_separation": true,
+          "M3_aep_stability": true,
+          "M4_false_execute": false,
+          "M5_fate_distribution": true
+        },
+        "all_pass": false,
+        "pass_count": 4
+      },
+      "stats_summary": {
+        "hard_dead": 870,
+        "soft_dead": 49,
+        "alive": 299,
+        "max_dd": 0.32,
+        "final_equity": 105804.75
+      }
+    }
+  ],
+  "cross_market": {
+    "sharp_gap_range": 13.2,
+    "fate_sep_range": 20.0,
+    "aep_range": 0.1515,
+    "fpr_mean": 19.0,
+    "fpr_std": 9.5
+  },
+  "zombie_seal_confirmed": true,
+  "zombie_seal_statement": "bar 0-2 \uae30\uc900\uc73c\ub85c\ub9cc \uc138\uacc4\uc120\uc744 \ubd84\ub958. \uadf8 \uc774\ud6c4 \ud68c\ubcf5\ud558\ub294 \uc54c\ud30c\ub294 \uad00\uce21 \uc2dc\uac04 \ud55c\uacc4\ub85c \ubd09\uc778."
+}

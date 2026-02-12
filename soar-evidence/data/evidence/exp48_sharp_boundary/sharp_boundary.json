@@ -1,0 +1,38 @@
+{
+  "method": "Deterministic step-function p_exec from minimal features",
+  "rules_distribution": {
+    "EXECUTE": 90,
+    "DENY": 176,
+    "BOUNDARY": 27
+  },
+  "group_performance": {
+    "execute": {
+      "n": 90,
+      "wr": 93.3,
+      "avg_pnl": 9.0
+    },
+    "deny": {
+      "n": 176,
+      "wr": 8.0,
+      "avg_pnl": -3.84
+    },
+    "boundary": {
+      "n": 27,
+      "wr": 63.0,
+      "avg_pnl": 4.44
+    }
+  },
+  "results": {
+    "n": 102,
+    "wr": 89.6,
+    "pf": 17.75,
+    "net": 4290,
+    "per_trade": 42.24
+  },
+  "hypotheses": {
+    "H48a": "SUPPORTED",
+    "H48b": "SUPPORTED",
+    "H48c": "SUPPORTED",
+    "H48d": "SUPPORTED"
+  }
+}

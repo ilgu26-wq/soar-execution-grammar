@@ -1,0 +1,1480 @@
+{
+  "experiment": "EXP-63 Infant Bin Growth Map",
+  "timestamp": "2026-02-12T14:43:26.420185",
+  "lock_version": "v2.0.0-PROD",
+  "n_bins": 57,
+  "n_trades": 1344,
+  "total_immortal": 100,
+  "maturity_summary": {
+    "ADOLESCENT": {
+      "n_bins": 7,
+      "n_trades": 93,
+      "n_immortal": 0
+    },
+    "INFANT": {
+      "n_bins": 19,
+      "n_trades": 93,
+      "n_immortal": 15
+    },
+    "MATURE": {
+      "n_bins": 14,
+      "n_trades": 1132,
+      "n_immortal": 81
+    },
+    "NEWBORN": {
+      "n_bins": 17,
+      "n_trades": 26,
+      "n_immortal": 4
+    }
+  },
+  "rare_alpha_summary": {
+    "n_bins": 23,
+    "n_trades": 71,
+    "n_immortal": 19,
+    "pct_immortal": 19.0
+  },
+  "observation_priority": [
+    {
+      "key": "POS|RISING|NO_SHADOW|D1|NON_TREND|HIGH",
+      "priority_score": 19.0,
+      "imm_density": 1.0,
+      "growth_need": 19.0,
+      "sharpness": 1.0,
+      "immortal_count": 1,
+      "n": 1,
+      "maturity": "NEWBORN",
+      "p_exec": 0.6667
+    },
+    {
+      "key": "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH",
+      "priority_score": 18.0,
+      "imm_density": 1.0,
+      "growth_need": 18.0,
+      "sharpness": 2.0,
+      "immortal_count": 2,
+      "n": 2,
+      "maturity": "NEWBORN",
+      "p_exec": 0.75
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D1|TREND|LOW",
+      "priority_score": 11.33,
+      "imm_density": 0.667,
+      "growth_need": 17.0,
+      "sharpness": 3.0,
+      "immortal_count": 2,
+      "n": 3,
+      "maturity": "INFANT",
+      "p_exec": 0.8
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D0|TREND|LOW",
+      "priority_score": 11.33,
+      "imm_density": 0.667,
+      "growth_need": 17.0,
+      "sharpness": 3.0,
+      "immortal_count": 2,
+      "n": 3,
+      "maturity": "INFANT",
+      "p_exec": 0.8
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW",
+      "priority_score": 9.33,
+      "imm_density": 0.667,
+      "growth_need": 14.0,
+      "sharpness": 6.0,
+      "immortal_count": 4,
+      "n": 6,
+      "maturity": "INFANT",
+      "p_exec": 0.875
+    },
+    {
+      "key": "POS|RISING|SHADOW|D3+|NON_TREND|LOW",
+      "priority_score": 9.0,
+      "imm_density": 0.5,
+      "growth_need": 18.0,
+      "sharpness": 2.0,
+      "immortal_count": 1,
+      "n": 2,
+      "maturity": "NEWBORN",
+      "p_exec": 0.5
+    },
+    {
+      "key": "POS|RISING|SHADOW|D1|NON_TREND|HIGH",
+      "priority_score": 7.0,
+      "imm_density": 0.5,
+      "growth_need": 14.0,
+      "sharpness": 6.0,
+      "immortal_count": 3,
+      "n": 6,
+      "maturity": "INFANT",
+      "p_exec": 0.875
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D1|TREND|HIGH",
+      "priority_score": 6.0,
+      "imm_density": 0.4,
+      "growth_need": 15.0,
+      "sharpness": 5.0,
+      "immortal_count": 2,
+      "n": 5,
+      "maturity": "INFANT",
+      "p_exec": 0.8571
+    },
+    {
+      "key": "POS|RISING|SHADOW|D3+|TREND|LOW",
+      "priority_score": 2.33,
+      "imm_density": 0.167,
+      "growth_need": 14.0,
+      "sharpness": 6.0,
+      "immortal_count": 1,
+      "n": 6,
+      "maturity": "INFANT",
+      "p_exec": 0.625
+    },
+    {
+      "key": "POS|RISING|SHADOW|D2|TREND|LOW",
+      "priority_score": 1.86,
+      "imm_density": 0.143,
+      "growth_need": 13.0,
+      "sharpness": 7.0,
+      "immortal_count": 1,
+      "n": 7,
+      "maturity": "INFANT",
+      "p_exec": 0.5556
+    },
+    {
+      "key": "POS|FALLING|SHADOW|D0|TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 0,
+      "sharpness": 38.0,
+      "immortal_count": 0,
+      "n": 38,
+      "maturity": "MATURE",
+      "p_exec": 0.775
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D0|TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.296,
+      "growth_need": 0,
+      "sharpness": 189.0,
+      "immortal_count": 56,
+      "n": 189,
+      "maturity": "MATURE",
+      "p_exec": 0.9895
+    },
+    {
+      "key": "NEG|FALLING|SHADOW|D0|TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 0,
+      "sharpness": 56.0,
+      "immortal_count": 0,
+      "n": 56,
+      "maturity": "MATURE",
+      "p_exec": 0.5517
+    },
+    {
+      "key": "POS|RISING|SHADOW|D3+|NON_TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 18.0,
+      "sharpness": 2.0,
+      "immortal_count": 0,
+      "n": 2,
+      "maturity": "NEWBORN",
+      "p_exec": 0.5
+    },
+    {
+      "key": "POS|RISING|SHADOW|D0|NON_TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 1.0,
+      "sharpness": 19.0,
+      "immortal_count": 0,
+      "n": 19,
+      "maturity": "ADOLESCENT",
+      "p_exec": 0.8571
+    },
+    {
+      "key": "POS|RISING|SHADOW|D0|TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 0,
+      "sharpness": 90.0,
+      "immortal_count": 0,
+      "n": 90,
+      "maturity": "MATURE",
+      "p_exec": 0.8152
+    },
+    {
+      "key": "POS|FALLING|SHADOW|D0|NON_TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 14.0,
+      "sharpness": 6.0,
+      "immortal_count": 0,
+      "n": 6,
+      "maturity": "INFANT",
+      "p_exec": 0.75
+    },
+    {
+      "key": "POS|RISING|SHADOW|D0|TREND|LOW",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 16.0,
+      "sharpness": 4.0,
+      "immortal_count": 0,
+      "n": 4,
+      "maturity": "INFANT",
+      "p_exec": 0.5
+    },
+    {
+      "key": "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH",
+      "priority_score": 0.0,
+      "imm_density": 0.17,
+      "growth_need": 0,
+      "sharpness": 53.0,
+      "immortal_count": 9,
+      "n": 53,
+      "maturity": "MATURE",
+      "p_exec": 0.9818
+    },
+    {
+      "key": "POS|RISING|SHADOW|D1|TREND|LOW",
+      "priority_score": 0.0,
+      "imm_density": 0.0,
+      "growth_need": 17.0,
+      "sharpness": 3.0,
+      "immortal_count": 0,
+      "n": 3,
+      "maturity": "INFANT",
+      "p_exec": 0.8
+    }
+  ],
+  "bin_profiles": {
+    "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 13.0,
+      "n": 12,
+      "p_exec": 0.0714,
+      "sharpness": 12.0,
+      "maturity": "ADOLESCENT",
+      "direction": "DENY",
+      "n_trades": 12,
+      "wins": 0,
+      "losses": 12,
+      "immortal_count": 0,
+      "pnl": -282.5,
+      "fates": {
+        "TERMINATED": 12
+      },
+      "sources": {
+        "NQ_Tick": 7,
+        "NQ_1min": 5
+      }
+    },
+    "NEG|RISING|SHADOW|D2|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 3.0,
+      "n": 3,
+      "p_exec": 0.4,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 3,
+      "wins": 1,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": -5.0,
+      "fates": {
+        "TERMINATED": 3
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3,
+      "p_exec": 0.8,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 3,
+      "wins": 3,
+      "losses": 0,
+      "immortal_count": 2,
+      "pnl": 145.0,
+      "fates": {
+        "IMMORTAL": 2,
+        "SURVIVED": 1
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+      "alpha": 7.0,
+      "beta": 1.0,
+      "n": 6,
+      "p_exec": 0.875,
+      "sharpness": 6.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 6,
+      "wins": 6,
+      "losses": 0,
+      "immortal_count": 4,
+      "pnl": 300.0,
+      "fates": {
+        "SURVIVED": 2,
+        "IMMORTAL": 4
+      },
+      "sources": {
+        "NQ_Tick": 4,
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|SHADOW|D2|TREND|LOW": {
+      "alpha": 5.0,
+      "beta": 4.0,
+      "n": 7,
+      "p_exec": 0.5556,
+      "sharpness": 7.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 7,
+      "wins": 4,
+      "losses": 3,
+      "immortal_count": 1,
+      "pnl": 122.5,
+      "fates": {
+        "TERMINATED": 6,
+        "IMMORTAL": 1
+      },
+      "sources": {
+        "NQ_Tick": 5,
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3,
+      "p_exec": 0.8,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 3,
+      "wins": 3,
+      "losses": 0,
+      "immortal_count": 2,
+      "pnl": 150.0,
+      "fates": {
+        "SURVIVED": 1,
+        "IMMORTAL": 2
+      },
+      "sources": {
+        "NQ_Tick": 3
+      }
+    },
+    "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 13.0,
+      "n": 12,
+      "p_exec": 0.0714,
+      "sharpness": 12.0,
+      "maturity": "ADOLESCENT",
+      "direction": "DENY",
+      "n_trades": 12,
+      "wins": 0,
+      "losses": 12,
+      "immortal_count": 0,
+      "pnl": -277.5,
+      "fates": {
+        "TERMINATED": 11,
+        "STILLBORN": 1
+      },
+      "sources": {
+        "NQ_Tick": 5,
+        "NQ_1min": 7
+      }
+    },
+    "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 26.0,
+      "n": 30,
+      "p_exec": 0.1875,
+      "sharpness": 30.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 30,
+      "wins": 5,
+      "losses": 25,
+      "immortal_count": 0,
+      "pnl": -375.0,
+      "fates": {
+        "ZOMBIE": 2,
+        "TERMINATED": 27,
+        "STILLBORN": 1
+      },
+      "sources": {
+        "NQ_Tick": 6,
+        "NQ_1min": 24
+      }
+    },
+    "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 8.0,
+      "beta": 221.0,
+      "n": 227,
+      "p_exec": 0.0349,
+      "sharpness": 227.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 227,
+      "wins": 7,
+      "losses": 220,
+      "immortal_count": 0,
+      "pnl": -4712.5,
+      "fates": {
+        "TERMINATED": 220,
+        "STILLBORN": 7
+      },
+      "sources": {
+        "NQ_Tick": 49,
+        "NQ_1min": 178
+      }
+    },
+    "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 31.0,
+      "beta": 9.0,
+      "n": 38,
+      "p_exec": 0.775,
+      "sharpness": 38.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 38,
+      "wins": 30,
+      "losses": 8,
+      "immortal_count": 0,
+      "pnl": 1192.5,
+      "fates": {
+        "ZOMBIE": 17,
+        "TERMINATED": 21
+      },
+      "sources": {
+        "NQ_Tick": 12,
+        "NQ_1min": 26
+      }
+    },
+    "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+      "alpha": 189.0,
+      "beta": 2.0,
+      "n": 189,
+      "p_exec": 0.9895,
+      "sharpness": 189.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 189,
+      "wins": 188,
+      "losses": 1,
+      "immortal_count": 56,
+      "pnl": 8560.0,
+      "fates": {
+        "IMMORTAL": 56,
+        "SURVIVED": 122,
+        "ZOMBIE": 6,
+        "TERMINATED": 5
+      },
+      "sources": {
+        "NQ_Tick": 45,
+        "NQ_1min": 144
+      }
+    },
+    "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 171.0,
+      "n": 170,
+      "p_exec": 0.0058,
+      "sharpness": 170.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 170,
+      "wins": 0,
+      "losses": 170,
+      "immortal_count": 0,
+      "pnl": -3895.0,
+      "fates": {
+        "TERMINATED": 161,
+        "ZOMBIE": 1,
+        "STILLBORN": 8
+      },
+      "sources": {
+        "NQ_Tick": 33,
+        "NQ_1min": 137
+      }
+    },
+    "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 32.0,
+      "beta": 26.0,
+      "n": 56,
+      "p_exec": 0.5517,
+      "sharpness": 56.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 56,
+      "wins": 31,
+      "losses": 25,
+      "immortal_count": 0,
+      "pnl": 837.5,
+      "fates": {
+        "TERMINATED": 52,
+        "ZOMBIE": 4
+      },
+      "sources": {
+        "NQ_Tick": 13,
+        "NQ_1min": 43
+      }
+    },
+    "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2,
+      "p_exec": 0.5,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 1,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": 25.0,
+      "fates": {
+        "TERMINATED": 2
+      },
+      "sources": {
+        "NQ_Tick": 2
+      }
+    },
+    "POS|RISING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 26.0,
+      "beta": 67.0,
+      "n": 91,
+      "p_exec": 0.2796,
+      "sharpness": 91.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 91,
+      "wins": 25,
+      "losses": 66,
+      "immortal_count": 9,
+      "pnl": -358.75,
+      "fates": {
+        "IMMORTAL": 9,
+        "TERMINATED": 80,
+        "STILLBORN": 1,
+        "ZOMBIE": 1
+      },
+      "sources": {
+        "NQ_Tick": 10,
+        "NQ_1min": 81
+      }
+    },
+    "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 18.0,
+      "beta": 3.0,
+      "n": 19,
+      "p_exec": 0.8571,
+      "sharpness": 19.0,
+      "maturity": "ADOLESCENT",
+      "direction": "EXEC",
+      "n_trades": 19,
+      "wins": 17,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": 800.0,
+      "fates": {
+        "TERMINATED": 17,
+        "ZOMBIE": 2
+      },
+      "sources": {
+        "NQ_Tick": 3,
+        "NQ_1min": 16
+      }
+    },
+    "POS|RISING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 75.0,
+      "beta": 17.0,
+      "n": 90,
+      "p_exec": 0.8152,
+      "sharpness": 90.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 90,
+      "wins": 74,
+      "losses": 16,
+      "immortal_count": 0,
+      "pnl": 2987.5,
+      "fates": {
+        "TERMINATED": 65,
+        "ZOMBIE": 24,
+        "SURVIVED": 1
+      },
+      "sources": {
+        "NQ_Tick": 12,
+        "NQ_1min": 78
+      }
+    },
+    "POS|FALLING|SHADOW|D1|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2,
+      "p_exec": 0.25,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "DENY",
+      "n_trades": 2,
+      "wins": 0,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": -47.5,
+      "fates": {
+        "ZOMBIE": 2
+      },
+      "sources": {
+        "NQ_Tick": 2
+      }
+    },
+    "POS|RISING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 5.0,
+      "beta": 3.0,
+      "n": 6,
+      "p_exec": 0.625,
+      "sharpness": 6.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 6,
+      "wins": 4,
+      "losses": 2,
+      "immortal_count": 1,
+      "pnl": 147.5,
+      "fates": {
+        "ZOMBIE": 1,
+        "TERMINATED": 4,
+        "IMMORTAL": 1
+      },
+      "sources": {
+        "NQ_Tick": 4,
+        "NQ_1min": 2
+      }
+    },
+    "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 2.0,
+      "n": 6,
+      "p_exec": 0.75,
+      "sharpness": 6.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 6,
+      "wins": 5,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": 225.0,
+      "fates": {
+        "ZOMBIE": 2,
+        "TERMINATED": 4
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 4
+      }
+    },
+    "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 50.0,
+      "n": 49,
+      "p_exec": 0.0196,
+      "sharpness": 49.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 49,
+      "wins": 0,
+      "losses": 49,
+      "immortal_count": 0,
+      "pnl": -1225.0,
+      "fates": {
+        "TERMINATED": 48,
+        "STILLBORN": 1
+      },
+      "sources": {
+        "NQ_Tick": 7,
+        "NQ_1min": 42
+      }
+    },
+    "POS|RISING|SHADOW|D0|TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 3.0,
+      "n": 4,
+      "p_exec": 0.5,
+      "sharpness": 4.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 4,
+      "wins": 2,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": 47.5,
+      "fates": {
+        "ZOMBIE": 2,
+        "TERMINATED": 2
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 54.0,
+      "beta": 1.0,
+      "n": 53,
+      "p_exec": 0.9818,
+      "sharpness": 53.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 53,
+      "wins": 53,
+      "losses": 0,
+      "immortal_count": 9,
+      "pnl": 2650.0,
+      "fates": {
+        "IMMORTAL": 9,
+        "SURVIVED": 40,
+        "TERMINATED": 4
+      },
+      "sources": {
+        "NQ_Tick": 3,
+        "NQ_1min": 50
+      }
+    },
+    "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2,
+      "p_exec": 0.75,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 2,
+      "losses": 0,
+      "immortal_count": 2,
+      "pnl": 100.0,
+      "fates": {
+        "IMMORTAL": 2
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|SHADOW|D1|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3,
+      "p_exec": 0.8,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 3,
+      "wins": 3,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 140.0,
+      "fates": {
+        "ZOMBIE": 2,
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 2
+      }
+    },
+    "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 5.0,
+      "beta": 6.0,
+      "n": 9,
+      "p_exec": 0.4545,
+      "sharpness": 9.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 9,
+      "wins": 4,
+      "losses": 5,
+      "immortal_count": 0,
+      "pnl": 70.0,
+      "fates": {
+        "ZOMBIE": 2,
+        "TERMINATED": 7
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 7
+      }
+    },
+    "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 25.0,
+      "n": 24,
+      "p_exec": 0.0385,
+      "sharpness": 24.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 24,
+      "wins": 0,
+      "losses": 24,
+      "immortal_count": 0,
+      "pnl": -552.5,
+      "fates": {
+        "TERMINATED": 24
+      },
+      "sources": {
+        "NQ_Tick": 6,
+        "NQ_1min": 18
+      }
+    },
+    "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 13.0,
+      "beta": 38.0,
+      "n": 49,
+      "p_exec": 0.2549,
+      "sharpness": 49.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 49,
+      "wins": 12,
+      "losses": 37,
+      "immortal_count": 0,
+      "pnl": -310.0,
+      "fates": {
+        "TERMINATED": 49
+      },
+      "sources": {
+        "NQ_Tick": 11,
+        "NQ_1min": 38
+      }
+    },
+    "POS|FALLING|SHADOW|D0|TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2,
+      "p_exec": 0.75,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 2,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 70.0,
+      "fates": {
+        "ZOMBIE": 2
+      },
+      "sources": {
+        "NQ_Tick": 2
+      }
+    },
+    "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 5.0,
+      "n": 5,
+      "p_exec": 0.2857,
+      "sharpness": 5.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 5,
+      "wins": 1,
+      "losses": 4,
+      "immortal_count": 0,
+      "pnl": -47.5,
+      "fates": {
+        "TERMINATED": 5
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 3
+      }
+    },
+    "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2,
+      "p_exec": 0.25,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "DENY",
+      "n_trades": 2,
+      "wins": 0,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": -50.0,
+      "fates": {
+        "TERMINATED": 2
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 1
+      }
+    },
+    "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+      "alpha": 4.0,
+      "beta": 2.0,
+      "n": 4,
+      "p_exec": 0.6667,
+      "sharpness": 4.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 4,
+      "wins": 3,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": 117.5,
+      "fates": {
+        "ZOMBIE": 1,
+        "TERMINATED": 2,
+        "SURVIVED": 1
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 3
+      }
+    },
+    "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 4.0,
+      "beta": 12.0,
+      "n": 14,
+      "p_exec": 0.25,
+      "sharpness": 14.0,
+      "maturity": "ADOLESCENT",
+      "direction": "DENY",
+      "n_trades": 14,
+      "wins": 3,
+      "losses": 11,
+      "immortal_count": 0,
+      "pnl": -107.5,
+      "fates": {
+        "TERMINATED": 12,
+        "STILLBORN": 2
+      },
+      "sources": {
+        "NQ_Tick": 5,
+        "NQ_1min": 9
+      }
+    },
+    "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 6.0,
+      "n": 5,
+      "p_exec": 0.1429,
+      "sharpness": 5.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 5,
+      "wins": 0,
+      "losses": 5,
+      "immortal_count": 0,
+      "pnl": -117.5,
+      "fates": {
+        "TERMINATED": 5
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 3
+      }
+    },
+    "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 1.0,
+      "n": 5,
+      "p_exec": 0.8571,
+      "sharpness": 5.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 5,
+      "wins": 5,
+      "losses": 0,
+      "immortal_count": 2,
+      "pnl": 225.0,
+      "fates": {
+        "SURVIVED": 3,
+        "IMMORTAL": 2
+      },
+      "sources": {
+        "NQ_Tick": 5
+      }
+    },
+    "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 8.0,
+      "beta": 6.0,
+      "n": 12,
+      "p_exec": 0.5714,
+      "sharpness": 12.0,
+      "maturity": "ADOLESCENT",
+      "direction": "EXEC",
+      "n_trades": 12,
+      "wins": 7,
+      "losses": 5,
+      "immortal_count": 0,
+      "pnl": 200.0,
+      "fates": {
+        "TERMINATED": 6,
+        "ZOMBIE": 6
+      },
+      "sources": {
+        "NQ_Tick": 2,
+        "NQ_1min": 10
+      }
+    },
+    "POS|RISING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 19.0,
+      "beta": 11.0,
+      "n": 28,
+      "p_exec": 0.6333,
+      "sharpness": 28.0,
+      "maturity": "MATURE",
+      "direction": "EXEC",
+      "n_trades": 28,
+      "wins": 18,
+      "losses": 10,
+      "immortal_count": 7,
+      "pnl": 590.0,
+      "fates": {
+        "TERMINATED": 18,
+        "ZOMBIE": 3,
+        "IMMORTAL": 7
+      },
+      "sources": {
+        "NQ_Tick": 9,
+        "NQ_1min": 19
+      }
+    },
+    "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 39.0,
+      "n": 38,
+      "p_exec": 0.025,
+      "sharpness": 38.0,
+      "maturity": "MATURE",
+      "direction": "DENY",
+      "n_trades": 38,
+      "wins": 0,
+      "losses": 38,
+      "immortal_count": 0,
+      "pnl": -950.0,
+      "fates": {
+        "TERMINATED": 33,
+        "STILLBORN": 5
+      },
+      "sources": {
+        "NQ_Tick": 6,
+        "NQ_1min": 32
+      }
+    },
+    "POS|FALLING|NO_SHADOW|D0|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 45.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_Tick": 1
+      }
+    },
+    "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 4.0,
+      "n": 3,
+      "p_exec": 0.2,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 3,
+      "wins": 0,
+      "losses": 3,
+      "immortal_count": 0,
+      "pnl": -67.5,
+      "fates": {
+        "TERMINATED": 2,
+        "STILLBORN": 1
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 7.0,
+      "beta": 1.0,
+      "n": 6,
+      "p_exec": 0.875,
+      "sharpness": 6.0,
+      "maturity": "INFANT",
+      "direction": "EXEC",
+      "n_trades": 6,
+      "wins": 6,
+      "losses": 0,
+      "immortal_count": 3,
+      "pnl": 300.0,
+      "fates": {
+        "TERMINATED": 2,
+        "ZOMBIE": 1,
+        "IMMORTAL": 3
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 5
+      }
+    },
+    "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2,
+      "p_exec": 0.5,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 1,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": 25.0,
+      "fates": {
+        "ZOMBIE": 1,
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_Tick": 1,
+        "NQ_1min": 1
+      }
+    },
+    "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 11.0,
+      "beta": 5.0,
+      "n": 14,
+      "p_exec": 0.6875,
+      "sharpness": 14.0,
+      "maturity": "ADOLESCENT",
+      "direction": "EXEC",
+      "n_trades": 14,
+      "wins": 10,
+      "losses": 4,
+      "immortal_count": 0,
+      "pnl": 400.0,
+      "fates": {
+        "TERMINATED": 14
+      },
+      "sources": {
+        "NQ_1min": 14
+      }
+    },
+    "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 9.0,
+      "n": 8,
+      "p_exec": 0.1,
+      "sharpness": 8.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 8,
+      "wins": 0,
+      "losses": 8,
+      "immortal_count": 0,
+      "pnl": -200.0,
+      "fates": {
+        "TERMINATED": 8
+      },
+      "sources": {
+        "NQ_1min": 8
+      }
+    },
+    "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 7.0,
+      "beta": 5.0,
+      "n": 10,
+      "p_exec": 0.5833,
+      "sharpness": 10.0,
+      "maturity": "ADOLESCENT",
+      "direction": "EXEC",
+      "n_trades": 10,
+      "wins": 6,
+      "losses": 4,
+      "immortal_count": 0,
+      "pnl": 200.0,
+      "fates": {
+        "TERMINATED": 10
+      },
+      "sources": {
+        "NQ_1min": 10
+      }
+    },
+    "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 4.0,
+      "n": 4,
+      "p_exec": 0.3333,
+      "sharpness": 4.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 4,
+      "wins": 1,
+      "losses": 3,
+      "immortal_count": 0,
+      "pnl": -22.5,
+      "fates": {
+        "TERMINATED": 4
+      },
+      "sources": {
+        "NQ_1min": 4
+      }
+    },
+    "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 2.0,
+      "n": 1,
+      "p_exec": 0.3333,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "DENY",
+      "n_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": -25.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 4.0,
+      "n": 3,
+      "p_exec": 0.2,
+      "sharpness": 3.0,
+      "maturity": "INFANT",
+      "direction": "DENY",
+      "n_trades": 3,
+      "wins": 0,
+      "losses": 3,
+      "immortal_count": 0,
+      "pnl": -67.5,
+      "fates": {
+        "STILLBORN": 2,
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 3
+      }
+    },
+    "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2,
+      "p_exec": 0.25,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "DENY",
+      "n_trades": 2,
+      "wins": 0,
+      "losses": 2,
+      "immortal_count": 0,
+      "pnl": -50.0,
+      "fates": {
+        "TERMINATED": 2
+      },
+      "sources": {
+        "NQ_1min": 2
+      }
+    },
+    "NEG|RISING|SHADOW|D1|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 2.0,
+      "n": 1,
+      "p_exec": 0.3333,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "DENY",
+      "n_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "immortal_count": 0,
+      "pnl": -22.5,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|SHADOW|D1|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 50.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2,
+      "p_exec": 0.5,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 1,
+      "losses": 1,
+      "immortal_count": 1,
+      "pnl": 25.0,
+      "fates": {
+        "TERMINATED": 1,
+        "IMMORTAL": 1
+      },
+      "sources": {
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|NO_SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 1,
+      "pnl": 50.0,
+      "fates": {
+        "IMMORTAL": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2,
+      "p_exec": 0.75,
+      "sharpness": 2.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 2,
+      "wins": 2,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 100.0,
+      "fates": {
+        "SURVIVED": 2
+      },
+      "sources": {
+        "NQ_1min": 2
+      }
+    },
+    "POS|RISING|SHADOW|D2|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 50.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "POS|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 50.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    },
+    "NEG|FALLING|SHADOW|D0|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1,
+      "p_exec": 0.6667,
+      "sharpness": 1.0,
+      "maturity": "NEWBORN",
+      "direction": "EXEC",
+      "n_trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "immortal_count": 0,
+      "pnl": 45.0,
+      "fates": {
+        "TERMINATED": 1
+      },
+      "sources": {
+        "NQ_1min": 1
+      }
+    }
+  }
+}

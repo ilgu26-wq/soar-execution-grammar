@@ -1,0 +1,291 @@
+{
+  "alpha_prior": 1.0,
+  "beta_prior": 1.0,
+  "bins": {
+    "NEG|FALLING|SHADOW|D2|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 13.0,
+      "n": 12
+    },
+    "NEG|RISING|SHADOW|D2|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 3.0,
+      "n": 3
+    },
+    "POS|RISING|NO_SHADOW|D1|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3
+    },
+    "POS|RISING|NO_SHADOW|D0|NON_TREND|LOW": {
+      "alpha": 7.0,
+      "beta": 1.0,
+      "n": 6
+    },
+    "POS|RISING|SHADOW|D2|TREND|LOW": {
+      "alpha": 5.0,
+      "beta": 4.0,
+      "n": 7
+    },
+    "POS|RISING|NO_SHADOW|D0|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3
+    },
+    "NEG|FALLING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 13.0,
+      "n": 12
+    },
+    "POS|RISING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 26.0,
+      "n": 30
+    },
+    "NEG|FALLING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 8.0,
+      "beta": 221.0,
+      "n": 227
+    },
+    "POS|FALLING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 31.0,
+      "beta": 9.0,
+      "n": 38
+    },
+    "POS|RISING|NO_SHADOW|D0|TREND|HIGH": {
+      "alpha": 189.0,
+      "beta": 2.0,
+      "n": 189
+    },
+    "NEG|FALLING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 171.0,
+      "n": 170
+    },
+    "NEG|FALLING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 32.0,
+      "beta": 26.0,
+      "n": 56
+    },
+    "POS|RISING|SHADOW|D3+|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2
+    },
+    "POS|RISING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 26.0,
+      "beta": 67.0,
+      "n": 91
+    },
+    "POS|RISING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 18.0,
+      "beta": 3.0,
+      "n": 19
+    },
+    "POS|RISING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 75.0,
+      "beta": 17.0,
+      "n": 90
+    },
+    "POS|FALLING|SHADOW|D1|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2
+    },
+    "POS|RISING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 5.0,
+      "beta": 3.0,
+      "n": 6
+    },
+    "POS|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 2.0,
+      "n": 6
+    },
+    "NEG|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 50.0,
+      "n": 49
+    },
+    "POS|RISING|SHADOW|D0|TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 3.0,
+      "n": 4
+    },
+    "POS|RISING|NO_SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 54.0,
+      "beta": 1.0,
+      "n": 53
+    },
+    "POS|FALLING|NO_SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2
+    },
+    "POS|RISING|SHADOW|D1|TREND|LOW": {
+      "alpha": 4.0,
+      "beta": 1.0,
+      "n": 3
+    },
+    "POS|FALLING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 5.0,
+      "beta": 6.0,
+      "n": 9
+    },
+    "NEG|RISING|SHADOW|D2|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 25.0,
+      "n": 24
+    },
+    "NEG|FALLING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 13.0,
+      "beta": 38.0,
+      "n": 49
+    },
+    "POS|FALLING|SHADOW|D0|TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2
+    },
+    "NEG|FALLING|SHADOW|D1|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 5.0,
+      "n": 5
+    },
+    "NEG|FALLING|SHADOW|D3+|NON_TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2
+    },
+    "POS|FALLING|NO_SHADOW|D0|TREND|HIGH": {
+      "alpha": 4.0,
+      "beta": 2.0,
+      "n": 4
+    },
+    "POS|RISING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 4.0,
+      "beta": 12.0,
+      "n": 14
+    },
+    "NEG|RISING|SHADOW|D0|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 6.0,
+      "n": 5
+    },
+    "POS|RISING|NO_SHADOW|D1|TREND|HIGH": {
+      "alpha": 6.0,
+      "beta": 1.0,
+      "n": 5
+    },
+    "POS|FALLING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 8.0,
+      "beta": 6.0,
+      "n": 12
+    },
+    "POS|RISING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 19.0,
+      "beta": 11.0,
+      "n": 28
+    },
+    "NEG|FALLING|SHADOW|D3+|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 39.0,
+      "n": 38
+    },
+    "POS|FALLING|NO_SHADOW|D0|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    },
+    "NEG|RISING|SHADOW|D3+|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 4.0,
+      "n": 3
+    },
+    "POS|RISING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 7.0,
+      "beta": 1.0,
+      "n": 6
+    },
+    "POS|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2
+    },
+    "NEG|FALLING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 11.0,
+      "beta": 5.0,
+      "n": 14
+    },
+    "NEG|RISING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 9.0,
+      "n": 8
+    },
+    "NEG|FALLING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 7.0,
+      "beta": 5.0,
+      "n": 10
+    },
+    "NEG|RISING|SHADOW|D1|TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 4.0,
+      "n": 4
+    },
+    "NEG|RISING|SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 2.0,
+      "n": 1
+    },
+    "NEG|RISING|SHADOW|D3+|TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 4.0,
+      "n": 3
+    },
+    "NEG|RISING|SHADOW|D0|NON_TREND|HIGH": {
+      "alpha": 1.0,
+      "beta": 3.0,
+      "n": 2
+    },
+    "NEG|RISING|SHADOW|D1|TREND|LOW": {
+      "alpha": 1.0,
+      "beta": 2.0,
+      "n": 1
+    },
+    "POS|RISING|SHADOW|D1|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    },
+    "POS|RISING|SHADOW|D3+|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 2.0,
+      "n": 2
+    },
+    "POS|RISING|NO_SHADOW|D1|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    },
+    "POS|RISING|NO_SHADOW|D1|NON_TREND|LOW": {
+      "alpha": 3.0,
+      "beta": 1.0,
+      "n": 2
+    },
+    "POS|RISING|SHADOW|D2|NON_TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    },
+    "POS|FALLING|SHADOW|D2|NON_TREND|HIGH": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    },
+    "NEG|FALLING|SHADOW|D0|TREND|LOW": {
+      "alpha": 2.0,
+      "beta": 1.0,
+      "n": 1
+    }
+  }
+}

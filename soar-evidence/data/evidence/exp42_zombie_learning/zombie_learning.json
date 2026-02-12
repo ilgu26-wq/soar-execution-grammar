@@ -1,0 +1,28 @@
+{
+  "zombie_population": 51,
+  "zombie_wr": 62.7,
+  "saved": {
+    "n": 43,
+    "wr": 62.8
+  },
+  "killed": {
+    "n": 8,
+    "wr": 62.5
+  },
+  "zombie_enhanced": {
+    "n": 116,
+    "wr": 75.2,
+    "pf": 6.1,
+    "net": 3604
+  },
+  "save_conditions": [
+    "PENUMBRA or NO_SHADOW",
+    "AEP SUPER-critical",
+    "Energy slope > 0"
+  ],
+  "hypotheses": {
+    "H42a": "SUPPORTED",
+    "H42b": "NOT SUPPORTED",
+    "H42c": "SUPPORTED"
+  }
+}

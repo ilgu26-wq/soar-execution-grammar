@@ -1,0 +1,35 @@
+{
+  "method": "IMMORTAL/SURVIVED pool purification with energy/shadow gates",
+  "categories": {
+    "PURE_ALPHA": 68,
+    "STRONG_ALPHA": 29,
+    "EXCLUDED": 196
+  },
+  "group_performance": {
+    "pure_alpha": {
+      "n": 68,
+      "wr": 95.6
+    },
+    "strong_alpha": {
+      "n": 29,
+      "wr": 79.3
+    },
+    "excluded": {
+      "n": 196,
+      "wr": 13.8
+    }
+  },
+  "results": {
+    "n": 86,
+    "wr": 92.4,
+    "pf": 25.25,
+    "net": 3829,
+    "per_trade": 44.32
+  },
+  "hypotheses": {
+    "H49a": "SUPPORTED",
+    "H49b": "SUPPORTED",
+    "H49c": "SUPPORTED",
+    "H49d": "SUPPORTED"
+  }
+}

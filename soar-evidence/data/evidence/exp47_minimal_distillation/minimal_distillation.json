@@ -1,0 +1,4440 @@
+{
+  "thesis": "Feature minimalism: 12+ layers \u2192 5+1 features",
+  "question": "\uc5bc\ub9c8\ub098 \uc801\uac8c \ubd10\ub3c4 \uc6b0\uc8fc\uac00 \uc720\uc9c0\ub418\ub0d0",
+  "minimal_features": [
+    "e_sign",
+    "de_sign",
+    "shadow_binary",
+    "arg_depth",
+    "regime_coarse",
+    "aep_binary"
+  ],
+  "full_features": [
+    "depth",
+    "aep_zone",
+    "shadow_class",
+    "regime"
+  ],
+  "distillation": {
+    "p_exec_correlation": 0.936,
+    "separation_retention_pct": 106.4,
+    "net_retention_pct": 105.9,
+    "feature_reduction_pct": 50
+  },
+  "minimal_results": {
+    "n": 117,
+    "wr": 76.2,
+    "pf": 6.48,
+    "net": 3749,
+    "mdd": 0.07,
+    "per_trade": 32.0
+  },
+  "ecl_minimal_hybrid": {
+    "n": 114,
+    "wr": 80.7,
+    "net": 4023
+  },
+  "hypotheses": {
+    "H47a_separation": "SUPPORTED",
+    "H47b_net_retention": "SUPPORTED",
+    "H47c_correlation": "SUPPORTED",
+    "H47d_zombie_boundary": "SUPPORTED"
+  },
+  "per_trade_minimal": [
+    {
+      "idx": 0,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 1,
+      "p_full": 0.1562,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 2,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 3,
+      "p_full": 0.9565,
+      "p_min": 0.8889,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 4,
+      "p_full": 0.9565,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 5,
+      "p_full": 0.7778,
+      "p_min": 0.7727,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 6,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 7,
+      "p_full": 0.9474,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 8,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 9,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 10,
+      "p_full": 0.0625,
+      "p_min": 0.3333,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 11,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 12,
+      "p_full": 0.1562,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 13,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 14,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 15,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 16,
+      "p_full": 0.1667,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 17,
+      "p_full": 0.2,
+      "p_min": 0.3333,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 18,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 19,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 20,
+      "p_full": 0.8,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 21,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 22,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 23,
+      "p_full": 0.3333,
+      "p_min": 0.5333,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 24,
+      "p_full": 0.8462,
+      "p_min": 0.6667,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 25,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 26,
+      "p_full": 0.1667,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 27,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 28,
+      "p_full": 0.4,
+      "p_min": 0.1429,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 29,
+      "p_full": 0.9474,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 30,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 31,
+      "p_full": 0.1667,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 32,
+      "p_full": 0.2222,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 33,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 34,
+      "p_full": 0.7,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 35,
+      "p_full": 0.4286,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 36,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 37,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 38,
+      "p_full": 0.96,
+      "p_min": 0.75,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 39,
+      "p_full": 0.3,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 40,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 41,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 42,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 43,
+      "p_full": 0.8,
+      "p_min": 0.56,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 44,
+      "p_full": 0.75,
+      "p_min": 0.7727,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 45,
+      "p_full": 0.8333,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 46,
+      "p_full": 0.8333,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 47,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 48,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 49,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 50,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 51,
+      "p_full": 0.1,
+      "p_min": 0.1429,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 52,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 53,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 54,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 55,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 56,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 57,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 58,
+      "p_full": 0.2,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 59,
+      "p_full": 0.1667,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 60,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 61,
+      "p_full": 0.2,
+      "p_min": 0.0164,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 62,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 63,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 64,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 65,
+      "p_full": 0.2143,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 66,
+      "p_full": 0.3333,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 67,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 68,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 69,
+      "p_full": 0.1667,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 70,
+      "p_full": 0.125,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 71,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 72,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 73,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 74,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 75,
+      "p_full": 0.1,
+      "p_min": 0.4,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 76,
+      "p_full": 0.1765,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 77,
+      "p_full": 0.9565,
+      "p_min": 0.8889,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 78,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 79,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 80,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 81,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 82,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 83,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 84,
+      "p_full": 0.9375,
+      "p_min": 0.8,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 85,
+      "p_full": 0.8636,
+      "p_min": 0.6667,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 86,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 87,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 88,
+      "p_full": 0.1,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 89,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 90,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 91,
+      "p_full": 0.9091,
+      "p_min": 0.8889,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 92,
+      "p_full": 0.9091,
+      "p_min": 0.8889,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 93,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 94,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 95,
+      "p_full": 0.15,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 96,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 97,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 98,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 99,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 100,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 101,
+      "p_full": 0.9375,
+      "p_min": 0.8,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 102,
+      "p_full": 0.9375,
+      "p_min": 0.8,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 103,
+      "p_full": 0.1562,
+      "p_min": 0.5556,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 104,
+      "p_full": 0.625,
+      "p_min": 0.6667,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 105,
+      "p_full": 0.3333,
+      "p_min": 0.56,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 106,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 107,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 108,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 109,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 110,
+      "p_full": 0.2,
+      "p_min": 0.5,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 111,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 112,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 113,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 114,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 115,
+      "p_full": 0.125,
+      "p_min": 0.52,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 116,
+      "p_full": 0.2,
+      "p_min": 0.3333,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 117,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 118,
+      "p_full": 0.6,
+      "p_min": 0.6667,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 119,
+      "p_full": 0.3333,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 120,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 121,
+      "p_full": 0.7,
+      "p_min": 0.8478,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 122,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 123,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 124,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 125,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 126,
+      "p_full": 0.0465,
+      "p_min": 0.125,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 127,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 128,
+      "p_full": 0.1667,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 129,
+      "p_full": 0.625,
+      "p_min": 0.6667,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 130,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 131,
+      "p_full": 0.6,
+      "p_min": 0.7143,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 132,
+      "p_full": 0.4286,
+      "p_min": 0.56,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 133,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 134,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 135,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 136,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 137,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 138,
+      "p_full": 0.1,
+      "p_min": 0.4,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 139,
+      "p_full": 0.4286,
+      "p_min": 0.56,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 140,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 141,
+      "p_full": 0.92,
+      "p_min": 0.6667,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 142,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 143,
+      "p_full": 0.0556,
+      "p_min": 0.1667,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 144,
+      "p_full": 0.2222,
+      "p_min": 0.52,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 145,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 146,
+      "p_full": 0.4286,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 147,
+      "p_full": 0.4,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 148,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 149,
+      "p_full": 0.0417,
+      "p_min": 0.5,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 150,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 151,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 152,
+      "p_full": 0.3333,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 153,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 154,
+      "p_full": 0.1667,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 155,
+      "p_full": 0.0714,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 156,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 157,
+      "p_full": 0.7,
+      "p_min": 0.7586,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 158,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 159,
+      "p_full": 0.15,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 160,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 161,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 162,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 163,
+      "p_full": 0.15,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 164,
+      "p_full": 0.0465,
+      "p_min": 0.125,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 165,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 166,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 167,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 168,
+      "p_full": 0.2857,
+      "p_min": 0.5185,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 169,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 170,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 171,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 172,
+      "p_full": 0.8,
+      "p_min": 0.8333,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 173,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 174,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 175,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 176,
+      "p_full": 0.2,
+      "p_min": 0.3333,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 177,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 178,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 179,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 180,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 181,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 182,
+      "p_full": 0.0256,
+      "p_min": 0.2,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 183,
+      "p_full": 0.15,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 184,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 185,
+      "p_full": 0.9167,
+      "p_min": 0.9375,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 186,
+      "p_full": 0.3333,
+      "p_min": 0.125,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 187,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 188,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 189,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 190,
+      "p_full": 0.2,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 191,
+      "p_full": 0.2,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 192,
+      "p_full": 0.7778,
+      "p_min": 0.7727,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 193,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 194,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 195,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 196,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 197,
+      "p_full": 0.4286,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 198,
+      "p_full": 0.1667,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 199,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 200,
+      "p_full": 0.8,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 201,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 202,
+      "p_full": 0.75,
+      "p_min": 0.7727,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 203,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 204,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 205,
+      "p_full": 0.8,
+      "p_min": 0.8889,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 206,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 207,
+      "p_full": 0.2143,
+      "p_min": 0.52,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 208,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 209,
+      "p_full": 0.3333,
+      "p_min": 0.56,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 210,
+      "p_full": 0.125,
+      "p_min": 0.0789,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 211,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 212,
+      "p_full": 0.8,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 213,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 214,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 215,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 216,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 217,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 218,
+      "p_full": 0.15,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 219,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 220,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 221,
+      "p_full": 0.9091,
+      "p_min": 0.8571,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 222,
+      "p_full": 0.2,
+      "p_min": 0.3333,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 223,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 224,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 225,
+      "p_full": 0.8636,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 226,
+      "p_full": 0.0714,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 227,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 228,
+      "p_full": 0.1429,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 229,
+      "p_full": 0.0465,
+      "p_min": 0.1667,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 230,
+      "p_full": 0.1,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 231,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 232,
+      "p_full": 0.1,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 233,
+      "p_full": 0.125,
+      "p_min": 0.1429,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 234,
+      "p_full": 0.6154,
+      "p_min": 0.5,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 235,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 236,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 237,
+      "p_full": 0.7,
+      "p_min": 0.52,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 238,
+      "p_full": 0.625,
+      "p_min": 0.7273,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 239,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 240,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 241,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 242,
+      "p_full": 0.1667,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 243,
+      "p_full": 0.0465,
+      "p_min": 0.1667,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 244,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 245,
+      "p_full": 0.9091,
+      "p_min": 0.8889,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 246,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 247,
+      "p_full": 0.2857,
+      "p_min": 0.52,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 248,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 249,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 250,
+      "p_full": 0.6,
+      "p_min": 0.6667,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 251,
+      "p_full": 0.75,
+      "p_min": 0.7727,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 252,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 253,
+      "p_full": 0.1,
+      "p_min": 0.0789,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 254,
+      "p_full": 0.15,
+      "p_min": 0.1053,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 255,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 256,
+      "p_full": 0.125,
+      "p_min": 0.5,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 257,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 258,
+      "p_full": 0.1,
+      "p_min": 0.0789,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 259,
+      "p_full": 0.0513,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 260,
+      "p_full": 0.1,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 261,
+      "p_full": 0.8125,
+      "p_min": 0.7586,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 262,
+      "p_full": 0.9091,
+      "p_min": 0.8889,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 263,
+      "p_full": 0.9375,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 264,
+      "p_full": 0.9474,
+      "p_min": 0.8889,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 265,
+      "p_full": 0.0455,
+      "p_min": 0.1667,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 266,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 267,
+      "p_full": 0.0513,
+      "p_min": 0.0357,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 268,
+      "p_full": 0.1667,
+      "p_min": 0.0357,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 269,
+      "p_full": 0.9375,
+      "p_min": 0.8,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 270,
+      "p_full": 0.8636,
+      "p_min": 0.6667,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 271,
+      "p_full": 0.75,
+      "p_min": 0.8333,
+      "fate": "SURVIVED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 272,
+      "p_full": 0.6923,
+      "p_min": 0.1429,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 273,
+      "p_full": 0.0556,
+      "p_min": 0.1667,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 274,
+      "p_full": 0.9,
+      "p_min": 0.975,
+      "fate": "IMMORTAL",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 275,
+      "p_full": 0.6923,
+      "p_min": 0.5333,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "NON_TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 276,
+      "p_full": 0.8,
+      "p_min": 0.95,
+      "fate": "SURVIVED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 277,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 278,
+      "p_full": 0.3333,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 279,
+      "p_full": 0.0625,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 280,
+      "p_full": 0.8,
+      "p_min": 0.56,
+      "fate": "ZOMBIE",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 281,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 282,
+      "p_full": 0.1,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 283,
+      "p_full": 0.6667,
+      "p_min": 0.7273,
+      "fate": "TERMINATED",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 284,
+      "p_full": 0.1875,
+      "p_min": 0.1053,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D2",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 285,
+      "p_full": 0.4,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 286,
+      "p_full": 0.95,
+      "p_min": 0.95,
+      "fate": "IMMORTAL",
+      "is_win": true,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "NO_SHADOW",
+        "arg_depth": "D0",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 287,
+      "p_full": 0.0417,
+      "p_min": 0.1429,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 288,
+      "p_full": 0.8125,
+      "p_min": 0.8478,
+      "fate": "ZOMBIE",
+      "is_win": true,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D1",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 289,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 290,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    },
+    {
+      "idx": 291,
+      "p_full": 0.1,
+      "p_min": 0.4,
+      "fate": "TERMINATED",
+      "is_win": false,
+      "features": {
+        "e_sign": "POS",
+        "de_sign": "RISING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "LOW"
+      }
+    },
+    {
+      "idx": 292,
+      "p_full": 0.0476,
+      "p_min": 0.0164,
+      "fate": "STILLBORN",
+      "is_win": false,
+      "features": {
+        "e_sign": "NEG",
+        "de_sign": "FALLING",
+        "shadow_binary": "SHADOW",
+        "arg_depth": "D3+",
+        "regime_coarse": "TREND",
+        "aep_binary": "HIGH"
+      }
+    }
+  ]
+}
