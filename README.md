@@ -123,10 +123,13 @@ does not introduce pathological risk profiles.
 | Sharp Boundary (EXEC/DENY) | +24.62 | +519.5 | $95.00 | +98.62 | 86.5% | 12.88 |
 | **SOAR v3 (CI Wait 15/85)** | **+29.58** | **+550.3** | **$72.50** | **+137.3** | **89.9%** | **17.81** |
 | Random Gate (same freq) | +2.75 | +83.3 | $309.62 | +5.28 | 41.9% | 1.45 |
-See: [EXP-71 Institutional Metrics Overlay][EXP-71](soar-evidence/docs/EXP/EXP-71.md)
+
+
+See: [EXP-71 — Institutional Metrics Overlay](./soar-evidence/docs/EXP/EXP-71.md)
+
 
 > Metrics computed on identical trade logs without parameter tuning.
-These metrics are reported for interpretability, not optimization or selection.
+> These metrics are reported for interpretability, not optimization or selection.
 
 ## Reproduction
 
